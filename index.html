@@ -1,0 +1,2372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <style>
+      select {
+        background: #fff;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid dodgerblue;
+      }
+
+      label {
+        margin-left: 10px;
+      }
+
+    </style>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDjv1OpLxr2dLQCTGQs8TrOyL9aVqLrV9k",
+    authDomain: "tcn-wishes.firebaseapp.com",
+    databaseURL: "https://tcn-wishes-default-rdivb.firebaseio.com",
+    projectId: "tcn-wishes",
+    storageBucket: "tcn-wishes.appspot.com",
+    messagingSenderId: "906559492664",
+    appId: "1:906559492664:web:21b3aac0749f0be1dfcccd"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous">
+  </script>
+    <link rel="stylesheet"href="style.css"/>
+    <title>TCN</title>
+
+    <script>
+      function random_function()
+      {
+          var a=document.getElementById("input").value;
+          if(a==="A.GOPAVARAM"){var arr=["PADMAJA-CABLE-NETWORK"]}
+          else if(a==="ACHANTA"){var arr=["SURESH-CABLE-NETWORK","SRINIVASA-CABLE-NETWORK","MOJESH-CABLE-NETWORK","ACHANTA-COMMUNICATION-NETWORK","FRIENDS-CABLE-NETWORK","FRIENDS-CABLE-NETWORK-2	"];}
+          else if(a==="ACHIYAPALEM"){var arr=["DHANA-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="ADAVIPALEM"){var arr=["RAMESH-STAR-TV-CABLE-NETWORK"];}
+          else if(a==="ADAVIPETA"){var arr=["SRI-ANJANEYA-CABLE-NETWORK"];}
+          else if(a==="ADDANKIVARIPALEM"){var arr=["MOSUBABU-CABLE-NETWORK"];}
+          else if(a==="ADURRU"){var arr=["SRI-LAKSHMI-SAI-MANIKANTA-CABLE-NETWORK","KANAKA-DURGA-CABLE-NETWORK"];}
+          else if(a==="AGRAHARAM"){var arr=["SRI-GANESH-CABLE-NETWORK"];}
+          else if(a==="AINAVILLI"){var arr=["AINAVALLI-COMMUNICATION-NETWORK","HYMA-CABLE-NETWORK"];}
+          else if(a==="AINAVILLI-LANKA"){var arr=["LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="AJJARAM"){var arr=["SURYA-COMMUNICATION-NETWORK"];}
+          else if(a==="AKKUPALLI-GOKAVARAM-1"){var arr=["CHINNI-CABLE-NETWORK"];}
+          else if(a==="AKKUPALLI-GOKAVARAM-2"){var arr=["SURYA-CABLE-NETWORK-"];}
+          else if(a==="ALAMPURAM"){var arr=["S.V.D.CABLE-NETWORK","AB-S.V.D.CABLE-NETWORK","SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="ALAMURU"){var arr=["ALAMURU-COMMUNICATION-NETWORK","ALAMURU-CABLE-NETWORK","MITHRA-CABLE-NETWORK","SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="AMBAJIPETA"){var arr=["AMBAJIPETA-COMMUNICATION-NETWORK","VASU-CABLE-NETWORK","SRI-SIDDI-VINAYAKA-CABLE-NETWORK","EDUKONDALU-CABLE-NETWORK"];}
+          else if(a==="AMBEDKAR-COLONY"){var arr=["GBR-CABLE-NETWORK"];}
+          else if(a==="AMBHAJIPETA-GARUVU"){var arr=["KAMAL-KAMYA-CABLE-NETWORK"];}
+          else if(a==="ANAKODERU"){var arr=["VINAYAKA-CABLE-NETWORK"];}
+          else if(a==="ANANDPURAM"){var arr=["PARALAMMA-CABLE-NETWORK"];}
+          else if(a==="ANANTHAPALLI"){var arr=["	A-SRI-VIJAYA-KRISHNA-CABLE","SRI-VIJAYA-KRISHNA-CABLE-NETWORK","SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="ANDALURU"){var arr=["ANDALURU-CABLE-TRANSMISSION"];}
+          else if(a==="ANKALAGUDEM"){var arr=["DIVYASAI-CABLE-NETWORK"];}
+          else if(a==="ANKAMPALEM"){var arr=["HYMA-CABLE-NETWORK"];}
+          else if(a==="ANNAVARAPPADU"){var arr=["SRI-MAHALAKSHMI-CABLE-NETWORK"];}
+          else if(a==="ANTHERVEDI-DEVASTANAM"){var arr=["ROHITH-CABLE-NETWORK","SWAMY-CABLE-NETWORK"];}
+          else if(a==="ANTHERVEDI-KARA"){var arr=["TEJA-CABLE-NETWORK","LAKSHMI-NARASIMHA-CABLE-NETWORK"];}
+          else if(a==="ANTHERVEDI-PALEM"){var arr=["SNEHA-CABLE-NETWORK","MELLODY-MEDIA-CABLE-NETWORK","SAIRAM-CABLE-NETWORK"];}
+          else if(a==="APPANA-RAMUNILANKA"){var arr=["SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="APPANNAPALLI"){var arr=["BALA-BALAJI-CABLE-NETWORK","YASWANTH-CABLE-NETWORK"];}
+          else if(a==="APPARAOPETA"){var arr=["LAKSHMI-DURGA-CABLE-NETWORK"];}
+          else if(a==="ARAVALLI"){var arr=["SRI-VENKATA-SAI-CABLE-NETWORK"];}
+          else if(a==="ARDHAVARAM"){var arr=["SRI-SAIRAM-CABLE-NETWORK"];}
+          else if(a==="ARJUNUDUPALEM"){var arr=["ANANTHA-LAKSHMI-CABLE-NETWORK","BHANU-CABLE-NETWORK"];}
+          else if(a==="ARUGOLANU"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="ARULLA"){var arr=["DEVI-CABLE-NETWORK"];}
+          else if(a==="ATCHYUTHAPURAM"){var arr=["VIKARAM-CABLE-NETWORK"];}
+          else if(a==="ATLAPADU"){var arr=["SANTHI-CABLE-NETWORK"];}
+          else if(a==="ATTILI"){var arr=["ATTILI-COMMUNICATION-NETWORK","SRI-DEVI-DURGA-CABLE-NETWORK","SRKS-CABLE-NETWORK","SRI-VENKATA-RAGHAVENDRA-CABLE-NETWORK"];}
+          else if(a==="AVAPADU"){var arr=["S-P-CABLE-NETWORK-1","S-P-CABLE-NETWORK-2"];}
+          else if(a==="AYODYALANKA"){var arr=["SRI-VENKATA-MANIKANTA-CABLE-NETWORK"];}
+          else if(a==="AYYAVARAM"){var arr=["SRI-SATYA-SAI-CABLE-NETWORK"];}
+          else if(a==="AYYAVARITHIPPA"){var arr=["NEETHIKONDA-CABLE-NETWORK"];}
+          else if(a==="B-KONDEPADU"){var arr=["RAJ-CABLE-NETWORK"];}
+          else if(a==="B.DODDAVARAM"){var arr=["ANJANI--CABLE-NETWORK"];}
+          else if(a==="B.SAVARAM"){var arr=["SYAM-CABLE-NETWORK"];}
+          else if(a==="BADILANKA"){var arr=["SRI-SWAMY-AYYAPPA-CABLE-NETWORK"];}
+          else if(a==="BALAM-VARI-PALEM"){var arr=["SRINU-CABLE-NETWORK"];}
+          else if(a==="BALAYOGI-KALUVA"){var arr=["SRI-BALA-BALAJI-CABLE-NETWORK"];}
+          else if(a==="BALEPALLI"){var arr=["SRI-MARUTHI-CABLE-NETWORK"];}
+          else if(a==="BALLIPADU"){var arr=["SRI-MADAN-GOPAL-CABLE-NETWORK"];}
+          else if(a==="BALUSUTIPPA"){var arr=["SRI-GANESH-CABLE-NETWORK"];}
+          else if(a==="BANDARUPALEM"){var arr=["S.S.SITI-CABLE"];}
+          else if(a==="BANGARUGUDEM"){var arr=["YESUKRISTHU-CABLE-NETWORK"];}
+          else if(a==="BARKETNAGARAM"){var arr=["LAKSHMI-SRINIVAS-CABLE-NETWORK"];}
+          else if(a==="BAYYANAGUDEM"){var arr=["SRI-VISHNU-SAI-CABLE-NETWORK","SRI-SAI-VENKATA-NEELAVENI-CABLE-NETWORK"];}
+          else if(a==="BHIMOLU"){var arr=["KANAKA-MAHALAKSHMI-CABLE-NETWORK"];}
+          else if(a==="BOBBANAPALLI"){var arr=["SRI-KANAKA-DURGA-CABLE-NETWORK"];}
+          else if(a==="BOBBARAJUPALEM"){var arr=["SRI-LAKSHMI-GANAPATHI-CABLE-NETWORK"];}
+          else if(a==="BODIAKODU"){var arr=["SRI-SATYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="BODIGUDEM"){var arr=["PAVAN-CABLE-SERVICE"];}
+          else if(a==="BOJJAVARIPETA"){var arr=["SRI-DURGA-SRI-DHARANI-CABLE-NETWORK"];}
+          else if(a==="BONTHUVARIPALEM"){var arr=["SRI-SAI-DURGA-CABLE-TV-NETWORK"];}
+          else if(a==="BRAHMANACHERUVU"){var arr=["SRI-BHAVANI-CABLE-NETWORK"];}
+          else if(a==="BRAHMANAGUDEM"){var arr=["	KESAVA-CABLE-NETWORK","SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="BUCHEMPETA"){var arr=["SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="BURUGULANKA"){var arr=["SRI-SATYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="BUTTAIGUDEM"){var arr=["PAVAN-CABLE-NETWORK"];}
+          else if(a==="CH-POTHEPALLI"){var arr=["SRI-KRISHNA-CABLE-NETWORK","RATNA-CABLE-NETWORK"];}
+          else if(a==="CH.GUNNEPALLI"){var arr=["SRI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="CH.GUNNEPALLI-2"){var arr=["GANESH-CABLE-NETWORK"];}
+          else if(a==="CHADARASIGUNTA"){var arr=["SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="CHAKALIPALEM"){var arr=["LAKSHMI-GANAPATHI-CABLE-NETWORK"];}
+          else if(a==="CHANDRAYAGUDEM"){var arr=["VINAYAKANJANEYA-CABLE-NETWORK"];}
+          else if(a==="CHEYYERU"){var arr=["VIJAYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="CHILAKAPADU"){var arr=["SRI-RAMAKRISHNA-CABLE-NETWORK"];}
+          else if(a==="CHINAKOTHA-LANKA"){var arr=["MANIKANTA-SITI-CABLE-NETWORK"];}
+          else if(a==="CHINAMVARIPALEM"){var arr=["KAMAL-KAMYA-COMMUNICATION"];}
+          else if(a==="CHINATADEPALLI"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="CHINAVELAMILLI"){var arr=["PAVAN-CABLE-NETWORK"];}
+          else if(a==="CHINTALA-MERAKA"){var arr=["TEJA-CABLE-NETWORK"];}
+          else if(a==="CHINTALAKOTIGARUVU"){var arr=["HARIKAKONDA-CABLE-NETWORK"];}
+          else if(a==="CHINTALAMORI"){var arr=["LEELA-MARUTHI-CABLE-NETWORK"];}
+          else if(a==="CHINTALURU"){var arr=["SRI-SAI-SUGUNA-CABLE-NETWORK"];}
+          else if(a==="CHINTAYAGUDEM"){var arr=["CHERAN-PRABHU-CABLE-NETWORK"];}
+          else if(a==="CHINTHALANKA"){var arr=["AHMAD-CABLE-NETWORK","HYMA-CABLE-NETWORK"];}
+          else if(a==="CHINTHAPALLI"){var arr=["MOULIKA-CABLE-NETWORK"];}
+          else if(a==="CHIPPALAPALEM"){var arr=["SRI-RAMA-CABLE-NETWORK"];}
+          else if(a==="CHIPURUGUDEM"){var arr=["SAIRAM-CABLE-NETWORK"];}
+          else if(a==="CHIRRAYANAM"){var arr=["SRI-KANAKA-DURGA-CABLE-NETWORK"];}
+          else if(a==="CHITYALAPADU"){var arr=["PADMASRI-CABLE-NETWORK"];}
+          else if(a==="CHIVATAM"){var arr=["QUALITY-CABLE-NETWORK","SIVA-SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="CHODAVARAM"){var arr=["SRAVANTHI-CABLE-NETWORK"];}
+          else if(a==="CHUKKAVARITHOTA"){var arr=["SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="D-KUMADAVALLI"){var arr=["DANESWARI-CABLENETWORK"];}
+          else if(a==="D-MUPPAVARAM"){var arr=["SRI-SAI-SIDDU-CABLE-NETWORK"];}
+          else if(a==="DAMMENNU"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="DANDAGARRA"){var arr=["LAKSHMI-DURGA-CABLE-NETWORK"];}
+          else if(a==="DEVARAPALLI"){var arr=["VENKATA-DURGA-CABLE-NETWORK"];}
+          else if(a==="DEVINENIVARIGUDEM"){var arr=["DWARAKA-CABLE-NETWORK"];}
+          else if(a==="DHARMARAOPETA"){var arr=["SRI-VINAYAKA-CABLE-NETWORK"];}
+          else if(a==="DINDI"){var arr=["DEVI-CABLE-NETWORK"];}
+          else if(a==="DIPPAKAYALAPADU"){var arr=["VIJAYA-SAI-CABLE-NETWORK"];}
+          else if(a==="DIRUSUMARRU-1"){var arr=["GANESH-CABLE-NETWORK"];}
+          else if(a==="DIRUSUMARRU-2"){var arr=["USHODAYA-CABLE-NETWORK"];}
+          else if(a==="DONDAPUDI"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="DONGAPINDI"){var arr=["GAJALAKSHMI-CABLE-NETWORK"];}
+          else if(a==="DONTHIKURRU"){var arr=["SRI-ESWAR-SITI-CABLE-NETWORK",""];}
+          else if(a==="DORASANIPADU"){var arr=["OM-NAGA-SRI-KANAKA-DURGA-CABLE-NETWORK",""];}
+          else if(a==="DUBHACEARLA&GANTAVARIGUDEM"){var arr=["SRI-VIJAYA-KRISHNA-CABLE-NETWORK ","HONEY-CABLE-NETWORK"];}
+          else if(a==="DUSANAPUDI"){var arr=["SRI-LAKSHMI-GANESH-CABLE-NETWORK","SRI-LAKSHMI-GANESH-CABLE-TV"];}
+          else if(a==="DUVVA"){var arr=["	R-SRI-DURGA-DANESWARI-CABLE-NETWORK","SRI-DURGA-DANESWARI-CABLE-NETWORK","SRI-SAINADH-CABLE-NETWORK","SRI-SRINIVASA-CABLE-NETWORK","VENKATA-SAI-CABLE-NETWORK"];}
+          else if(a==="DWARAKATIRUMALA"){var arr=["SRI-LAKSHMI-VENKATESWARA-CABLE-NETWORK","SURYA-CABLE-NETWORK","H-SURYA-CABLE-NETWORK",""];}
+          else if(a==="EAST-VIPPARRU"){var arr=["	H-SIVA-GANESH-CABLE-NETWORK","SIVA-GANESH-CABLE-NETWORK","PAVAN-CABLE-NETWORK","SATYA-SIVA-GANESH-CABLE-NETWORK"];}
+          else if(a==="EDARADA"){var arr=["LAKSHMI-DEVI-CABLE-NETWORK"];}
+          else if(a==="EEDURU"){var arr=["SRI-VENKATA-JAYA-CABLE"];}
+          else if(a==="EELAMPUDI"){var arr=["PAVAN-CABLE-NETWORK"];}
+          else if(a==="ERLA-CHERUVU"){var arr=["JAYALAKSHMI-CBALE-NETWORK"];}
+          else if(a==="ETHAKOTA"){var arr=["NAVEEN-CABLE-TV-NETWORK"];}
+          else if(a==="G-KOTHAPALLI"){var arr=["SRI-SHIRIDI-SAIBABA-CABLE-NETWORK"];}
+          else if(a==="GACHAKAYALAPORA"){var arr=["ANNAPURANA-CABLE-NETWORK"];}
+          else if(a==="GADILANKA"){var arr=["SATYA-SAI-CABLE-NETWORK"];}
+          else if(a==="GAJULAGUNTA"){var arr=["SRIRAMA-CABLE-NETWORK"];}
+          else if(a==="GAMALLAPADU"){var arr=["SRI-SAIRAM-CABLE-TV-NETWORK"];}
+          else if(a==="GANDHI-COLONY"){var arr=["JASWANTH-CABLE-NETWORK"];}
+          else if(a==="GANDHINAGARAM-1"){var arr=["SURYANARAYANA-CABLE-NETWORK"];}
+          else if(a==="GANDHINAGARAM-2"){var arr=["RAVI-CABLE-NETWORK"];}
+          else if(a==="GANGALAKURRU"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="GANGAVARAM"){var arr=["MAHALAKSHMI-CABLE-NETWORK"];}
+          else if(a==="GANGOLU"){var arr=["KRISHNA-TEJA-CABLE-NETWORK"];}
+          else if(a==="GARAGAPARRU"){var arr=["GAYATHRI-CABLE-NETWORK","SIVANI-CABLE-NETWORK"];}
+          else if(a==="GARAVALLADIBBA"){var arr=["SRI-SURYA-CABLE-NETWORK"];}
+          else if(a==="GAVARAPALEM"){var arr=["GOWRI-CABLE-NETWORK","CHANDANA-CABLE-NETWORK","VIGNESWARA-CABLE-NETWORK","SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="GAVARLAPALEM"){var arr=["SRI-VARA-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="GEDELLANKA"){var arr=["K.P.R-CABLE-NETWORK"];}
+          else if(a==="GODUGUPETA"){var arr=["SRI-SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="GOGANNAMATAM"){var arr=["DHARMA-CABLE-NETWORK","VENKANNA-BABU-CABLE-NETWORK"];}
+          else if(a==="GOLLAGARUVU"){var arr=["DHANA-SRI-CABLE-NETWORK"];}
+          else if(a==="GOLLAGUDEM"){var arr=["	F-SRI-SATYA-SAI-CABLE-NETWORK","SRI-SATYA-SAI-CABLE-NETWORK"];}
+          else if(a==="GOLLAGUDEM(D)"){var arr=["SRI-VIJAYA-LAKSMHI-CABLE-NETWORK","E-SRI-VIJAYA-LAKSMHI-CABLE-NETWORK"];}
+          else if(a==="GOLLAGUDEM(T)"){var arr=["STAR-CABLE-NETWORK"];}
+          else if(a==="GOLLAVANITIPPA"){var arr=["DIVYA-CABLE-NETWORK","GOLLAVANITIPPA-COMMUNICATION-NETWORK"];}
+          else if(a==="GONDHI"){var arr=["SRIMANIKANTA-CABLE-NETWORK"];}
+          else if(a==="GOPALAPURAM"){var arr=["JNANASRI-CABLE-NETWORK"];}
+          else if(a==="GOPALAPURAM(I)"){var arr=["SRI-SATYA-CABLE-NETWORK"];}
+          else if(a==="GOPALAPURAM(R)"){var arr=["KUMARI-CABLE-NETWORK","VIJAYA-LAKSHMI-CABLE-NETWORK","MEENAKSHI-CABLE-NETWORK","D-MEENAKSHI-CABLE-NETWORK"];}
+          else if(a==="GOPAVARAM"){var arr=["SRI-SAI-MANI-DURGA-CABLE-NETWORK"];}
+          else if(a==="GOPAVARAM(G)"){var arr=["JEEVAN-CABLE-COMMUNICATION"];}
+          else if(a==="GOPINADHAPATNAM"){var arr=["SRI-SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="GOPINADHAPATNAM-COLONY"){var arr=["VINAY-BABU-CABLE-NETWORK"];}
+          else if(a==="GOTERU"){var arr=["SRI-SAIRAM-CABLE-NETWORK"];}
+          else if(a==="GOTHIPPA"){var arr=["LALITHA-CABLE-NETWORK"];}
+          else if(a==="GUBBALAPALEM"){var arr=["SRI-NAVODAYA-STAR-TV-NETWORK"];}
+          else if(a==="GUBBALAVARIPALEM"){var arr=["MANIKANTA-CABLE-NETWORK"];}
+          else if(a==="GUDDIGUDEM-1"){var arr=["BHAVYA-SRI-CABLE-NETWORK"];}
+          else if(a==="GUDDIGUDEM-2"){var arr=["LAKSHMI-SRINIVASA-CABLE-NETWORK","C-LAKSHMI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="GUDIMELLANKA"){var arr=["GOVINDH-CABLE-NETWORK","SRI-LALITHA-CABLE-NETWORK","SRI-LAKSHMI-DURGA-CABLE-NETWORK"];}
+          else if(a==="GULLAPADU"){var arr=["JOSEPH-CABLE-NETWORK","SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="GUMMAMPADU"){var arr=["SRI-VENKATA-SAI-CABLE-TV-NETWORK"];}
+          else if(a==="GUMMILERU"){var arr=["SRI-SAINADH-CABLE-NETWORK"];}
+          else if(a==="GUNDEPALLI"){var arr=["NAGAMMA-CABLE-NETWORK"];}
+          else if(a==="GUNDUGOLANUGUNTA"){var arr=["NAVEEN-CABLE-NETWORK"];}
+          else if(a==="GUNJAVARAM"){var arr=["SRI-SAINADH-CABLE-NETWORK"];}
+          else if(a==="GUNNAMPALLI"){var arr=["HANUMAN-CABLE-NETWORK"];}
+          else if(a==="GUNNEPALLI-AGRAHARAM"){var arr=["SRI-GANESH-MANIKANTA-CABLE-NETWORK"];}
+          else if(a==="GUTHULAVARIPALEM"){var arr=["SRI-RAMA-CABLE-NETWORK"];}
+          else if(a==="GUTLAPADU"){var arr=["SRI-BHAVANI-CABLE-NETWORK"];}
+          else if(a==="HUKUMPETA"){var arr=["CHAKRI-CABLE-NETWORK"];}
+          else if(a==="I-S-RAGHAVAPURAM"){var arr=["SRI-LAKSHMI-NARASIMHA-MADURI-CABLE-NETWORK"];}
+          else if(a==="ILLAVARIPALEM"){var arr=["CHANTI-CABLE-NETWORK"];}
+          else if(a==="INAPARRU"){var arr=["SRI-SAI-CABLE-NETWORK","SRI-SAI-HARSHA-SITI-CABLE","SOWMYA-STAR-VISION-CABLE-NETWORK"];}
+          else if(a==="IRAGAVARAM"){var arr=["SOWJANYA-CABLE-NETWORK"];}
+          else if(a==="ISAKAPUDI"){var arr=["HEMAKUMAR-CABLE-NETWORK"];}
+          else if(a==="ISAKAPUDI-DAM"){var arr=["BOBY-CABLE-NETWORK"];}
+          else if(a==="ISUKULANKA"){var arr=["SRI-DURGA-PARLAMMA-CABLE-NETWORK"];}
+          else if(a==="ITUKULAGUNTA"){var arr=["VIJAYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="JAGANNADHAPURAM"){var arr=["SATYA-SIVA-GANESH-CABLE-NETWORK","DHANA-LAKSHMI-CABLE-NETWORK","VEERABRAHMENDRA-CABLE-NETWORK"];}
+          else if(a==="JAGANNADHAPURAM(G)"){var arr=["	D-STAR-CABLE-NETWORK","STAR-CABLE-NETWORK"];}
+          else if(a==="JAGGANNAPET"){var arr=["SIDDI-VINAYAKA-CABLE-NETWORK"];}
+          else if(a==="JAGGANNAPETA"){var arr=["SRI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="JAJULAKUNTA"){var arr=["SRI-VENKATA-SATYA-SAIRAM-CABLE-NETWORK"];}
+          else if(a==="JALLIKAKINADA"){var arr=["SRI-VENKATA-DURGA-CABLE-NETWORK"];}
+          else if(a==="JEEDIGUNTA"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="JONNADA"){var arr=["TARAK-PRABHU-CABLE-NETWORK"];}
+          else if(a==="JONNADA-2"){var arr=["SRI-SHIRIDI-SAI-CABLE-NETWORK"];}
+          else if(a==="JONNALAPALEM"){var arr=["TEJASWI-CABLE-NETWORK"];}
+          else if(a==="JUTTIGA"){var arr=["HIMAKARA-CABLE-NETWORK","BHASKARA-CABLE-NETWORK"];}
+          else if(a==="K-ILLINDALAPARRU"){var arr=["SAI-SIVA-GANESH-CABLE-NETWORK","SIVA-GANESH-CABLE-NETWORK"];}
+          else if(a==="K-PEDAPUDI"){var arr=["SRI-SIDDI-VINAYAKA-CABLE-NETWORK"];}
+          else if(a==="K-SAMUDRAPU-GATTU"){var arr=["SRI-SAI-CABLE-TV-NETWORK","UDAY-KRISHNA-CABLE-NETWORK"];}
+          else if(a==="K-YENUGUPALLI"){var arr=["SRI-SIRI-CABLE-NETWORK"];}
+          else if(a==="K.JAGANNADHAPURAM"){var arr=["VIJAYA-DURGA-SAI-CABLE-NETWORK"];}
+          else if(a==="KADALI"){var arr=["KADALI-COMMUNICATION"];}
+          else if(a==="KADIAYADDA"){var arr=["STAR-CABLE-NETWORK"];}
+          else if(a==="KAKARAPARRU"){var arr=["SRINIVASA-DIGITAL-CABLE-NETWORK","LAKSHMI-CABLE-NETWORK","Z-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="KALAVACHERLA"){var arr=["SUDHA-CABLE-TV-NETWORK"];}
+          else if(a==="KALAVAPUDI"){var arr=["GANESH-CABLE-NETWORK"];}
+          else if(a==="KALDARI"){var arr=["JYOTHI-CABLE-NETWORK"];}
+          else if(a==="KAMASALAPALEM"){var arr=["S.G.S.CABLE-NETWORK"];}
+          else if(a==="KAMAYYAKUNTA"){var arr=["LAKSHMI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="KAMSALIBETAPUDI"){var arr=["SRI-SAI-SURYA-CABLE-NETWORK"];}
+          else if(a==="KAMSALIGUNTA"){var arr=["DWARAKA-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="KANAKADRIPURAM(ARIPATIDIBBALU)"){var arr=["LAKSHMI-PRASANNA-CABLE-NETWORK"];}
+          else if(a==="KANAKAYALANKA"){var arr=["GOWTHAMI-CABLE-NETWORK"];}
+          else if(a==="KANCHUMARRU"){var arr=["SRI-DURGA-BHAVANI-CABLE-TV-NETWORK"];}
+          else if(a==="KANDIKUPPA"){var arr=["RAJ-CABLE-NETWORK"];}
+          else if(a==="KANDRIKAGUDEM"){var arr=["MEHAR-BABU-CABLE-NETWORK"];}
+          else if(a==="KANNAIGUDEM"){var arr=["ANNAPURNA-CABLE-NETWORK"];}
+          else if(a==="KANNAPURAM"){var arr=["BHAVANI-CABLE-NETWORK","KANNAPURAM-CABLE-NETWORK"];}
+          else if(a==="KANTHERU"){var arr=["SRI-SAINADH-CABLE-NETWORK","I-SRI-SAINADH-CABLE-NETWORK"];}
+          else if(a==="KANURU"){var arr=["WHY-NOT-CABLE-NETWORK","WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="KANURU-AGRAHARAM"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="KANURU-AGRAHARAM-2"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="KAPAVARAM"){var arr=["INDU-PRIYANKA-CABLE-NETWORK"];}
+          else if(a==="KAPPALAKUNTA"){var arr=["PAVAN-KUMAR-CABLE-NETWORK"];}
+          else if(a==="KARICHARLAGUDEM"){var arr=["SURYA-CABLE-NETWORK"];}
+          else if(a==="KARRAVANIREVU"){var arr=["JYOTHI-SRI-CABLE-NETWORK"];}
+          else if(a==="KARRAVARI-SAVARAM"){var arr=["LALITHA-CABLE-NETWORK"];}
+          else if(a==="KARUKUVADA-BETHAPUDI"){var arr=["MAHI-CABLE-NETWORK"];}
+          else if(a==="KASIPADU"){var arr=["K.R.CABLE-NETWORK"];}
+          else if(a==="KATAKOTESWARAM"){var arr=["KVR-CABLE-NETWORK","BALU-CABLE-NETWORK"];}
+          else if(a==="KATARULANKA"){var arr=["SRI-SAI-RAMA-CABLE-NETWORK"];}
+          else if(a==="KATHAVAPADU"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="KATRENIKONA"){var arr=["SRINIVASA-SITI-CABLE","OM-SAI-SITI-CABLE-NETWORK"];}
+          else if(a==="KATTIMANDA"){var arr=["BHASKARA-CABLE-NETWORK"];}
+          else if(a==="KAVULURU"){var arr=["SRI-SAI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="KESAVADASUPALEM"){var arr=["OM-CABLE-NETWORK","SRI-CABLE-NETWORK","VANI-CABLE-NETWORK","SIVA-CABLE-NETWORK"];}
+          else if(a==="KESAVARAM"){var arr=["RAJU-CABLE-TV-NETWORK","B-RAJU-DIGITAL-NETWORK"];}
+          else if(a==="KETHARAJUPALLI"){var arr=["ARUN-KUMAR-CABLE-NETWORK"];}
+          else if(a==="KETHAVARAM"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="KODAMANCHILI"){var arr=["SATYAM-CABLE-NETWORK","KODAMANCHILI-COMMUNICATION-NETWORK","AC-KODAMANCHILI-COMMUNICATION-NETWORK","VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="KODERU"){var arr=["SATYA-CABLE-NETWORK"];}
+          else if(a==="KODIGUDEM"){var arr=["SRI-BALAJI-CABLE-NETWORK"];}
+          else if(a==="KOMARADA"){var arr=["SRINIVASA-CABLE-NETWORK","VINAYAKA-CABLE-NETWORK"];}
+          else if(a==="KOMARAVARAM"){var arr=["JAI-KRISHNAVENI-CABLE-NETWORK","SRI-KRISHNA-VENI-CABLE-NETWORK"];}
+          else if(a==="KOMARRU"){var arr=["SRI-VENKATESWARA-CABLE-TV-NETWORK"];}
+          else if(a==="KOMMARA"){var arr=["CHINNA-CABLE-NETWORK","SRI-DURGA-CABLE-NETWORK"];}
+          else if(a==="KOMMARAJULANKA"){var arr=["MYTRI-CABLE-NETWORK"];}
+          else if(a==="KOMMUGUDEM"){var arr=["SHIRDI-SAI-Y.G.R-CABLE-NETWORK","SRI-VIJAYA-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="KONABOTHUGUNTA"){var arr=["SAI-CABLE-NETWORK"];}
+          else if(a==="KONALA"){var arr=["DEVI-CABLE-NETWORK"];}
+          else if(a==="KONDAIAHGUNTA"){var arr=["ANAND-CABLE-NETWORK"];}
+          else if(a==="KONDAIAHPALEM"){var arr=["BHAGYALAKSHMI-CABLE-NETWORK"];}
+          else if(a==="KONDALAMMA-CHINTA"){var arr=["V-CABLE-NETWORK"];}
+          else if(a==="KONDEPUDI"){var arr=["SRI-PUJITHA-CABLE-NETWORK"];}
+          else if(a==="KONDRUPROLU"){var arr=["RAMYA-COMMUNICATION-NETWORK"];}
+          else if(a==="KONDUKUDURU"){var arr=["SAINADH-CABLE-NETWORK"];}
+          else if(a==="KONITHIWADA"){var arr=["SAI-TEJA-CABLE-NETWORK"];}
+          else if(a==="KOPPARRU"){var arr=["BHARGAVI-CABLE-NETWORK"];}
+          else if(a==="KOPPARRU-1"){var arr=["SIRI-CABLE-NETWORK"];}
+          else if(a==="KORUKOLLU"){var arr=["SRI-CABLE-NETWORK","HANUMAN-CABLE-NETWORK"];}
+          else if(a==="KORUMAMIDI"){var arr=["SRI-SAI-MANI-DEEP-CABLE-NETWORK","SRI-KAVYA-CABLE-NETWORK"];}
+          else if(a==="KORUMILLI"){var arr=["LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="KORUPALLI"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="KOTA-RAMACHANDRAPURAM"){var arr=["TWINS-CABLE-NETWORK"];}
+          else if(a==="KOTHA-PUSALAMARRU"){var arr=["VANI-CABLE-NETWORK"];}
+          else if(a==="KOTHAGUDEM"){var arr=["SRI-SATYA-SAI-CABLE-NETWORK","JAI-SOMALAMMA-TALLI-CABLE-NETWORK","SAI-CABLE-NETWORK"];}
+          else if(a==="KOTHALANKA"){var arr=["SRI-MOUNIKA-CABLE-NETWORK"];}
+          else if(a==="KOTHAPADU"){var arr=["SRI-SAINADH-CABLE-NETWORK"];}
+          else if(a==="KOTHAPALEM-(LIGHT-HOUSE)"){var arr=["SRI-MANI-CABLE-NETWORK"];}
+          else if(a==="KOTHAPALLI"){var arr=["SRI-SAI-RAM-CABLE-NETWORK"];}
+          else if(a==="KOTIVARI-AGRAHARAM"){var arr=["EDUKONDALU-CABLE-NETWORK","KAMAL-CABLE-NETWORK","VASU-CABLE-NETWORK"];}
+          else if(a==="KOTTURU"){var arr=["SRI-BHAVANI-CABLE-NETWORK"];}
+          else if(a==="KOVVURPADU"){var arr=["AMEN-CABLE-NETWORK"];}
+          else if(a==="KOYARAJAHMUNDRY"){var arr=["SRI-VIGENESWARA-CABLE-NETWORK"];}
+          else if(a==="KOYYALAGUDEM"){var arr=["KOYYALAGUDEM-COMMUNICATION-NETWORK","GOLDSTAR-CABLE-NETWORK","SRI-CHANDRIKA-CABLE-NETWORK","SRI-SAI-BABA-CABLE-NETWORK","A-J-S-B-M-NETWORK"];}
+          else if(a==="KRAPA"){var arr=["SRI-LAKSHMI-GANAPATHI-CABLE-NETWORK"];}
+          else if(a==="KRAPACHINTALAPUDI"){var arr=["SRI-SATYADEVA-CABLE-NETWORK"];}
+          else if(a==="KRISHNAMMAGUDEM"){var arr=["KUMARI-CABLE-NETWORK"];}
+          else if(a==="KRISHNAPURAM"){var arr=["MANIKANTA-CABLE-NETWORK"];}
+          else if(a==="KRISHNAYAGUDEM"){var arr=["SRI-PRABHU-CABLE-NEWORK"];}
+          else if(a==="KRISHNAYAPALEM"){var arr=["ANANTHA-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="KUNALANKA"){var arr=["KANYAKA-PARAMESWARI-CABLE-NETWORK"];}
+          else if(a==="KUNDALESWARAM"){var arr=["KUNDALESWARAM-CABLE-NETWORK","MANIKANTA-CABLE-NETWORK"];}
+          else if(a==="KUNTALAGUDEM"){var arr=["GANESH-CABLE-NETWORK"];}
+          else if(a==="L-AGRAHARAM"){var arr=["GANESH-CABLE-NETWORK","VIJAYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="L-GANNAVARAM"){var arr=["SRI-RAMA-CABLE-NETWORK"];}
+          else if(a==="L-N-D-PETA"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="L-V-N-PURAM"){var arr=["PAVAN-CABLE-NETWORK"];}
+          else if(a==="LAKKAVARAM"){var arr=["SRI-SURYA-CABLE-NETWORK","SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="LAKSHMI-POLAVARAM"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="LAKSHMIDEVILANKA"){var arr=["SRI-SAI-DHARSINI-CABLE-NETWORK"];}
+          else if(a==="LAKSHMINARASIMHAPURAM"){var arr=["SNEHA-CABLE-NETWORD"];}
+          else if(a==="LAKSHMINARAYANAPURAM"){var arr=["	LAKSHMI-DURGA-CABLE-NETWORK"];}
+          else if(a==="LAKSHMIPURAM"){var arr=["SAIBABA-CABLE-NETWORK"];}
+          else if(a==="LIKITHAPUDI"){var arr=["SRI-VEERANJANEYA-CABLE-NETWORK"];}
+          else if(a==="LINGAREDDYGUDEM"){var arr=["VIJAYA-DURGA-CABLE-NEWORK","VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="LOLLA"){var arr=["ESWARA-CABLE-NETWORK"];}
+          else if(a==="LUTUKURRU"){var arr=["SRI-DHANAMMA-THALLI-CABLE-NETWORK","MOKSHITHA-HARSHI-CABLE-NETWORK"];}
+          else if(a==="M-G-PALEM"){var arr=["SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="MACHAVARAM"){var arr=["KAMAL-CABLE-NETWORK","SRI-LAKSHMI-SAI-CABLE-NETWORK","SRI-VENKATA-DURGA-CABLE"];}
+          else if(a==="MADDULAGUDEM"){var arr=["N.K.B.V.R.R.CABLE-NETWORK"];}
+          else if(a==="MADHAVARAM"){var arr=["ANNAVARAM-CABLE-NETWORK","STAR-CABLE-NETWORK","HYMA-CABLE-NETWORK"];}
+          else if(a==="MADUGU-POLAVARAM"){var arr=["	A-SAI-CHAITANYA-CABLE-NETWORK","SAI-CHAITANYA-CABLE-NETWORK"];}
+          else if(a==="MAGAM"){var arr=["RADHASWAMY-CABLE-NETWORK"];}
+          else if(a==="MAGATAPALLI"){var arr=["THE-MAGATAPALLI-CABLE-NETWORK"];}
+          else if(a==="MAHADEVAPURAM"){var arr=["SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="MAHALAKSHMI-CHERUVU"){var arr=["SRIDEVI-CABLE-NETWORK"];}
+          else if(a==="MAHIPALA-CHERUVU"){var arr=["MANIKANTA-CABLE-NETWORK"];}
+          else if(a==="MAKANAPALEM"){var arr=["SRI-DEVI-CABLE-NETWORK"];}
+          else if(a==="MALAVANITHIPPA"){var arr=["SATISH-CABLE-NETWORK"];}
+          else if(a==="MALIKIPURAM"){var arr=["MALIKIPURAM-COMMUNICATION","SAI-RAM-CABLE-NETWORK","MALIKIPURAM-COMMUNICATION","ARTHI-CABLE-NETWORK","DEVI-CABLE-NETWORK"];}
+          else if(a==="MALLAIDODDI"){var arr=["ARUNA-CABLE-NETWORK"];}
+          else if(a==="MALLAPARAJUPETA"){var arr=["VARMA-CABLE-NETWORK"];}
+          else if(a==="MALLIPUDI"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="MAMIDIKUDURU"){var arr=["MAHA-LAKSHMI-CABLE-NETWORK","SATYASRI-CABLE-NETWORK"];}
+          else if(a==="MAMIDIPUDI"){var arr=["YACOB-CABLE-NETWORK"];}
+          else if(a==="MAMUDURU"){var arr=["SRI-SAI-MARUTHI-CABLE-NETWORK"];}
+          else if(a==="MANCHILI"){var arr=["SRI-LEKHA-CABLE-NETWORK"];}
+          else if(a==="MANDAPAKA"){var arr=["S.R.K.S-CABLE-NETWORK","SIVA-SRI-CABLE-NETWORK","GANESH-CABLE-NETWORK","J-S.R.K.S-CABLE-NETWORK"];}
+          else if(a==="MANEPALLI"){var arr=["SRI-SAI-DURGA-CABLE-NETWORK","BHAVANI-CABLE-NETWORK"];}
+          else if(a==="MANEVARIPALEM"){var arr=["LAKSHMI-SAI-CABLE-NETWORK"];}
+          else if(a==="MANGAPATIDEVIPETA"){var arr=["BHARATH-CABLE-NETWORK"];}
+          else if(a==="MARAMPALLI"){var arr=["SRI-VENKATA-SATYA-SAIRAM-CABLE-NETWORK","BALA-SHESHU-CABLE-NETWORK"];}
+          else if(a==="MARELLAMUDI"){var arr=["LALITHA-CABLE-NETWORK","I-LALITHA-CABLE-NETWORK"];}
+          else if(a==="MATLAM"){var arr=["SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="MATSYAPURI"){var arr=["MURALI-KRISHNA-CABLE-NETWORK"];}
+          else if(a==="MATTAGUNTA"){var arr=["LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="MATTAPARRU"){var arr=["KRISHNA-CABLE-NETWORK"];}
+          else if(a==="MEDICHARLAPALEM"){var arr=["VIJAYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="MEENAVALLURU"){var arr=["SRI-BALADITYA-CABLE-NETWORK"];}
+          else if(a==="MENTEPUDI"){var arr=["SRI-SATYA-CABLE-NETWORK"];}
+          else if(a==="MERAPALEM"){var arr=["M.VENKATESWARA-RAO-CABLE-NETWORK"];}
+          else if(a==="MERLAPALEM"){var arr=["SATYA-CABLE-NETWORK"];}
+          else if(a==="METTAUPPARAGUDEM"){var arr=["SURYA-SAI-CABLE-NETWORK"];}
+          else if(a==="MODI"){var arr=["SAI-DURGA-PARVATHI-CABLE-NETWORK"];}
+          else if(a==="MODUKURU"){var arr=["SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="MOGALLU"){var arr=["	A-SRI-CABLE-NETWORK","SRI-CABLE-NETWORK","SRI-SRINU-CABLE-NETWORK","SRI-PANKAJANABHA-CABLE-NETWORK"];}
+          else if(a==="MOKKALATIPPA"){var arr=["SRI-GANESH-CABLE-NETWORK"];}
+          else if(a==="MONDEPULANKA"){var arr=["	A-MAXIMA-CABLE-NETWORK","MAXIMA-CABLE-NETWORK"];}
+          else if(a==="MORI"){var arr=["SRI-VINAYAKA-CABLE-NETWORK"];}
+          else if(a==="MORI-PADAMATIPALEM"){var arr=["SRI-MAHA-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="MORIPODU"){var arr=["SRI-MAHALAKSHMI-THALLI-CABLE-NETWORK","SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="MORIPOLAM"){var arr=["SUDHA-CABLE-NETWORK"];}
+          else if(a==="MORTHA"){var arr=["VARA-PRASAD-CABLE-NETWORK","Q-LAKSHMI-PRASAD-CABLE-NETWORK","LAKSHMI-PRASAD-CABLE-NETWORK"];}
+          else if(a==="MOYYERU"){var arr=["SUDEESHNA-CABLE-NETWORK"];}
+          else if(a==="MUDDAPURAM"){var arr=["DEVI-CABLE-NETWORK","SATYA-KRISHNA-CABLE-NETWORK"];}
+          else if(a==="MUKKAMALA"){var arr=["	V-SRI-SAI-CABLE-NETWORK","SRI-SAI-CABLE-NETWORK","SAI-CABLE-NETWORK","HANUMAN-CABLE-VISION"];}
+          else if(a==="MUKTESWARAM"){var arr=["NAVYA-SRI-CABLE-NETWORK"];}
+          else if(a==="MULA-GONDHI"){var arr=["LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="MULLAIPALEM"){var arr=["SRI-SIVA-DURGA-CABLE-NETWORK"];}
+          else if(a==="MUMMIDIVARAM"){var arr=["MANASA-SITI-CABLE","V-COMMUNICATIONS","MANASA-SITI-CABLE-NETWORK","A-MANASA-SITI-CABLE-NETWORK"];}
+          else if(a==="MUNGANDA(M)"){var arr=["VENU-CABLE-NETWORK","SMYLEY-CABLE-NETWORK"];}
+          else if(a==="MUNGANDAPALEM"){var arr=["SREERAM-CABLE-NETWORK"];}
+          else if(a==="MUNIPALLI"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="MUNJAVARAM"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="MUPPARTHIPADU"){var arr=["RAJU-DIGITAL-NETWORK"];}
+          else if(a==="MUSALLAGUNTA"){var arr=["SRAVANI-CABLE-NETWORK"];}
+          else if(a==="NABIPETA"){var arr=["SRI-SAI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="NADAPANIVARIPALEM"){var arr=["PAVAN-CABLE-NETWORK"];}
+          else if(a==="NADAVAPALLI-(PALLIPALEM)"){var arr=["ADITYA-CABLE-NETWORK"];}
+          else if(a==="NADIGADI/VEMANAVARIPALEM"){var arr=["SRI-SAI-PRIYA-CABLE-NETWORK"];}
+          else if(a==="NADIMI-LANKA"){var arr=["MANI-KANTA-CABLE-NETWORK"];}
+          else if(a==="NADUPALLI"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="NADUPALLI-KOTA"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="NAGARAM"){var arr=["SAI-SURYA-CABLE-NETWORK","SRI-VINAYAKA-VIJAYA-DURGA-CABLE-NETWORK","GEETASAI-CABLE-NETWORK"];}
+          else if(a==="NAGARAM"){var arr=[""];}
+          else if(a==="NAGARAM"){var arr=[""];}
+          else if(a==="NAGIDIPALEM"){var arr=["SRI-VENAKTESWARA-CABLE-NETWORK"];}
+          else if(a==="NAGULLANKA"){var arr=["SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="NALLAJERLA"){var arr=["NALLAJERLA-CABLE-COMMUNICATION"];}
+          else if(a==="NANDAMPUDI"){var arr=["VINOD-CABLE-NETWORK"];}
+          else if(a==="NANDAMURU"){var arr=["SAI-TEJA-CABLE-NETWORK"];}
+          else if(a==="NANDIGUDEM"){var arr=["SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="NANDURI-NAGAR"){var arr=["SRI-SIDHI-VINAYAKA-CABLE-NETWORK"];}
+          else if(a==="NARASANNAPALEM"){var arr=["SRI-SAI-VARA-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="NARENDRAPURAM"){var arr=["SAI-CABLE-NETWORK"];}
+          else if(a==="NARKEDIMILLI"){var arr=["SRI-RAM-CABLE-NETWORK"];}
+          else if(a==="NATTARAMESWARAM"){var arr=["SHIVA-SHAKTHI-CABLE-NETWORK"];}
+          else if(a==="NAVABPALEM"){var arr=["SAI-TEJA-CABLE-NETWORK"];}
+          else if(a==="NAVUDURU"){var arr=["KOPPARRU-COMMUNICATION-NETWORK","GOLD-STAR-CABLE-NETWORK"];}
+          else if(a==="NAVUDURU"){var arr=[""];}
+          else if(a==="NAVUDURU-JUNCTION"){var arr=["SAI-CABLE-NETWORK"];}
+          else if(a==="NEELADRIPURAM"){var arr=["SAI-SRINIVASA-CABLE-NETWORK","SRI-VENKATA-SATYA-CABLE-SERVICE"];}
+          else if(a==="NEELADRIPURAM(T)"){var arr=[""];}
+          else if(a==="NELAMURU"){var arr=["SRI-CHAITANYA-KRISHNA-CABLE-NETWORK"];}
+          else if(a==="NELAPOGULU"){var arr=["MANIKANTA-CABLE-NETWORK"];}
+          else if(a==="NEMMALAGUDEM"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="NIDADAVOLU"){var arr=["NAGELLA-BALAJI-CABLE-NETWORK","SAI-BALAJI-CABLE-NETWORK","SRI-VEERANJANEYA-CABLE-NETWORK","SRI-BHAKTHANJANEYA-CABLE-NETWORK","MAHA-LAKSHMI-CABLE-NETWORK","KATTA-MURALI-KRISHNA-CABLE-NETWORK","SRI-RAMU-CABLE-NETWORK","B-SRI-SAIRAM-STAR-TV-CABLE-NETWORK","SRI-SAIRAM-STAR-TV-CABLE-NETWORK","SRI-SAIRAM-STAR-TV-CABLE-NETWORK-","SRI-SUBBARAJUPETA-CABLE-NETWORK","NAAZ-CABLE-NETWORK","NIDADAVOLU-COMMUNICATION-N/W","STAR-&-STAR-CABLE-NETWORK","H-STAR-&-STAR-CABLE-NETWORK","JESUS-CABLE-NETWORK","I-SRI-VEERANJANEYA-CABLE-NETWORK","SRI-SOWJANYA-CABLE-NETWORK","E-SRI-SOWJANYA-CABLE-NETWORK","SAI-BABA-CABLE-NETWORK","SARITHA-CABLE-NETWORK","SRI-SAI-BABA-CABLE-NETWORK","SOWJANYA-CABLE-NETWORK","GANGA-RAJU-CABLE-NETWORK","SRI-LAKSHMI-CABLE-NETWORK","SRI-SIVA-SAI-CABLE-NETWORK","VENKATESWARA-CABLE-NETWORK","SUDRASHAN-CABLE-NETWORK","LIMBRA-CABLE-NETWORK"];}
+          else if(a==="NIMMALAGUDEM"){var arr=["SRI-SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="NUTHIRAMANNAPALEM"){var arr=["TWINS-CABLE-NETWORK"];}
+          else if(a==="P-GANNAVARAM"){var arr=["P-GANNAVARAM-COMMUNICATION-N/W","V.S.COMMUNICATION"];}
+          else if(a==="P-KANNAPURAM"){var arr=["SRI-SUBRAHMANYAM-CABLE-NETWORK"];}
+          else if(a==="PADAMATIPALEM"){var arr=["DURGA-SAINDH-CABLE-NETWORK"];}
+          else if(a==="PALAGUMMI"){var arr=["SRI-LAKSHMI-GANAPATHI-CABLE-NETWORK"];}
+          else if(a==="PALANGI"){var arr=["SAIBABA-CABLE-NETWORK","SRI-SAINADH-STAR-&-CABLE-NETWORK","X-SRI-SAINADH-STAR-&-CABLE-NETWORK","MANASA-CABLE-NETWORK"];}
+          else if(a==="PALI"){var arr=["SRI-SRINIVASA-CABLE-TV-NETWORK"];}
+          else if(a==="PALLAM"){var arr=["SATYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="PALLAMKURRU"){var arr=["SRI-SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="PALLEPALEM"){var arr=["GANESH-CABLE-NETWORK"];}
+          else if(a==="PALLIPALEM"){var arr=["SUSHMA-CABLE-NETWORK"];}
+          else if(a==="PALURU"){var arr=["SRI-VENKATA-VIJAYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="PAMPANAVARIPALEM"){var arr=["VINAYAKA-DURGA-SAI-CABLE-NETWORK"];}
+          else if(a==="PAMPANAVARIPALEM"){var arr=["VINAYAKA-DURGA-SAI-CABLE-NETWORK"];}
+          else if(a==="PANDALAPARRU"){var arr=["SRI-LAKSHMI-NARASIMHA-CABLE-NETWORK","SRI-AYYAPPA-CABLE-NETWORK","D-SRI-AYYAPPA-CABLE-NETWORK"];}
+          else if(a==="PANDIREDDYGUDEM"){var arr=["SRI-LALITHA-CABLE-NETWORK"];}
+          else if(a==="PANDUGUDEM"){var arr=["LAKSHMI-SRINIVAS-CABLE-NETWORK"];}
+          else if(a==="PANGIDIGUDEM"){var arr=["SRI-HANUMAN-CABLE-NETWORK"];}
+          else if(a==="PANJA-VEMAVARAM"){var arr=["PAVAN-SAI-CABLE-NETWORK"];}
+          else if(a==="PARIMPUDI"){var arr=["ANANTHA-SAI-CABLE-NETWORK	"];}
+          else if(a==="PASALAPUDI"){var arr=["VENKATA-SAI-CABLE-NETWORK"];}
+          else if(a==="PASARALAPUDI-BADAVA"){var arr=["SRI-LAAKSHMI-CABLE-NETWORK","SRI-RAMA-CABLE-NETWORK","SRI-VENKATA-DURGA-CABLE-NETWORK"];}
+          else if(a==="PASARLAPUDI"){var arr=["SURYA-CHANDRA-CABLE-NETWORK	"];}
+          else if(a==="PASARLAPUDI-LANKA"){var arr=["MANI-KUMARI-CABLE-NETWORK","SRI-SAI-KIRAN-CABLE-NETWORK"];}
+          else if(a==="PATTEMPALEM"){var arr=["SRI-CHAITANYA-CABLE-NETWORK	"];}
+          else if(a==="PAVULURIVARIGUDEM"){var arr=["SRI-VENKATESWARA-CABLE-NETWORK	"];}
+          else if(a==="PEDA-TATAPUDI"){var arr=["SRI-SATYA-CABLE-NETWORK	"];}
+          else if(a==="PEDAKANDALAPALEM"){var arr=["SURYA-CABLE-NETWORK	"];}
+          else if(a==="PEDALANKA"){var arr=["SIVA-GAYATHRI-CABLE-NETWORK	"];}
+          else if(a==="PEDAMALLAM"){var arr=["VENKATA-COMMUNICATION	"];}
+          else if(a==="PEDAMETLANKA"){var arr=["MOHAN-MANI-SRI-CABLE-NETWORK	"];}
+          else if(a==="PEDAPADU"){var arr=["MARUTHI-CABLE-NETWORK	"];}
+          else if(a==="PEDAPALLA"){var arr=["GANESH-CABLE-NETWORK	"];}
+          else if(a==="PEDAPATNAM"){var arr=["VEERABHADRA-CABLE-NETWORK	"];}
+          else if(a==="PEDAPATNAM-AGRAHARAM"){var arr=["SURYA-CABLE-NETWORK	"];}
+          else if(a==="PEDAPATNAMLANKA"){var arr=["P.NAIDU-CABLE-NETWORK","SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="PEDAPETA"){var arr=["YAMAHA-CABLE-NETWORK	"];}
+          else if(a==="PEDATADEPALLI"){var arr=["SRI-SURYA-CABLE-NETWORK","SRI-VENKATESWARA-RURAL-COMMUNICATION-N/W"];}
+          else if(a==="PEDATHIPPA"){var arr=["VANI-CABLE-NETWORK	"];}
+          else if(a==="PEDAVELAMILLI"){var arr=["N.V.R-CABLE-NETWORK	"];}
+          else if(a==="PEDDA-GARUVU"){var arr=["SHIVA-CABLE-NETWORK	"];}
+          else if(a==="PENDYALA-1"){var arr=["WHY-NOT-CABLE-NETWORK	"];}
+          else if(a==="PENDYALA-2"){var arr=["WHY-NOT-CABLE-NETWORK	"];}
+          else if(a==="PENIKURU"){var arr=["SURESH-CABLE-NETWORK","A-SURESH-CABLE-NETWORK"];}
+          else if(a==="PENKULAPATIGARUVU"){var arr=["SRI-SAI-GANESH-CABLE-TV-NETWORK	"];}
+          else if(a==="PENUMANTRA"){var arr=["SRI-RAVINDRA-CABLE-NETWORK","SRI-SRINIVASA-CABLE-TV-NETWORK"];}
+          else if(a==="PERAVALI"){var arr=["SAI-SAILAJA-CABLE-NETWORK","SRI-SAI-CABLE-NETWORK","DINESH-COMMUNICATIONS"];}
+          else if(a==="PERIKIPALEM"){var arr=["SRI-LAKSHMI-SAI-CABLE-NETWORK	"];}
+          else if(a==="PERUGUDEM"){var arr=["VIJAYA-LAKSHMI-CABLE-NETWORK	"];}
+          else if(a==="PINAPALLA"){var arr=["GANESH-CABLE-NETWORK	"];}
+          else if(a==="PITTLA-VEMAVARAM"){var arr=["SATYA-SRI-CABLE-NETWORK","AA-SATYA-SRI-CABLE-NETWORK"];}
+          else if(a==="PODAGATLAPALLI"){var arr=["SRI-RAMA-CABLE-TV-NETWORK","SRI-TEJA-CABLE-NETWORK"];}
+          else if(a==="PODALADA"){var arr=["LAKSHMI-NARASIMHA-CABLE-NETWORK","SAI-KRISHNA-CABLE-NETWORK","SYAM-&-SARATH-CABLE-NETWORK"];}
+          else if(a==="POLAMURU"){var arr=["SAI-DURGA-CBALE-NETWORK","BHANU-CABLE-NETWORK"];}
+          else if(a==="PONGUTURU"){var arr=["FRIENDS-CABLE-NETWORK	"];}
+          else if(a==="PONNAMANDA"){var arr=["ARUNA-CABLE-NETWORK","B-SRINU-CABLE-NETWORK","SRINU-CABLE-NETWORK"];}
+          else if(a==="PORA"){var arr=["SRI-VENKATA-NARAYANA-CABLE-NETWORK	"];}
+          else if(a==="POTHARLANKA"){var arr=["BHAGYA-RAJU-CABLE-NETWORK	"];}
+          else if(a==="POTHAVARAM"){var arr=["POTHAVARAM-COMMUNICATION-NETWORK","B-POTHAVARAM-COMMUNICATION-NETWORK","J.D-CABLE-NETWORK","SRI-VIJAYA-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="POTHAVARAM(P)"){var arr=["GANESH-CABLE-NETWORK	"];}
+          else if(a==="PRAGADAPALLI"){var arr=["VASUDHA-CABLE-NETWORK	"];}
+          else if(a==="PRAKASARAOPALEM"){var arr=["VIJAYA-LAKSHMI-CABLE-NETWORK	"];}
+          else if(a==="PRATHALLAMERAKA"){var arr=["SRI-BHAVANI-CABLE-NETWORK	"];}
+          else if(a==="PUCHALANKA(NADIGADI)"){var arr=["SRI-CABLE-NETWORK	"];}
+          else if(a==="PULIRAMANNAGUDEM"){var arr=["ROWAN-CALISTA-CABLE-NETWORK	"];}
+          else if(a==="PULLAIGUDEM"){var arr=["GANESH-CABLE-NETWORK	"];}
+          else if(a==="PULLALAPADU"){var arr=["SRAVANI-CABLE-NETWORK	"];}
+          else if(a==="PULLETIKURRU"){var arr=["SRI-RAJA-RAJESWARI-CABLE-NETWORK","SRI-HARINI-CABLE-NETWORK","YODE-CABLE-NETWORK","SRI-USHODAYA-COMMUNICATION-CABLE-NETWORK"];}
+          else if(a==="K.PEDAPUDI"){var arr=["SRI-USHODAYA-COMMUNICATION-CABLE-NETWORK	"];}
+          else if(a==="PURUSHOTAPALLI"){var arr=["SRI-VENKATESWARA-SIVA-SAI-CABLE-NETWORK","S.V.L.S.S.CABLE-NETWORK","G-S.V.L.S.S.CABLE-NETWORK"];}
+          else if(a==="PUTTALAPUDI"){var arr=["SRI-VENKATESWARA-CABLE-NETWORK	"];}
+          else if(a==="PYDIPARRU"){var arr=["	K-SIVANI-CABLE-NETWORK","SIVANI-CABLE-NETWORK","B-R-CABLE-NETWORK"];}
+          else if(a==="RAJAMPALEM"){var arr=["SRI-VIGNESWARA-DURGA-CABLE-NETWORK	"];}
+          else if(a==="RAJANAGARAM"){var arr=["SHANMUKA-SAI-CABLE-NETWORK	"];}
+          else if(a==="RAJAVARAM"){var arr=["SRI-KRISHNA-TEJA-CABLE-NETWORK","KRISHNA-TEJA-CABLE-NETWORK","G-KRISHNA-TEJA-CABLE-NETWORK"];}
+          else if(a==="RAJUPALEM"){var arr=["JAI-SANTOSHIMATHA-CABLE-NETWORK	"];}
+          else if(a==="RALLAGANDI"){var arr=["CHINNI-KRISHNA-CABLE-NETWORK	"];}
+          else if(a==="RALLAKUNTA"){var arr=["SRI-SRINIVASA-CABLE-NETWORK	"];}
+          else if(a==="RAMA-SINGAVARAM"){var arr=["PARAMESWARI-CABLE-NETWORK	"];}
+          else if(a==="RAMACHANDRAPURAM"){var arr=["SAI-DURGA-CABLE-NETWORK	"];}
+          else if(a==="RAMAKRISHNAPURAM"){var arr=["SRI-LAKSHMI-SAIRAM-CABLE-NETWORK	"];}
+          else if(a==="RAMANNAGUDEM"){var arr=["	A-STAR-CABLE-NETWORK","STAR-CABLE-NETWORK"];}
+          else if(a==="RAMANNAGUDEM(B)"){var arr=["	VARALAKSFHMI-CABLE-NETWORK	"];}
+          else if(a==="RAMANUJAPURAM"){var arr=["SRI-VENKATESWARA-CABLE-NETWORK	"];}
+          else if(a==="RAMARAJULANKA"){var arr=["SRI-SAI-DURGA-CABLE-NETWORK","SRI-SAI-TEJA-CABLE-NETWORK"];}
+          else if(a==="RAMARAJULANKA"){var arr=[""];}
+          else if(a==="RAMARAJULANKA-CHURCHPETA"){var arr=["SIVALEELA-CABLE-NETWORK	"];}
+          else if(a==="RAMAYANAPURAM"){var arr=["DURGA-CABLE-NETWORK	"];}
+          else if(a==="RAMESWARAM"){var arr=["SAI-CABLE-NETWORK","AKIL-CABLE-NETWORK"];}
+          else if(a==="RAMESWARAM"){var arr=[""];}
+          else if(a==="RAMPALEM"){var arr=["KRISHNA-TEJA-CABLE-NETWORK	"];}
+          else if(a==="RAVIGUNTA"){var arr=["SURYA-CABLE-NETWORK	"];}
+          else if(a==="RAVIMETLA"){var arr=["SRI-DANALAKSHMI-CABLE-NETWORK	"];}
+          else if(a==="RAVIPADU"){var arr=["LALITHA-CABLE-NETWORK","SRI-VIJAYA-DURGA-CABLE-NETWORK","C-SRI-VIJAYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="RAVIVARIPALEM"){var arr=["WHY-NOT-CABLE-NETWORK	"];}
+          else if(a==="RAVULAPADU"){var arr=["JAI-PRAKASH-CABLE-NETWORK	"];}
+          else if(a==="RAVULAPALEM"){var arr=["	A-GAYATHRI-CABLE-NETWORK","SRI-MAHALAKSHMI-CABLE-NETWORK","B-K-V-REDDY-CABLE-NETWORK","SRI-KRISHNA-COMMUNICATION-NETWORK","GAYATHRI-CABLE-NETWORK","VAKULAMMA-CABLE-NETWORK","VINAYAKA-CABLE-NETWORK","ADILAKSHMI-CABLE-NETWORK","ANKALAMMA-CABLE-NETWORK","AYYAPPA-CABLE-NETWORK","SRINIVASA-CABLE-NETWORK","GANESH-CABLE-NETWORK","RAVULAPALEM-COMMUNICATION-N/W","SRI-K.V.REDDY-CABLE-NETWORK","K.V.REDDY-CABLE-NETWORK-"];}
+          else if(a==="RAZOLE"){var arr=["PADMAJA-CABLE-NETWORK","A-MAHALAKSHMI-DISH-CABLE-NETWORK","THIRUMALA-CABLE-NETWORK","MAHALAKSHMI-DISH-CABLE-NETWORK","R-K-DISH-CABLE-NETWORK","RAZOLE-COMMUNICATION-N/W","SRI-MAHA-VIJAYA-KANAKA-DURGA-CABLE-NETWORK","KRISHNA-CABLE-NETWORK"];}
+          else if(a==="REGULAGUNTA"){var arr=["SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK	"];}
+          else if(a==="RELANGI"){var arr=["DIRISALA-COMMUNICATIONS-","SRI-DURGA-CABLE-NETWORK","LUCKY-COMMUNICATION-NETWORK","DIRISALA-COMMUNICATIONS","DIRISALA-CABLE-NERWORK","SAI-SUBRAHMANYESWARA-CABLE-NETWORK","SRI-VIJAYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="REPALLIWADA"){var arr=["SATYASAI-BHAVATHI-CABLE-NETWORK	"];}
+          else if(a==="RYALI"){var arr=["THE-RYALI-CABLE-COMMUNICATION-NETWORK	"];}
+          else if(a==="S-ILLINDALAPARRU"){var arr=["SRI-SHIRDI-SAI-CABLE-NETWORK	"];}
+          else if(a==="S-MUPPAVARAM"){var arr=["MADHU-CABLE-NETWORK	"];}
+          else if(a==="S.KONDEPADU"){var arr=["SRI-VENKATESWARA-CABLE-NETWORK	"];}
+          else if(a==="S.MULAPALEM/KONDUKUDURU/POTTILANKA"){var arr=["MURALI-KRISHNA-CABLE-NETWORK	"];}
+          else if(a==="SAJJAPURAM"){var arr=["	C-GAJANANA-CABLE-NETWORK","GAJANANA-CABLE-NETWORK","SRI-SANTHI-COMMUNICATIONS","SRI-SAIRAM-CABLE-NETWORK"];}
+          else if(a==="SAKINETIPALLI"){var arr=["PAVANI-CABLE-NETWORK","SRI-LASKHMI-BHIMESWARA-CABLE-NETWORK"];}
+          else if(a==="SAKINETIPALLI-LANKA"){var arr=["SURYA-CABLE-NETWORK","LAKSHMI-DURGA-CABLE-NETWORK"];}
+          else if(a==="SAKURRU"){var arr=["PAVAN-CABLE-NETWORK",""];}
+          else if(a==="SAMISRAGUDEM"){var arr=["BHAGYA-LAKSHMI-CABLE-NETWORK","A-SRI-AYYAPPA-CABLE","SRI-AYYAPPA-CABLE-&-SAT-LINKS-NETWORK"];}
+          else if(a==="SANDHIPUDI"){var arr=["SAI-SRIDATTA-CABLE-NETWORK	"];}
+          else if(a==="SANDRAGUNTA"){var arr=["KUMARI-CABLE-NETWORK"];}
+          else if(a==="SANKARAGUPTHAM"){var arr=["SARADHI-CABLE-NETWORK"];}
+          else if(a==="SANKARAPURAM"){var arr=["SRI-NAMGALYA-DEVI-CABLE-NETWORK"];}
+          else if(a==="SARIPALLI"){var arr=["SIRISHA-CABLE-NETWORK"];}
+          else if(a==="SARVAPURAM"){var arr=["SAI-PRIYA-CABLE-NETWORK"];}
+          else if(a==="SATTEMMACHETTU"){var arr=["SATYA-SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="SATTENNAGUDEM"){var arr=["ASHOK-CABLE-NETWORK"];}
+          else if(a==="SATYAWADA"){var arr=["	G-SRI-VENKATESWARA-CABLE-NETWORK","SRI-VENKATA-SAI-CABLE-NETWORK	"];}
+          else if(a==="SAVARAM"){var arr=["SHAHEE-SITI-CABLE-NETWORK"];}
+          else if(a==="SEETHAMPETA"){var arr=["SRI-VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="SETTIPET"){var arr=["VIGNESWARA-CABLE-NETWORK","SURYA-CABLE-NETWORK	"];}
+          else if(a==="SHANKARAYAGUDEM"){var arr=["NAVAYUGA-CABLE-NETWORK"];}
+          else if(a==="SINGARJUPALEM"){var arr=["LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="SINGAVARAM"){var arr=["SRI-SAI-RAM-CABLE-NETWORK"];}
+          else if(a==="SIVAKODU"){var arr=["GANESH-CABLE-NETWORK","BALU-CABLE-NETWORK	"];}
+          else if(a==="SIVAKODU-PALEM"){var arr=["PREETHI-CABLE-NETWORK"];}
+          else if(a==="SIVAPURAM"){var arr=["SRI-VENKATESWARA-CABLE-TV-NETWORK"];}
+          else if(a==="SKINNERAPURAM"){var arr=["SRI-KRISHNA-MADHAV-CABLE-NETWORK"];}
+          else if(a==="SOMIDEVARAPALEM"){var arr=["SURYA-CABLE-NETWORK"];}
+          else if(a==="SOMPALLI"){var arr=["SARATH-CABLE-NETWORK"];}
+          else if(a==="SRIRANGAPATNAM"){var arr=["NAGA-GOWRI-CABLE-NETWORK"];}
+          else if(a==="SRUNGAVARAPUPADU"){var arr=["SURYA-CABLE-NETWORK","SRI-VENKATA-SAI-CABLE-NETWORK	"];}
+          else if(a==="SUBHADRAPALEM"){var arr=["PARAMESWARI-CABLE-NETWORK"];}
+          else if(a==="SURAIAHPETA"){var arr=["SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="SURAICHERUVU"){var arr=["MADHU-CABLE-NETWORK"];}
+          else if(a==="SURAMPUDI"){var arr=["SURAMPUDI-CABLE-NETWORK"];}
+          else if(a==="SURYACHANDRARAOPETA"){var arr=["SRI-VENKATA-SAI-SOWMYA-CABLE-NETWORK"];}
+          else if(a==="SURYARAOPALEM"){var arr=["SURYA-CABLE-NETWORK"];}
+          else if(a==="TADIMALLA"){var arr=["VENKATESWARA-CABLE-NETWORK"];}
+          else if(a==="TADIMALLA-COLONY"){var arr=["HEMA-CABLE-NETWORK"];}
+          else if(a==="TADIPARRU"){var arr=["SRI-SRINIVASA-CABLE-NETWORK","SRI-DURGA-CABLE-NETWORK	"];}
+          else if(a==="TAKKELLAPADU"){var arr=["SRI-VIJAYA-KRISHNACABLE-NETWORK"];}
+          else if(a==="TALATADITHIPPA"){var arr=["ABHAYANJANEYA-CABLE-NETWORK"];}
+          else if(a==="TALLAPALEM"){var arr=["MOHAN-CABLE-NETWORK"];}
+          else if(a==="TALLAPALEM(N)"){var arr=["DEEPIKA-CABLE-NETWORK"];}
+          else if(a==="TANELANKA"){var arr=["SRI-SAI-KRISHNA-CABLE-NETWORK"];}
+          else if(a==="TANUKU"){var arr=["	GOLDSTAR-CABLE-NETWORK","SRI-HARIKA-CABLE-NETWORK","PUJITHA-CABLE-NETWORK","MANIKANTA-CABLE-NETWORK","DARSHAN-STAR-NETWORK","DHANA-LAKSHMI-STAR-CABLE-NETWORK","ANJALI-STAR-NETWORK","DURGA-DEVI-CABLE-NETWORK","C-HYMA-CABLE-NETWORK","T-MANIKANTA-STAR-CABLE-NETWORK","S.R.K.S.CABLE-NETWORK","GOLDSTAR-CABLE-NETWORK","SRI-PAVANA-CABLE-NETWORK","LAKSHMI-TULASI-CABLE-NETWORK","STAR-NETWORK","N-TCN-DIGITAL-OFFICE","A-GOLDSTAR-CABLE-NETWORK","AVANTHI-CABLE-NETWORK","SRI-CABLE-NETWORK","NAGA-YASHWANTH-CABLE-NETWORK","SRI-RAM-CABLE-NETWORK","HANUMAN-CABLE-NETWORK","C-SRI-USHODAYA-COMMUNICATION-CABLE-NETWORK","PSRI-SAINADH-CABLE-NETWORK","SRI-SAINADH-CABLE-NETWORK","W-SURYA-CHANDRA-CABLE-NETWORK","PRASANTH-CABLE-NETWORK","SRI-KRISHNA-CABLE-NETWORK","SIVA-CABLE-NETWORK","GOLDSTAR-CABLE-NETWORK","TANUKU-COMMUNICATION-N/W","COASTAL-BROADBAND-NETWORK","SRI-HARI-PRIYA-CABLE-NETWORK","VENKATA-RATHNA-CABLE-NETWORK","CHAKRAVARTHI-CABLE-NETWORK"];}
+          else if(a==="TATIPAKA"){var arr=["GAYATHRI-COMMUNICATION","SYAMALA-COMMUNICATIONS	"];}
+          else if(a==="TEEPARRU"){var arr=["VENKATA-KRISHNA-CABLE-NETWORK"];}
+          else if(a==="TEKISETTIPALEM"){var arr=["FRIENDS-CABLE-NETWORK"];}
+          else if(a==="TEKISETTIPALEM-VANTHENA"){var arr=["SRI-SATYA-CABLE-NETWORK"];}
+          else if(a==="TEKKINAVARIGUDEM"){var arr=["	G-SRI-SAI-DURGA-CABLE-NETWORK","SRI-SAI-DURGA-CABLE-NETWORK	"];}
+          else if(a==="TELIKICHERLA"){var arr=["DHANA-LAKSHMI-CABLE-NETWORK-","KANAKADURGA-CABLE-NETWORK	"];}
+          else if(a==="TETALI"){var arr=["SATYA-SURYA-CABLE-NETWORK","LALITHA-CABLE-NETWORK	"];}
+          else if(a==="THATIPAKA-MATAM"){var arr=["PAVAN-CABLE-NWTWORK"];}
+          else if(a==="THILLAPUDIPALEM"){var arr=["SRI-SAIDURGA-CABLE-NETWORK"];}
+          else if(a==="THIMMAIAHPALEM"){var arr=["SAIDURGA-CABLE-NETWORK"];}
+          else if(a==="THOTLAPALEM"){var arr=["SRI-SAI-CABLE-NETWORK","SRI-SAI-GAYATHRI-CABLE-NETWORK	"];}
+          else if(a==="THRINADHAPURAM"){var arr=["SRI-CABLE-NETWORK"];}
+          else if(a==="THUNDURRU"){var arr=["MANI-CABLE-NETWORK"];}
+          else if(a==="TIMMAPURAM"){var arr=["MESSAYYA-CABLE-NETWORK"];}
+          else if(a==="TIMMARAJUPALEM"){var arr=["SRI-SAI-ROHINI-CABLE-NETWORK"];}
+          else if(a==="TIRUMALAMPALEM"){var arr=["GANESH-CABLE-NETWORK"];}
+          else if(a==="TIRUMALAPURAM"){var arr=["TULASI-NAIDU-CABLE-NETWORK"];}
+          else if(a==="TIRUPATHIPURAM"){var arr=["TEJA-CABLE-NETWORK"];}
+          else if(a==="TOKALANKA"){var arr=["SRI-SAI-CABLE-VISION"];}
+          else if(a==="TOKALAPUDI"){var arr=["DURGA-CABLE-NETWORK"];}
+          else if(a==="TOKALAPUDI-PALEM"){var arr=["KRISHNA-KUMARI-CABLE-NETWORK"];}
+          else if(a==="TOKKIREDDYGUDEM"){var arr=["SRI-VIGNESWARA-CABLE-NETWORK"];}
+          else if(a==="TOLERU"){var arr=["SRI-DURGA-CABLE-NETWORK"];}
+          else if(a==="TOLERU-UTTARAPALEM"){var arr=["DURGA-SAI-NADH-CABLE-NETWORK"];}
+          else if(a==="TONDAVARAM"){var arr=["SRI-RAJYALAKSHMI-CABLE-NETWORK"];}
+          else if(a==="TOTTARAMUDI"){var arr=["SRI-SAI-DURGA-CABLE-NETWORK"];}
+          else if(a==="TUMMAGUPPAM"){var arr=["DIVYA-CABLE-NETWORK"];}
+          else if(a==="TURPUPALEM"){var arr=["VINAYA-SRI-CABLE-NETWORK"];}
+          else if(a==="TYAJAMPUDI"){var arr=["DIVYA-CABLE-NETWORK","KVR-CABLE-NETWORK	"];}
+          else if(a==="UBALANKA"){var arr=["SRI-SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="UNDRAJAVARAM"){var arr=["ABC-CABLE-NETWORK","MUTYALAMMA-CABLE-NETWORK","SANGAMITRA-CABLE-NETWORK","SURYA-CABLE-NETWORK","GANDHI-CABLE-NETWORK"];}
+          else if(a==="UNIKILI"){var arr=["VIJAYA-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="UNKARAMILLI"){var arr=["SURYA-CABLE-NETWORK"];}
+          else if(a==="UPPARAGUDEM"){var arr=["YESU-RAJU-CABLE-NETWORK","MALATHI-CABLE-NETWORK	"];}
+          else if(a==="UPPIDI"){var arr=["SRI-SAI-NAVEEN-CABLE-NETWORK"];}
+          else if(a==="URADALLAPALEM"){var arr=["SRI-SHIRIDI-SAI-CABLE-TV-NETWORK"];}
+          else if(a==="USULUMARRU"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="USULUMARRU-PADU"){var arr=["WHY-NOT-CABLE-NETWORK"];}
+          else if(a==="UTCHILI"){var arr=["LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="UTTARAPALEM"){var arr=["SRI-PAVAN-PUTHRA-CABLE-NETWORK"];}
+          else if(a==="VADDIGUDEM"){var arr=["SAINADH-CABLE-NETWORK"];}
+          else if(a==="VADLURU"){var arr=["VENUS-COMMUNICATION"];}
+          else if(a==="VADREVUPALLI"){var arr=["SRI-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="VAKAPALLI"){var arr=["SRI-PANKAJANABHA-CABLE-NETWORK"];}
+          else if(a==="VANGATALACHERUVU"){var arr=["SRINIVAS-CABLE-NETWORK"];}
+          else if(a==="VANUM-VARI-PALEM"){var arr=["SRI-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="VARAGALANKA"){var arr=["SRI-DEVI-HARSHITHA-CABLE-NETWORK"];}
+          else if(a==="VARIGHEDU"){var arr=["SRI-DANESWARI-CABLE-NETWORK"];}
+          else if(a==="VASAMSETTIVARIPALEM"){var arr=["KAVYA-CABLE-NETWORK"];}
+          else if(a==="VEDANTHAPURAM"){var arr=["SRI-DURGA-CABLE-NETWORK"];}
+          else if(a==="VEDIRESWARAM"){var arr=["VARMA-CABLE-NETWORK"];}
+          else if(a==="VEERABADRAPURAM"){var arr=["SRI-SAI-SATTELLITE-VISION"];}
+          else if(a==="VEERAMPALEM"){var arr=["KARUNA-CABLE-NETWORK"];}
+          else if(a==="VEERAVALLIPALEM"){var arr=["OM-SAI-CABLE-NETWORK","LAKSHMI-PRASANNA-CABLE-NETWORK	"];}
+          else if(a==="VEGIVARIPALEM"){var arr=["KEERTHI-CABLE-NETWORK"];}
+          else if(a==="VELAGADURRU"){var arr=["SRI-SAIKRISHNA-CABLE-NETWORK"];}
+          else if(a==="VELAGALAVARIPALEM"){var arr=["SRI-VIGNESWARA-CABLE-NETWORK"];}
+          else if(a==="VELAVALIPALLI"){var arr=["SAI-BALAJI-CABLE-NETWORK"];}
+          else if(a==="VELICHERU"){var arr=["SRI-VIJAYA-DURGA-CABLE-NETWORK"];}
+          else if(a==="VELIVENNU"){var arr=["VIGNESWARA-CABLE-NETWORK","VARASIDDI-VINAYAKA-CABLE-NETWORK","SRI-LAKSHMI-GANAPATHI-CABLE-NETWORK"];}
+          else if(a==="VELPUR"){var arr=["PAVAN-CHANDRA-CABLE-NETWORK","TEJA-CABLE-CABLE-NETWORK","AKILA-CABLE-NETWORK","SHIVA-CABLE-NETWORK","KARTHIKEYA-CABLE-NETWORK","NEELAKANTA-CABLE-NETWORK","SURYA-CHANDRA-CABLE-NETWORK","V.S.C.DIGITAL-NETWORK","MOHAN-COMMUNICATOIN-CABLE-NETWORKs"];}
+          else if(a==="VENDRA"){var arr=["SRI-VIJAYA-LAKSHMI-CABLE-NETWORK"];}
+          else if(a==="VENKATARAMANNAGUDEM"){var arr=["STAR-CABLE-NETWORK","YSR-HORTICULTURAL-UNIVERSITY	"];}
+          else if(a==="VENKATARAOPALEM"){var arr=["SRI-KANAKADURGA-CABLE-NETWORK"];}
+          else if(a==="VENKATARAYAPURAM"){var arr=["SREE-RANGARAO-MEMORIAL-CLUB","THE-ANDHRA-SUGARS-L.T.D	"];}
+          else if(a==="VENKATARAYAPURAM(PERAVALI)"){var arr=["LAKSHMI-SURYA-CABLE-NETWORK"];}
+          else if(a==="VETLAPALEM"){var arr=["SATYA-CABLE-NETWORK"];}
+          else if(a==="VINAYAKA-PURAM"){var arr=["VINAYAKAPURAM-CABLE-NETWORK"];}
+          else if(a==="VISWESWARAYAPURAM"){var arr=["SRI-DEVI-CABLE-NETWORK"];}
+          else if(a==="VUYYURI-VARI-MERAKA"){var arr=["CHINNA-CABLE-NETWORK","SRI-SAI-CABLE-NETWORK	"];}
+          else if(a==="Y-BRIDZE"){var arr=["SRI-SAI-CABLE-NETWORK"];}
+          else if(a==="YALAKALLANKA"){var arr=["SRINIVASA-CABLE-NETWORK"];}
+          else if(a==="YANAMADURRU"){var arr=["NAVEEN-CABLE-NETWORK"];}
+          else if(a==="YARRAMALLA"){var arr=["PAVAN-CABLE-NETWORK"];}
+          else if(a==="YARRAMILLIPADU"){var arr=["SRI-LALITHA-CABLE-NETWORK"];}
+          else if(a==="YELLAMILLI-STAGE"){var arr=["LAKSMI-DURGA-CABLE-NETWORK"];}
+          else if(a==="YENUGULAMAHAL"){var arr=["BABA-CABLE-NETWORK-","BABA-CABLE-NETWORK	"];}
+          else if(a==="YERRAICHERUVU"){var arr=["SRI-RAMA-CABLE-NETWORK"];}
+          else if(a==="YERRAMSETTIVARIPAELM"){var arr=["SRI-SAI-SATYA-SIVARAM-CABLE-NETWORK"];}
+          else if(a==="YERRANELUGUNTA"){var arr=["SWATHI-CABLE-NETWORK"];}
+
+          var string="";
+       
+          for(i=0;i<arr.length;i++)
+          {
+              string=string+"<option value="+arr[i]+">"+arr[i]+"</option>";
+          }
+          document.getElementById("output").innerHTML=string;
+      }
+  </script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup"><center>
+          <form class="sign-in-form">
+            <br><br><br>
+            <center>
+            <h2 class="title">Don't fear to complain<br>about our backlog</h2></center>
+<div class="Form">
+            <select style="width:560px;"id="input"onchange="random_function()">
+                    <option>select-option</option>
+                    <option>A.GOPAVARAM</option>
+                    <option>ACHANTA</option>
+                    <option>ACHIYAPALEM</option>
+                    <option>ADAVIPALEM</option>
+                    <option>ADAVIPETA</option>
+                    <option>ADDANKIVARIPALEM</option>
+                    <option>ADURRU</option>
+                    <option>AGRAHARAM</option>
+                    <option>AINAVILLI</option>
+                    <option>AINAVILLI-LANKA</option>
+                    <option>AJJARAM</option>
+                    <option>AKKUPALLI-GOKAVARAM-1</option>
+                    <option>AKKUPALLI-GOKAVARAM-2</option>
+                    <option>ALAMPURAM</option>
+                    <option>ALAMURU</option>
+                    <option>AMBAJIPETA</option>
+                    <option>AMBEDKAR-COLONY</option>
+                    <option>AMBHAJIPETA-GARUVU</option>
+                    <option>ANAKODERU</option>
+                    <option>ANANDPURAM</option>
+                    <option>ANANTHAPALLI</option>
+                    <option>ANDALURU</option>
+                    <option>ANKALAGUDEM</option>
+                    <option>ANKAMPALEM</option>
+                    <option>ANNAVARAPPADU</option>
+                    <option>ANTHERVEDI-DEVASTANAM</option>
+                    <option>ANTHERVEDI-KARA</option>
+                    <option>ANTHERVEDI-PALEM</option>
+                    <option>ANTHERVEDI-PALLIPALEM</option>
+                    <option>APPANA-RAMUNILANKA</option>
+                    <option>APPANNAPALLI</option>
+                    <option>APPARAOPETA</option>
+                    <option>ARAVALLI</option>
+                    <option>ARDHAVARAM</option>
+                    <option>ARJUNUDUPALEM</option>
+                    <option>ARUGOLANU</option>
+                    <option>ARULLA</option>
+                    <option>ATCHYUTHAPURAM</option>
+                    <option>ATLAPADU</option>
+                    <option>ATTILI</option>
+                    <option>AVAPADU</option>
+                    <option>AYODYALANKA</option>
+                    <option>AYYAVARAM</option>
+                    <option>AYYAVARITHIPPA</option>
+                    <option>B-KONDEPADU</option>
+                    <option>B.DODDAVARAM</option>
+                    <option>B.SAVARAM</option>
+                    <option>BADILANKA</option>
+                    <option>BALAM-VARI-PALEM</option>
+                    <option>BALASUGOYYIPALEM</option>
+                    <option>BALAYOGI-KALUVA</option>
+                    <option>BALEPALLI</option>
+                    <option>BALLIPADU</option>
+                    <option>BALUSUTIPPA</option>
+                    <option>BANDARUPALEM</option>
+                    <option>BANGARUGUDEM</option>
+                    <option>BARKETNAGARAM</option>
+                    <option>BAYYANAGUDEM</option>
+                    <option>BHIMOLU</option>
+                    <option>BOBBANAPALLI</option>
+                    <option>BOBBARAJUPALEM</option>
+                    <option>BODIAKODU</option>
+                    <option>BODIGUDEM</option>
+                    <option>BOJJAVARIPETA</option>
+                    <option>BONTHUVARIPALEM</option>
+                    <option>BRAHMANACHERUVU</option>
+                    <option>BRAHMANAGUDEM</option>
+                    <option>BUCHEMPETA</option>
+                    <option>BUDDARAYUDUCHERUVU</option>
+                    <option>BURUGULANKA</option>
+                    <option>BUTTAIGUDEM</option>
+                    <option>CH-POTHEPALLI</option>
+                    <option>CH.GUNNEPALLI</option>
+                    <option>CH.GUNNEPALLI-2</option>
+                    <option>CHADARASIGUNTA</option>
+                    <option>CHAKALIPALEM</option>
+                    <option>CHANDRAYAGUDEM</option>
+                    <option>CHEYYERU</option>
+                    <option>CHILAKAPADU</option>
+                    <option>CHINAKOTHA-LANKA</option>
+                    <option>CHINAMVARIPALEM</option>
+                    <option>CHINARAMUNICHERUVU</option>
+                    <option>CHINATADEPALLI</option>
+                    <option>CHINAVELAMILLI</option>
+                    <option>CHINTALA-MERAKA</option>
+                    <option>CHINTALAKOTIGARUVU</option>
+                    <option>CHINTALAMORI</option>
+                    <option>CHINTALURU</option>
+                    <option>CHINTAYAGUDEM</option>
+                    <option>CHINTHALANKA</option>
+                    <option>CHINTHAPALLI</option>
+                    <option>CHIPPALAPALEM</option>
+                    <option>CHIPURUGUDEM</option>
+                    <option>CHIRRAYANAM</option>
+                    <option>CHITYALAPADU</option>
+                    <option>CHIVATAM</option>
+                    <option>CHODAVARAM</option>
+                    <option>CHUKKAVARITHOTA</option>
+                    <option>D-KUMADAVALLI</option>
+                    <option>D-MUPPAVARAM</option>
+                    <option>DAMMENNU</option>
+                    <option>DANDAGARRA</option>
+                    <option>DEVARAPALLI</option>
+                    <option>DEVINENIVARIGUDEM</option>
+                    <option>DHARMARAOPETA</option>
+                    <option>DINDI</option>
+                    <option>DIPPAKAYALAPADU</option>
+                    <option>DIRUSUMARRU-1</option>
+                    <option>DIRUSUMARRU-2</option>
+                    <option>DONDAPUDI</option>
+                    <option>DONGAPINDI</option>
+                    <option>DONTHIKURRU</option>
+                    <option>DORASANIPADU</option>
+                    <option>DUBHACEARLA&GANTAVARIGUDEM</option>
+                    <option>DUSANAPUDI</option>
+                    <option>DUVVA</option>
+                    <option>DWARAKATIRUMALA</option>
+                    <option>EAST-VIPPARRU</option>
+                    <option>EDARADA</option>
+                    <option>EEDURU</option>
+                    <option>EELAMPUDI</option>
+                    <option>ERLA-CHERUVU</option>
+                    <option>ETHAKOTA</option>
+                    <option>G-KOTHAPALLI</option>
+                    <option>GACHAKAYALAPORA</option>
+                    <option>GADILANKA</option>
+                    <option>GAJULAGUNTA</option>
+                    <option>GAMALLAPADU</option>
+                    <option>GANDHI-COLONY</option>
+                    <option>GANDHINAGARAM-1</option>
+                    <option>GANDHINAGARAM-2</option>
+                    <option>GANGALAKURRU</option>
+                    <option>GANGAVARAM</option>
+                    <option>GANGOLU</option>
+                    <option>GARAGAPARRU</option>
+                    <option>GARAVALLADIBBA</option>
+                    <option>GAVARAPALEM</option>
+                    <option>GAVARAVARAM</option>
+                    <option>GAVARLAPALEM</option>
+                    <option>GEDELLANKA</option>
+                    <option>GODUGUPETA</option>
+                    <option>GOGANNAMATAM</option>
+                    <option>GOLLAGARUVU</option>
+                    <option>GOLLAGUDEM</option>
+                    <option>GOLLAGUDEM(D)</option>
+                    <option>GOLLAGUDEM(T)</option>
+                    <option>GOLLAVANITIPPA</option>
+                    <option>GONDHI</option>
+                    <option>GOPALAPURAM</option>
+                    <option>GOPALAPURAM(I)</option>
+                    <option>GOPALAPURAM(R)</option>
+                    <option>GOPAVARAM</option>
+                    <option>GOPAVARAM(G)</option>
+                    <option>GOPINADHAPATNAM</option>
+                    <option>GOPINADHAPATNAM-COLONY</option>
+                    <option>GOTERU</option>
+                    <option>GOTHIPPA</option>
+                    <option>GUBBALAPALEM</option>
+                    <option>GUBBALAVARIPALEM</option>
+                    <option>GUDDIGUDEM-1</option>
+                    <option>GUDDIGUDEM-2</option>
+                    <option>GUDIMELLANKA</option>
+                    <option>GUDIMULA</option>
+                    <option>GULLAPADU</option>
+                    <option>GULLAPADU(U)</option>
+                    <option>GUMMAMPADU</option>
+                    <option>GUMMILERU</option>
+                    <option>GUNDEPALLI</option>
+                    <option>GUNDUGOLANUGUNTA</option>
+                    <option>GUNJAVARAM</option>
+                    <option>GUNNAMPALLI</option>
+                    <option>GUNNEPALLI-AGRAHARAM</option>
+                    <option>GUTHULAVARIPALEM</option>
+                    <option>GUTLAPADU</option>
+                    <option>HUKUMPETA</option>
+                    <option>I-S-RAGHAVAPURAM</option>
+                    <option>ILLAVARIPALEM</option>
+                    <option>INAPARRU</option>
+                    <option>INAPURAM</option>
+                    <option>IRAGAVARAM</option>
+                    <option>ISAKAPUDI</option>
+                    <option>ISAKAPUDI-DAM</option>
+                    <option>ISUKULANKA</option>
+                    <option>ITUKULAGUNTA</option>
+                    <option>JAGANNADHAPURAM</option>
+                    <option>JAGANNADHAPURAM(G)</option>
+                    <option>JAGGANNAPET</option>
+                    <option>JAGGANNAPETA</option>
+                    <option>JAJULAKUNTA</option>
+                    <option>JALLIKAKINADA</option>
+                    <option>JEEDIGUNTA</option>
+                    <option>JONNADA</option>
+                    <option>JONNADA-2</option>
+                    <option>JONNALAPALEM</option>
+                    <option>JUTTIGA</option>
+                    <option>K-ILLINDALAPARRU</option>
+                    <option>K-PEDAPUDI</option>
+                    <option>K-SAMUDRAPU-GATTU</option>
+                    <option>K-YENUGUPALLI</option>
+                    <option>K.JAGANNADHAPURAM</option>
+                    <option>KADALI</option>
+                    <option>KADIAYADDA</option>
+                    <option>KAKARAPARRU</option>
+                    <option>KALAVACHERLA</option>
+                    <option>KALAVAPUDI</option>
+                    <option>KALDARI</option>
+                    <option>KAMASALAPALEM</option>
+                    <option>KAMAYYAKUNTA</option>
+                    <option>KAMSALIBETAPUDI</option>
+                    <option>KAMSALIGUNTA</option>
+                    <option>KANAKADRIPURAM(ARIPATIDIBBALU)</option>
+                    <option>KANAKAYALANKA</option>
+                    <option>KANCHUMARRU</option>
+                    <option>KANDIKUPPA</option>
+                    <option>KANDRIKAGUDEM</option>
+                    <option>KANNAIGUDEM</option>
+                    <option>KANNAPURAM</option>
+                    <option>KANTHERU</option>
+                    <option>KANURU</option>
+                    <option>KANURU-AGRAHARAM</option>
+                    <option>KANURU-AGRAHARAM-2</option>
+                    <option>KAPAVARAM</option>
+                    <option>KAPPALAKUNTA</option>
+                    <option>KARICHARLAGUDEM</option>
+                    <option>KARRAVANIREVU</option>
+                    <option>KARRAVARI-SAVARAM</option>
+                    <option>KARUKUVADA-BETHAPUDI</option>
+                    <option>KASIPADU</option>
+                    <option>KATAKOTESWARAM</option>
+                    <option>KATARULANKA</option>
+                    <option>KATHAVAPADU</option>
+                    <option>KATRENIKONA</option>
+                    <option>KATTIMANDA</option>
+                    <option>KAVULURU</option>
+                    <option>KESAVADASUPALEM</option>
+                    <option>KESAVARAM</option>
+                    <option>KETHARAJUPALLI</option>
+                    <option>KETHAVARAM</option>
+                    <option>KODAMANCHILI</option>
+                    <option>KODERU</option>
+                    <option>KODIGUDEM</option>
+                    <option>KOMARADA</option>
+                    <option>KOMARADA(B)</option>
+                    <option>KOMARAVARAM</option>
+                    <option>KOMARRU</option>
+                    <option>KOMMARA</option>
+                    <option>KOMMARA(A)</option>
+                    <option>KOMMARAJULANKA</option>
+                    <option>KOMMUGUDEM</option>
+                    <option>KOMMUGUDEM-(D)</option>
+                    <option>KONABOTHUGUNTA</option>
+                    <option>KONALA</option>
+                    <option>KONDAIAHGUNTA</option>
+                    <option>KONDAIAHPALEM</option>
+                    <option>KONDALAMMA-CHINTA</option>
+                    <option>KONDEPUDI</option>
+                    <option>KONDRUPROLU</option>
+                    <option>KONDUKUDURU</option>
+                    <option>KONITHIWADA</option>
+                    <option>KOPPARRU</option>
+                    <option>KOPPARRU-1</option>
+                    <option>KORUKOLLU</option>
+                    <option>KORUMAMIDI</option>
+                    <option>KORUMILLI</option>
+                    <option>KORUPALLI</option>
+                    <option>KOTA-RAMACHANDRAPURAM</option>
+                    <option>KOTHA-PUSALAMARRU</option>
+                    <option>KOTHAGUDEM</option>
+                    <option>KOTHAGUDEM(D)</option>
+                    <option>KOTHAGUDEM(N)</option>
+                    <option>KOTHALANKA</option>
+                    <option>KOTHAPADU</option>
+                    <option>KOTHAPALEM-(LIGHT-HOUSE)</option>
+                    <option>KOTHAPALLI</option>
+                    <option>KOTIVARI-AGRAHARAM</option>
+                    <option>KOTTURU</option>
+                    <option>KOVVURPADU</option>
+                    <option>KOYARAJAHMUNDRY</option>
+                    <option>KOYYALAGUDEM</option>
+                    <option>KRAPA</option>
+                    <option>KRAPACHINTALAPUDI</option>
+                    <option>KRISHNAMMAGUDEM</option>
+                    <option>KRISHNAPURAM</option>
+                    <option>KRISHNAYAGUDEM</option>
+                    <option>KRISHNAYAPALEM</option>
+                    <option>KUNALANKA</option>
+                    <option>KUNDALESWARAM</option>
+                    <option>KUNTALAGUDEM</option>
+                    <option>L-AGRAHARAM</option>
+                    <option>L-GANNAVARAM</option>
+                    <option>L-N-D-PETA</option>
+                    <option>L-V-N-PURAM</option>
+                    <option>LAKKAVARAM</option>
+                    <option>LAKSHMI-POLAVARAM</option>
+                    <option>LAKSHMIDEVILANKA</option>
+                    <option>LAKSHMINARASIMHAPURAM</option>
+                    <option>LAKSHMINARAYANAPURAM</option>
+                    <option>LAKSHMIPURAM</option>
+                    <option>LIKITHAPUDI</option>
+                    <option>LINGAREDDYGUDEM</option>
+                    <option>LOLLA</option>
+                    <option>LUTUKURRU</option>
+                    <option>M-G-PALEM</option>
+                    <option>MACHAVARAM</option>
+                    <option>MADDULAGUDEM</option>
+                    <option>MADHAVARAM</option>
+                    <option>MADIPALLI</option>
+                    <option>MADUGU-POLAVARAM</option>
+                    <option>MAGAM</option>
+                    <option>MAGATAPALLI</option>
+                    <option>MAHADEVAPURAM</option>
+                    <option>MAHALAKSHMI-CHERUVU</option>
+                    <option>MAHIPALA-CHERUVU</option>
+                    <option>MAKANAPALEM</option>
+                    <option>MALAVANITHIPPA</option>
+                    <option>MALIKIPURAM</option>
+                    <option>MALLAIDODDI</option>
+                    <option>MALLAPARAJUPETA</option>
+                    <option>MALLIPUDI</option>
+                    <option>MAMIDIKUDURU</option>
+                    <option>MAMIDIPUDI</option>
+                    <option>MAMUDURU</option>
+                    <option>MANCHILI</option>
+                    <option>MANDAPAKA</option>
+                    <option>MANEPALLI</option>
+                    <option>MANEVARIPALEM</option>
+                    <option>MANGAPATIDEVIPETA</option>
+                    <option>MARAMPALLI</option>
+                    <option>MARAMPALLI(T)</option>
+                    <option>MARELLAMUDI</option>
+                    <option>MATLAM</option>
+                    <option>MATSYAPURI</option>
+                    <option>MATTAGUNTA</option>
+                    <option>MATTAPARRU</option>
+                    <option>MEDICHARLAPALEM</option>
+                    <option>MEENAVALLURU</option>
+                    <option>MENTEPUDI</option>
+                    <option>MERAPALEM</option>
+                    <option>MERLAPALEM</option>
+                    <option>METTAUPPARAGUDEM</option>
+                    <option>MODI</option>
+                    <option>MODUKURU</option>
+                    <option>MOGALLU</option>
+                    <option>MOGGALLA</option>
+                    <option>MOKKALATIPPA</option>
+                    <option>MONDEPULANKA</option>
+                    <option>MORI</option>
+                    <option>MORI-PADAMATIPALEM</option>
+                    <option>MORIPODU</option>
+                    <option>MORIPOLAM</option>
+                    <option>MORTHA</option>
+                    <option>MOYYERU</option>
+                    <option>MUDDAPURAM</option>
+                    <option>MUKKAMALA</option>
+                    <option>MUKKAMALA/NEDUNURU</option>
+                    <option>MUKTESWARAM</option>
+                    <option>MULA-GONDHI</option>
+                    <option>MULASTHANAM</option>
+                    <option>MULLAIPALEM</option>
+                    <option>MUMMIDIVARAM</option>
+                    <option>MUNGANDA(M)</option>
+                    <option>MUNGANDA(S)</option>
+                    <option>MUNGANDAPALEM</option>
+                    <option>MUNIPALLI</option>
+                    <option>MUNJAVARAM</option>
+                    <option>MUPPARTHIPADU</option>
+                    <option>MUSALLAGUNTA</option>
+                    <option>NABIPETA</option>
+                    <option>NADAPANIVARIPALEM</option>
+                    <option>NADAVAPALLI-(PALLIPALEM)</option>
+                    <option>NADIGADI/VEMANAVARIPALEM</option>
+                    <option>NADIMI-LANKA</option>
+                    <option>NADUPALLI</option>
+                    <option>NADUPALLI-KOTA</option>
+                    <option>NAGARAM</option>
+                    <option>NAGIDIPALEM</option>
+                    <option>NAGULLANKA</option>
+                    <option>NALLAJERLA</option>
+                    <option>NANDAMPUDI</option>
+                    <option>NANDAMURU</option>
+                    <option>NANDIGUDEM</option>
+                    <option>NANDURI-NAGAR</option>
+                    <option>NARASANNAPALEM</option>
+                    <option>NARENDRAPURAM</option>
+                    <option>NARKEDIMILLI</option>
+                    <option>NATTARAMESWARAM</option>
+                    <option>NAVABPALEM</option>
+                    <option>NAVUDURU</option>
+                    <option>NAVUDURU-JUNCTION</option>
+                    <option>NEELADRIPURAM</option>
+                    <option>NEELADRIPURAM(T)</option>
+                    <option>NELAMURU</option>
+                    <option>NELAPOGULU</option>
+                    <option>NEMMALAGUDEM</option>
+                    <option>NIDADAVOLU</option>
+                    <option>NIMMALAGUDEM</option>
+                    <option>NUTHIRAMANNAPALEM</option>
+                    <option>P-GANNAVARAM</option>
+                    <option>P-KANNAPURAM</option>
+                    <option>PADAMATIPALEM</option>
+                    <option>PALAGUMMI</option>
+                    <option>PALANGI</option>
+                    <option>PALI</option>
+                    <option>PALLAM</option>
+                    <option>PALLAMKURRU</option>
+                    <option>PALLEPALEM</option>
+                    <option>PALLIPALEM</option>
+                    <option>PALURU</option>
+                    <option>PAMPANAVARIPALEM</option>
+                    <option>PANDALAPARRU</option>
+                    <option>PANDIREDDYGUDEM</option>
+                    <option>PANDUGUDEM</option>
+                    <option>PANGIDIGUDEM</option>
+                    <option>PANJA-VEMAVARAM</option>
+                    <option>PARIMPUDI</option>
+                    <option>PASALAPUDI</option>
+                    <option>PASARALAPUDI-BADAVA</option>
+                    <option>PASARLAPUDI</option>
+                    <option>PASARLAPUDI-LANKA</option>
+                    <option>PATTEMPALEM</option>
+                    <option>PAVULURIVARIGUDEM</option>
+                    <option>PEDA-TATAPUDI</option>
+                    <option>PEDAKANDALAPALEM</option>
+                    <option>PEDALANKA</option>
+                    <option>PEDAMALLAM</option>
+                    <option>PEDAMETLANKA</option>
+                    <option>PEDAPADU</option>
+                    <option>PEDAPALLA</option>
+                    <option>PEDAPATNAM</option>
+                    <option>PEDAPATNAM-AGRAHARAM</option>
+                    <option>PEDAPATNAMLANKA</option>
+                    <option>PEDAPETA</option>
+                    <option>PEDATADEPALLI</option>
+                    <option>PEDATHIPPA</option>
+                    <option>PEDAVELAMILLI</option>
+                    <option>PEDDA-GARUVU</option>
+                    <option>PENDYALA-1</option>
+                    <option>PENDYALA-2</option>
+                    <option>PENIKURU</option>
+                    <option>PENKULAPATIGARUVU</option>
+                    <option>PENUMANTRA</option>
+                    <option>PERAVALI</option>
+                    <option>PERIKIPALEM</option>
+                    <option>PERUGUDEM</option>
+                    <option>PINAPALLA</option>
+                    <option>PITTLA-VEMAVARAM</option>
+                    <option>PODAGATLAPALLI</option>
+                    <option>PODALADA</option>
+                    <option>POLAMURU</option>
+                    <option>PONGUTURU</option>
+                    <option>PONNAMANDA</option>
+                    <option>PORA</option>
+                    <option>POTHARLANKA</option>
+                    <option>POTHAVARAM</option>
+                    <option>POTHAVARAM(P)</option>
+                    <option>POTHUKURRU</option>
+                    <option>PRAGADAPALLI</option>
+                    <option>PRAKASARAOPALEM</option>
+                    <option>PRATHALLAMERAKA</option>
+                    <option>PUCHALANKA(NADIGADI)</option>
+                    <option>PULIRAMANNAGUDEM</option>
+                    <option>PULLAIGUDEM</option>
+                    <option>PULLALAPADU</option>
+                    <option>PULLETIKURRU</option>
+                    <option>PULLETIKURRU/K.PEDAPUDI</option>
+                    <option>PURUSHOTAPALLI</option>
+                    <option>PUTTALAPUDI</option>
+                    <option>PYDIPARRU</option>
+                    <option>RAJAMPALEM</option>
+                    <option>RAJANAGARAM</option>
+                    <option>RAJAVARAM</option>
+                    <option>RAJUPALEM</option>
+                    <option>RALLAGANDI</option>
+                    <option>RALLAKUNTA</option>
+                    <option>RAMA-SINGAVARAM</option>
+                    <option>RAMACHANDRAPURAM</option>
+                    <option>RAMAKRISHNAPURAM</option>
+                    <option>RAMANNAGUDEM</option>
+                    <option>RAMANNAGUDEM(B)</option>
+                    <option>RAMANUJAPURAM</option>
+                    <option>RAMARAJULANKA</option>
+                    <option>RAMARAJULANKA-CHURCHPETA</option>
+                    <option>RAMAYANAPURAM</option>
+                    <option>RAMESWARAM</option>
+                    <option>RAMPALEM</option>
+                    <option>RAVIGUNTA</option>
+                    <option>RAVIMETLA</option>
+                    <option>RAVIPADU</option>
+                    <option>RAVIVARIPALEM</option>
+                    <option>RAVULAPADU</option>
+                    <option>RAVULAPALEM</option>
+                    <option>RAZOLE</option>
+                    <option>REGULAGUNTA</option>
+                    <option>RELANGI</option>
+                    <option>REPALLIWADA</option>
+                    <option>RYALI</option>
+                    <option>S-ILLINDALAPARRU</option>
+                    <option>S-MUPPAVARAM</option>
+                    <option>S.KONDEPADU</option>
+                    <option>S.MULAPALEM/KONDUKUDURU/POTTILANKA</option>
+                    <option>SAJJAPURAM</option>
+                    <option>SAKINETIPALLI</option>
+                    <option>SAKINETIPALLI-LANKA</option>
+                    <option>SAKURRU</option>
+                    <option>SAMISRAGUDEM</option>
+                    <option>SANDHIPUDI</option>
+                    <option>SANDRAGUNTA</option>
+                    <option>SANKARAGUPTHAM</option>
+                    <option>SANKARAPURAM</option>
+                    <option>SARIPALLI</option>
+                    <option>SARVAPURAM</option>
+                    <option>SATTEMMACHETTU</option>
+                    <option>SATTENNAGUDEM</option>
+                    <option>SATYAWADA</option>
+                    <option>SAVARAM</option>
+                    <option>SEETHAMPETA</option>
+                    <option>SETTIPET</option>
+                    <option>SHANKARAYAGUDEM</option>
+                    <option>SINGARJUPALEM</option>
+                    <option>SINGAVARAM</option>
+                    <option>SIVAKODU</option>
+                    <option>SIVAKODU-PALEM</option>
+                    <option>SIVAPURAM</option>
+                    <option>SKINNERAPURAM</option>
+                    <option>SOMIDEVARAPALEM</option>
+                    <option>SOMPALLI</option>
+                    <option>SRIRANGAPATNAM</option>
+                    <option>SRUNGAVARAPUPADU</option>
+                    <option>SUBHADRAPALEM</option>
+                    <option>SURAIAHPETA</option>
+                    <option>SURAICHERUVU</option>
+                    <option>SURAMPUDI</option>
+                    <option>SURYACHANDRARAOPETA</option>
+                    <option>SURYARAOPALEM</option>
+                    <option>TADIMALLA</option>
+                    <option>TADIMALLA-COLONY</option>
+                    <option>TADIPARRU</option>
+                    <option>TAKKELLAPADU</option>
+                    <option>TALATADITHIPPA</option>
+                    <option>TALLAPALEM</option>
+                    <option>TALLAPALEM(N)</option>
+                    <option>TANELANKA</option>
+                    <option>TANUKU</option>
+                    <option>TATIPAKA</option>
+                    <option>TEEPARRU</option>
+                    <option>TEKISETTIPALEM</option>
+                    <option>TEKISETTIPALEM-VANTHENA</option>
+                    <option>TEKKINAVARIGUDEM</option>
+                    <option>TELIKICHERLA</option>
+                    <option>TETALI</option>
+                    <option>THATIPAKA-MATAM</option>
+                    <option>THILLAPUDIPALEM</option>
+                    <option>THIMMAIAHPALEM</option>
+                    <option>THOTLAPALEM</option>
+                    <option>THRINADHAPURAM</option>
+                    <option>THUNDURRU</option>
+                    <option>TIMMAPURAM</option>
+                    <option>TIMMARAJUPALEM</option>
+                    <option>TIRUMALAMPALEM</option>
+                    <option>TIRUMALAPURAM</option>
+                    <option>TIRUPATHIPURAM</option>
+                    <option>TOKALANKA</option>
+                    <option>TOKALAPUDI</option>
+                    <option>TOKALAPUDI-PALEM</option>
+                    <option>TOKKIREDDYGUDEM</option>
+                    <option>TOLERU</option>
+                    <option>TOLERU-UTTARAPALEM</option>
+                    <option>TONDAVARAM</option>
+                    <option>TOTTARAMUDI</option>
+                    <option>TUMMAGUPPAM</option>
+                    <option>TURPUPALEM</option>
+                    <option>TYAJAMPUDI</option>
+                    <option>UBALANKA</option>
+                    <option>UNDRAJAVARAM</option>
+                    <option>UNIKILI</option>
+                    <option>UNKARAMILLI</option>
+                    <option>UPPARAGUDEM</option>
+                    <option>UPPARAGUDEM(T)</option>
+                    <option>UPPIDI</option>
+                    <option>URADALLAPALEM</option>
+                    <option>USULUMARRU</option>
+                    <option>USULUMARRU-PADU</option>
+                    <option>UTCHILI</option>
+                    <option>UTTARAPALEM</option>
+                    <option>VADDIGUDEM</option>
+                    <option>VADLURU</option>
+                    <option>VADREVUPALLI</option>
+                    <option>VAKAPALLI</option>
+                    <option>VANGATALACHERUVU</option>
+                    <option>VANUM-VARI-PALEM</option>
+                    <option>VARAGALANKA</option>
+                    <option>VARIGHEDU</option>
+                    <option>VASAMSETTIVARIPALEM</option>
+                    <option>VEDANTHAPURAM</option>
+                    <option>VEDIRESWARAM</option>
+                    <option>VEERABADRAPURAM</option>
+                    <option>VEERAMPALEM</option>
+                    <option>VEERAVALLIPALEM</option>
+                    <option>VEERAVALLIPALEM(V)</option>
+                    <option>VEGIVARIPALEM</option>
+                    <option>VELAGADURRU</option>
+                    <option>VELAGALAVARIPALEM</option>
+                    <option>VELAVALIPALLI</option>
+                    <option>VELICHERU</option>
+                    <option>VELIVENNU</option>
+                    <option>VELPUR</option>
+                    <option>VENDRA</option>
+                    <option>VENKATARAMANNAGUDEM</option>
+                    <option>VENKATARAOPALEM</option>
+                    <option>VENKATARAYAPURAM</option>
+                    <option>VENKATARAYAPURAM(PERAVALI)</option>
+                    <option>VETLAPALEM</option>
+                    <option>VINAYAKA-PURAM</option>
+                    <option>VISWESWARAYAPURAM</option>
+                    <option>VUYYURI-VARI-MERAKA</option>
+                    <option>Y-BRIDZE</option>
+                    <option>YALAKALLANKA</option>
+                    <option>YANAMADURRU</option>
+                    <option>YARRAMALLA</option>
+                    <option>YARRAMILLIPADU</option>
+                    <option>YELLAMILLI-STAGE</option>
+                    <option>YENUGULAMAHAL</option>
+                    <option>YERRAICHERUVU</option>
+                    <option>YERRAMSETTIVARIPAELM</option>
+                    <option>YERRANELUGUNTA</option>
+                  </select>
+                <div>
+                  <select  name="name"id="output"onchange="random_function1()">
+                </div>
+                <br>
+
+                <textarea placeholder="Enter Your Complaint:-" id="Complaint"class="Complaint_class"name="name"rows="4"cols="60"></textarea>
+
+                <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="text"id="complaintName"placeholder="Enter Your Name:-"/>
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="text"id="complaintPhNumber" maxlength="10" placeholder="Enter Your Mobile Number:-"/>
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="text"id="complaintAddress"placeholder="Enter your Address:-"/>
+                </div>    
+
+                <input type="submit"onClick="gotowhatsapp()"value="Send Via Whatsapp"class="btn solid"/>
+              </div></div></center>
+              </form>
+              
+              <form class="sign-up-form" id="Bday-form"><center>
+                <h2 class="title">Celebrating with <strong class="strong">TCN</strong></h2>
+
+                <tbody>
+                  <tr>
+                      <div class="input-field2" id="Name" class="form_font">
+                        <i class="fas fa-user"></i>
+                          <input name="Person_Nametxt" type="text" id="Person_Nametxt" class="formbox"  placeholder="Enter Person's Name:-">
+
+                      </div>
+                  </tr>
+                  <tr>
+                      <div class="input-field2" id="Date" class="form_font">
+                  <i class="fas fa-user"></i>
+                          <input
+                              name="Dateof_Telecast_Txt"
+                              type="text"
+                              maxlength="10"
+                              placeholder="Telecast Date(dd/mm/yyyy)">
+
+                      </div>
+                  </tr>
+                  <tr>
+                      <div class="input-field2" id="Number" class="form_font">
+                        <i class="fas fa-user"></i>
+                        <input
+                              name="Mobile_Notxt"
+                              type="text"
+                              maxlength="10"
+                              id="Mobile_Notxt"
+                              placeholder="Enter Your Phone Number:-"
+                              class="formbox">
+
+                      </div>
+                  </tr>
+                  <tr>
+                      <div class="input-field2" id="Occasion" class="form_font">
+                        <i class="fas fa-user"></i>
+                        <input placeholder="Enter Occasion:-" name="Occasion_Nametxt" type="text" id="Occasion_Nametxt" class="formbox">
+
+                      </div>
+                  </tr>
+                  <tr>
+                      <div class="input-field2" id="City" class="form_font">
+                        <i class="fas fa-user"></i>
+                        <input placeholder="Enter Your City/Village/Name" name="City_Txt" type="text" id="City_Txt" class="formbox">
+
+                      </div>
+                  </tr>
+                  <tr>
+                      <div class="input-field2" id="SenderName" class="form_font">
+                        <i class="fas fa-user"></i>
+                        <input placeholder="Enter All The Details" name="Sendername_Txt" type="text" id="Sendername_Txt" class="formbox">
+                      </div>
+                  </tr>
+                  <tr>
+                     
+                  </tr>
+                  <tr>
+                  <div class="input-field2" id="Transaction" class="form_font">
+                    <i class="fas fa-user"></i>
+                    <input placeholder="Enter Your Transaction ID" name="Transaction" type="text" id="Transaction" class="formbox">
+
+                  </div>
+              </tr>
+              
+              <tr>
+                  <div class="input-field2" id="Reference" class="form_font">
+                    <i class="fas fa-user"></i>
+                    <input placeholder="Enter Your Reference ID" name="Reference" type="text" id="Reference" class="formbox">
+
+                  </div>
+              </tr>
+              </tbody>
+          </table>
+                <input type="file" multiple onchange='chooseFile(event)' /> <br>
+                
+                <input type="submit"class="btn"id="signUpBtn"value="Send"allFunction()"/>
+                </center>
+              </form>
+            </div>
+          </div>
+    
+          <div class="panels-container">
+            <div class="panel left-panel">
+              <div class="content">
+                <h3>Occasion?</h3>
+                <p>
+                  Celebrate your occasion on TCN
+                </p>
+                <button class="btn transparent"id="sign-up-btn">
+                  Register
+                </button>
+              </div>
+              <img src="img/log.svg"class="image"alt=""/>
+            </div>
+            <div class="panel right-panel">
+              <div class="content">
+                <h3>Any complaint on us?</h3>
+                <p>
+                  We will solve your problem as quick as arrow
+                </p>
+                <button class="btn transparent"id="sign-in-btn">
+                  File Complaint
+                </button>
+              </div>
+              <img src="img/register.svg"class="image"alt=""/>
+            </div>
+          </div>
+        </div>
+    
+        
+    <script>
+      function gotowhatsapp() {
+          var City = document.getElementById("input").value;
+          var networkName = document.getElementById("output").value;
+          var email = document.getElementById("Complaint").value;
+          var complaintName = document.getElementById("complaintName").value;
+          var complaintPhNumber = document.getElementById("complaintPhNumber").value;
+          var complaintAddress = document.getElementById("complaintAddress").value;
+          
+          var newPostKey = firebase.database().ref().child('posts').push().key;
+          var database = firebase.database;
+
+          
+
+
+          fileButton.addEventListener('change' , function(e) {
+            var file = e.target.files(0);
+            var storageRef = firebase.storage().ref('img/' + file.name);
+            var task = storageRef.put(file);
+            task.on('state_changed', 
+            
+            function progress(snapshot){
+              var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+              uploader.value = percentage;
+            },
+
+            function errror(err){
+            },
+            function complete(){
+            }
+
+
+            );
+
+          });
+
+        function setup(){
+          var ref = database.ref('Complaints/' + newPostKey);
+          ref.on('value');
+        
+          database = firebase.database;
+        }
+
+          if(document.getElementById("complaintName").value.length == 0){
+            alert("Check Everything Properly and Enter everything again");
+          }else{
+
+     if(City=="A.GOPAVARAM"&&networkName=="PADMAJA-CABLE-NETWORK"){num="919948574817"}
+else if(City=="ACHANTA"&&networkName=="SURESH-CABLE-NETWORK"){num="919912433486"}
+else if(City=="ACHANTA"&&networkName=="ACHANTA-COMMUNICATION-NETWORK"){num="917013146007"}
+else if(City=="ACHANTA"&&networkName=="SRINIVASA-CABLE-NETWORK"){num="919908166777"}
+else if(City=="ACHANTA"&&networkName=="MOJESH-CABLE-NETWORK"){num="919491970783"}
+else if(City=="ACHANTA"&&networkName=="FRIENDS-CABLE-NETWORK"){num="919441133388"}
+else if(City=="ACHANTA"&&networkName=="FRIENDS-CABLE-NETWORK"){num="919441133388"}
+else if(City=="ACHIYAPALEM"&&networkName=="DHANA-LAKSHMI-CABLE-NETWORK"){num="919618277166"}
+else if(City=="ADAVIPALEM"&&networkName=="RAMESH-STAR-TV-CABLE-NETWORK"){num="917995765149"}
+else if(City=="ADAVIPETA"&&networkName=="SRI-ANJANEYA-CABLE-NETWORK"){num="919866207937"}
+else if(City=="ADDANKIVARIPALEM"&&networkName=="MOSUBABU-CABLE-NETWORK"){num="919959735723"}
+else if(City=="ADURRU"&&networkName=="KANAKA-DURGA-CABLE-NETWORK"){num="919989878719"}
+else if(City=="ADURRU"&&networkName=="SRI-LAKSHMI-SAI-MANIKANTA-CABLE-NETWORK"){num="919866257473"}
+else if(City=="AGRAHARAM"&&networkName=="SRI-GANESH-CABLE-NETWORK"){num="919849633847"}
+else if(City=="AINAVILLI"&&networkName=="HYMA-CABLE-NETWORK"){num="919100112126"}
+else if(City=="AINAVILLI"&&networkName=="HYMA-CABLE-NETWORK"){num="919100112126"}
+else if(City=="AINAVILLI-LANKA"&&networkName=="LAKSHMI-CABLE-NETWORK"){num="919553089546"}
+else if(City=="AJJARAM"&&networkName=="SURYA-COMMUNICATION-NETWORK"){num="919949975335"}
+else if(City=="AKKUPALLI-GOKAVARAM-1"&&networkName=="CHINNI-CABLE-NETWORK"){num="918096329654"}
+else if(City=="AKKUPALLI-GOKAVARAM-2"&&networkName=="SURYA-CABLE-NETWORK"){num="919951273848"}
+else if(City=="ALAMPURAM"&&networkName=="S.V.D.CABLE-NETWORK"){num="918309288238"}
+else if(City=="ALAMPURAM"&&networkName=="SAI-DURGA-CABLE-NETWORK"){num="918985799033"}
+else if(City=="ALAMURU"&&networkName=="ALAMURU-CABLE-NETWORK"){num="919000626666"}
+else if(City=="ALAMURU"&&networkName=="SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"){num="919866053265"}
+else if(City=="ALAMURU"&&networkName=="MITHRA-CABLE-NETWORK"){num="919014424999"}
+else if(City=="AMBAJIPETA"&&networkName=="SRI-SIDDI-VINAYAKA-CABLE-NETWORK"){num="919866417155"}
+else if(City=="AMBAJIPETA"&&networkName=="VASU-CABLE-NETWORK"){num="919494909996"}
+else if(City=="AMBAJIPETA"&&networkName=="EDUKONDALU-CABLE-NETWORK"){num="919440110136"}
+else if(City=="AMBEDKAR-COLONY"&&networkName=="GBR-CABLE-NETWORK"){num="919494957475"}
+else if(City=="AMBHAJIPETA-GARUVU"&&networkName=="KAMAL-KAMYA-CABLE-NETWORK"){num="919884507145"}
+else if(City=="ANAKODERU"&&networkName=="VINAYAKA-CABLE-NETWORK"){num="919603313412"}
+else if(City=="ANANDPURAM"&&networkName=="PARALAMMA-CABLE-NETWORK"){num="919492733666"}
+else if(City=="ANANTHAPALLI"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919949559633"}
+else if(City=="ANANTHAPALLI"&&networkName=="SRI-VIJAYA-KRISHNA-CABLE-NETWORK"){num="919866829051"}
+else if(City=="ANDALURU"&&networkName=="ANDALURU-CABLE-TRANSMISSION"){num="919493985332"}
+else if(City=="ANKALAGUDEM"&&networkName=="DIVYASAI-CABLE-NETWORK"){num="919701324984"}
+else if(City=="ANKAMPALEM"&&networkName=="HYMA-CABLE-NETWORK"){num="918985250639"}
+else if(City=="ANKAMPALEM"&&networkName=="HYMA-CABLE-NETWORK"){num="918985250639"}
+else if(City=="ANNAVARAPPADU"&&networkName=="SRI-MAHALAKSHMI-CABLE-NETWORK"){num="918106332555"}
+else if(City=="ANTHERVEDI-DEVASTANAM"&&networkName=="ROHITH-CABLE-NETWORK"){num="919573035211"}
+else if(City=="ANTHERVEDI-KARA"&&networkName=="TEJA-CABLE-NETWORK"){num="919849126030"}
+else if(City=="ANTHERVEDI-KARA"&&networkName=="LAKSHMI-NARASIMHA-CABLE-NETWORK"){num="919951802098"}
+else if(City=="ANTHERVEDI-PALEM"&&networkName=="MELLODY-MEDIA-CABLE-NETWORK"){num="919490712891"}
+else if(City=="ANTHERVEDI-PALEM"&&networkName=="SAIRAM-CABLE-NETWORK"){num="919849533555"}
+else if(City=="ANTHERVEDI-PALEM"&&networkName=="SNEHA-CABLE-NETWORK"){num="919908405838"}
+else if(City=="ANTHERVEDI-PALLIPALEM"&&networkName=="SWAMY-CABLE-NETWORK"){num="919949922695"}
+else if(City=="APPANA-RAMUNILANKA"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919912971116"}
+else if(City=="APPANNAPALLI"&&networkName=="YASWANTH-CABLE-NETWORK"){num="918688377799"}
+else if(City=="APPANNAPALLI"&&networkName=="BALA-BALAJI-CABLE-NETWORK"){num="917675919157"}
+else if(City=="APPARAOPETA"&&networkName=="LAKSHMI-DURGA-CABLE-NETWORK"){num="919346921889"}
+else if(City=="ARAVALLI"&&networkName=="SRI-VENKATA-SAI-CABLE-NET-WORK"){num="919908341369"}
+else if(City=="ARDHAVARAM"&&networkName=="SRI-SAIRAM-CABLE-NETWORK"){num="919866598227"}
+else if(City=="ARJUNUDUPALEM"&&networkName=="BHANU-CABLE-NETWORK"){num="919441391327"}
+else if(City=="ARJUNUDUPALEM"&&networkName=="ANANTHA-LAKSHMI-CABLE-NETWORK"){num="919553440880"}
+else if(City=="ARUGOLANU"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="918332926844"}
+else if(City=="ARULLA"&&networkName=="DEVI-CABLE-NETWORK"){num="919948896373"}
+else if(City=="ATCHYUTHAPURAM"&&networkName=="VIKARAM-CABLE-NETWORK"){num="919951669593"}
+else if(City=="ATLAPADU"&&networkName=="SANTHI-CABLE-NETWORK"){num="919346743321"}
+else if(City=="ATTILI"&&networkName=="ATTILI-TELEVISION-NETWORK"){num="919440354848"}
+else if(City=="ATTILI"&&networkName=="SRI-VENKATA-RAGHAVENDRA-CABLE-NETWORK"){num="919392047788"}
+else if(City=="ATTILI"&&networkName=="SRKS-CABLE-NETWORK"){num="919440354848"}
+else if(City=="ATTILI"&&networkName=="SRI-DEVI-DURGA-CABLE-NETWORK"){num="919440354848"}
+else if(City=="ATTILI"&&networkName=="ATTILI-COMMUNICATION-NETWORK"){num="919440354848"}
+else if(City=="AVAPADU"&&networkName=="S-P-CABLE-NETWORK"){num="919618277166"}
+else if(City=="AYODYALANKA"&&networkName=="SRI-VENKATA-MANIKANTA-CABLE-NETWORK"){num="918985212375"}
+else if(City=="AYYAVARAM"&&networkName=="SRI-SATYA-SAI-CABLE-NETWRK"){num="919949485139"}
+else if(City=="AYYAVARITHIPPA"&&networkName=="NEETHIKONDA-CABLE-NETWORK"){num="919989075545"}
+else if(City=="B-KONDEPADU"&&networkName=="RAJ-CABLE-NETWORK"){num="919959744876"}
+else if(City=="B.DODDAVARAM"&&networkName=="ANJANI--CABLE-NET-WORK"){num="919912241468"}
+else if(City=="B.SAVARAM"&&networkName=="SYAM-CABLE-NETWORK"){num="918985944110"}
+else if(City=="BADILANKA"&&networkName=="SRI-SWAMY-AYYAPPA-CABLE-NETWORK"){num="919177199666"}
+else if(City=="BALAM-VARI-PALEM"&&networkName=="SRINU-CABLE-NETWORK"){num="919652477323"}
+else if(City=="BALASUGOYYIPALEM"&&networkName=="RATNA-KUMARI-CABLE-NETWORK"){num="919989532538"}
+else if(City=="BALAYOGI-KALUVA"&&networkName=="SRI-BALA-BALAJI-CABLE-NETWORK"){num="919849633847"}
+else if(City=="BALEPALLI"&&networkName=="SRI-MARUTHI-CABLE-NETWORK"){num="919848030597"}
+else if(City=="BALLIPADU"&&networkName=="SRI-MADAN-GOPAL-CABLE-NETWORK"){num="919949069910"}
+else if(City=="BALUSUTIPPA"&&networkName=="SRI-GANESH-CABLE-NETWORK"){num="918499921745"}
+else if(City=="BANDARUPALEM"&&networkName=="S.S.SITI-CABLE"){num="919948664388"}
+else if(City=="BANGARUGUDEM"&&networkName=="YESUKRISTHU-CABLE-NETWORK"){num="918500448034"}
+else if(City=="BARKETNAGARAM"&&networkName=="LAKSHMI-SRINIVAS-CABLE-NETWORK"){num="919494701401"}
+else if(City=="BAYYANAGUDEM"&&networkName=="SRI-SAI-VENKATA-NEELAVENI-CABLE-NETWORK"){num="919553977278"}
+else if(City=="BAYYANAGUDEM"&&networkName=="SRI-VISHNU-SAI-CABLE-NETWORK"){num="919515787469"}
+else if(City=="BHIMOLU"&&networkName=="KANAKA-MAHALAKSHMI-CABLE-NETWORK"){num="919490085900"}
+else if(City=="BOBBANAPALLI"&&networkName=="SRI-KANAKA-DURGA-CABLE-NETWORK"){num="919959875187"}
+else if(City=="BOBBARAJUPALEM"&&networkName=="SRI-LAKSHMI-GANAPATHI-CABLE-NETWORK"){num="919704464603"}
+else if(City=="BODIAKODU"&&networkName=="SRI-SATYA-DURGA-CABLE-NETWORK"){num="919553421253"}
+else if(City=="BODIGUDEM"&&networkName=="PAVAN-CABLE-SERVICE"){num="919948780459"}
+else if(City=="BOJJAVARIPETA"&&networkName=="SRI-DURGA-SRI-DHARANI-CABLE-NETWORK"){num="919493962285"}
+else if(City=="BONTHUVARIPALEM"&&networkName=="SRI-SAI-DURGA-CABLE-TV-NETWORK"){num="919440471294"}
+else if(City=="BRAHMANACHERUVU"&&networkName=="SRI-BHAVANI-CABLE-NETWORK"){num="919490038999"}
+else if(City=="BRAHMANAGUDEM"&&networkName=="KESAVA-CABLE-NETWORK"){num="919347566728"}
+else if(City=="BRAHMANAGUDEM"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919396257462"}
+else if(City=="BUCHEMPETA"&&networkName=="SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"){num="919494701401"}
+else if(City=="BUDDARAYUDUCHERUVU"&&networkName=="VEERANAJANEYA-CABLE-NETWORK"){num="918374469011"}
+else if(City=="BURUGULANKA"&&networkName=="SRI-SATYA-DURGA-CABLE-NETWORK"){num="919177791577"}
+else if(City=="BUTTAIGUDEM"&&networkName=="PAVAN-CABLE-NETWORK"){num="919490347747"}
+else if(City=="CH-POTHEPALLI"&&networkName=="RATNA-CABLE-NETWORK"){num="919493009948"}
+else if(City=="CH-POTHEPALLI"&&networkName=="SRI-KRISHNA-CABLE-NETWORK"){num="919989271315"}
+else if(City=="CH.GUNNEPALLI"&&networkName=="SRI-SRINIVASA-CABLE-NETWORK"){num="919949225826"}
+else if(City=="CH.GUNNEPALLI-2"&&networkName=="GANESH-CABLE-NETWORK"){num="919989977399"}
+else if(City=="CHADARASIGUNTA"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919542509072"}
+else if(City=="CHAKALIPALEM"&&networkName=="LAKSHMI-GANAPATHI-CABLE-NETWORK"){num="919951558696"}
+else if(City=="CHANDRAYAGUDEM"&&networkName=="VINAYAKANJANEYA-CABLE-NETWORK"){num="919652675439"}
+else if(City=="CHEYYERU"&&networkName=="VIJAYA-DURGA-CABLE-NETWORK"){num="919000177899"}
+else if(City=="CHILAKAPADU"&&networkName=="SRI-RAMAKRISHNA-CABLE-NETWORK"){num="919010707347"}
+else if(City=="CHINAKOTHA-LANKA"&&networkName=="MANIKANTA-SITI-CABLE-NETWORK"){num="919640986567"}
+else if(City=="CHINAMVARIPALEM"&&networkName=="KAMAL-KAMYA-COMMUNICATION"){num="919000033776"}
+else if(City=="CHINARAMUNICHERUVU"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919676829201"}
+else if(City=="CHINATADEPALLI"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919866293253"}
+else if(City=="CHINAVELAMILLI"&&networkName=="PAVAN-CABLE-NETWORK"){num="919441829821"}
+else if(City=="CHINTALA-MERAKA"&&networkName=="TEJA-CABLE-NETWORK"){num="919949751269"}
+else if(City=="CHINTALAKOTIGARUVU"&&networkName=="HARIKAKONDA-CABLE-NETWORK"){num="919292558680"}
+else if(City=="CHINTALAMORI"&&networkName=="LEELA-MARUTHI-CABLE-NETWORK"){num="919849261044"}
+else if(City=="CHINTALURU"&&networkName=="SRI-SAI-SUGUNA-CABLE-NETWORK"){num="919951444116"}
+else if(City=="CHINTAYAGUDEM"&&networkName=="CHERAN-PRABHU-CABLE-NETWORK"){num="919494704590"}
+else if(City=="CHINTHALANKA"&&networkName=="AHMAD-CABLE-NETWORK"){num="919848458716"}
+else if(City=="CHINTHALANKA"&&networkName=="HYMA-CABLE-NETWORK"){num="919100112125"}
+else if(City=="CHINTHAPALLI"&&networkName=="MOULIKA-CABLE-NETWORK"){num="919989823334"}
+else if(City=="CHIPPALAPALEM"&&networkName=="SRI-RAMA-CABLE-NETWORK"){num="919705535785"}
+else if(City=="CHIPURUGUDEM"&&networkName=="SAIRAM-CABLE-NETWORK"){num="918121247779"}
+else if(City=="CHIRRAYANAM"&&networkName=="SRI-KANAKA-DURGA-CABLE-NETWORK"){num="919908357106"}
+else if(City=="CHITYALAPADU"&&networkName=="PADMASRI-CABLE-NETWORK"){num="919908261835"}
+else if(City=="CHIVATAM"&&networkName=="QUALITY-CABLE-NETWORK"){num="918121971816"}
+else if(City=="CHIVATAM"&&networkName=="SIVA-SAI-DURGA-CABLE-NETWORK"){num="919848313137"}
+else if(City=="CHODAVARAM"&&networkName=="SRAVANTHI-CABLE-NETWORK"){num="919441528569"}
+else if(City=="CHUKKAVARITHOTA"&&networkName=="SRINIVASA-CABLE-NETWORK"){num="919959469610"}
+else if(City=="D-KUMADAVALLI"&&networkName=="DANESWARI-CABLENETWORK"){num="919949933255"}
+else if(City=="D-MUPPAVARAM"&&networkName=="SRI-SAI-SIDDU-CABLE-NETWORK"){num="919347626817"}
+else if(City=="DAMMENNU"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="918297722448"}
+else if(City=="DANDAGARRA"&&networkName=="LAKSHMI-DURGA-CABLE-NETWORK"){num="919949924569"}
+else if(City=="DEVARAPALLI"&&networkName=="VENKATA-DURGA-CABLE-NETWORK"){num="919490124069"}
+else if(City=="DEVINENIVARIGUDEM"&&networkName=="DWARAKA-CABLE-NETWORK"){num="919989108648"}
+else if(City=="DHARMARAOPETA"&&networkName=="SRI-VINAYAKA-CABLE-NETWORK"){num="919492415509"}
+else if(City=="DINDI"&&networkName=="DEVI-CABLE-NETWORK"){num="919701285878"}
+else if(City=="DIPPAKAYALAPADU"&&networkName=="VIJAYA-SAI-CABLE-NETWORK"){num="919393503297"}
+else if(City=="DIRUSUMARRU-1"&&networkName=="GANESH-CABLE-NETWORK"){num="919849804571"}
+else if(City=="DIRUSUMARRU-2"&&networkName=="USHODAYA-CABLE-NETWORK"){num="919849246579"}
+else if(City=="DONDAPUDI"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919440328655"}
+else if(City=="DONGAPINDI"&&networkName=="GAJALAKSHMI-CABLE-NETWORK"){num="919959998909"}
+else if(City=="DONTHIKURRU"&&networkName=="SRI-ESWAR-SITI-CABLE-NETWORK"){num="919493000800"}
+else if(City=="DORASANIPADU"&&networkName=="OM-NAGA-SRI-KANAKA-DURGA-CABLE-NETWORK"){num="919492229189"}
+else if(City=="DUBHACEARLA&GANTAVARIGUDEM"&&networkName=="SRI-VIJAYA-KRISHNA-CABLE-NETWORK"){num="919866829051"}
+else if(City=="DUBHACEARLA&GANTAVARIGUDEM"&&networkName=="HONEY-CABLE-NETWORK"){num="919849320033"}
+else if(City=="DUSANAPUDI"&&networkName=="SRI-LAKSHMI-GANESH-CABLE-NETWORK"){num="919666054473"}
+else if(City=="DUSANAPUDI"&&networkName=="SRI-LAKSHMI-GANESH-CABLE-TV"){num="918074901629"}
+else if(City=="DUVVA"&&networkName=="SRI-DURGA-DANESWARI-CABLE-NET-WORK"){num="919491428625"}
+else if(City=="DUVVA"&&networkName=="SRI-SAINADH-CABLE-NETWORK"){num="919490085900"}
+else if(City=="DUVVA"&&networkName=="VENKATA-SAI-CABLE-NETWORK"){num="919912360711"}
+else if(City=="DUVVA"&&networkName=="SRI-SRINIVASA-CABLE-NETWORK"){num="919491428625"}
+else if(City=="DWARAKATIRUMALA"&&networkName=="SRI-LAKSHMI-VENKATESWARA-CABLE-NETWORK"){num="918008707013"}
+else if(City=="DWARAKATIRUMALA"&&networkName=="SURYA-CABLE-NETWORK"){num="919441267013"}
+else if(City=="EAST-VIPPARRU"&&networkName=="SIVA-GANESH-CABLE-NETWORK"){num="919705138155"}
+else if(City=="EAST-VIPPARRU"&&networkName=="SATYA-SIVA-GANESH-CABLE-NETWORK"){num="919550427243"}
+else if(City=="EAST-VIPPARRU"&&networkName=="PAVAN-CABLE-NETWORK"){num="918465070799"}
+else if(City=="EDARADA"&&networkName=="LAKSHMI-DEVI-CABLE-NETWORK"){num="919494663528"}
+else if(City=="EEDURU"&&networkName=="SRI-VENKATA-JAYA-CABLE"){num="919866234929"}
+else if(City=="EELAMPUDI"&&networkName=="PAVAN-CABLE-NETWORK"){num="919989265176"}
+else if(City=="ERLA-CHERUVU"&&networkName=="JAYALAKSHMI-CBALE-NETWORK"){num="919533882486"}
+else if(City=="ETHAKOTA"&&networkName=="NAVEEN-CABLE-TV-NETWORK"){num="919701173038"}
+else if(City=="G-KOTHAPALLI"&&networkName=="SRI-SHIRIDI-SAIBABA-CABLE-NETWORK"){num="919676663366"}
+else if(City=="GACHAKAYALAPORA"&&networkName=="ANNAPURANA-CABLE-NETWORK"){num="919951802343"}
+else if(City=="GADILANKA"&&networkName=="SATYA-SAI-CABLE-NETWORK"){num="919963340299"}
+else if(City=="GAJULAGUNTA"&&networkName=="SRIRAMA-CABLE-NETWORK"){num="919502064091"}
+else if(City=="GAMALLAPADU"&&networkName=="SRI-SAIRAM-CABLE-TV-NETWORK"){num="919849949818"}
+else if(City=="GANDHI-COLONY"&&networkName=="JASWANTH-CABLE-NETWORK"){num="919000945464"}
+else if(City=="GANDHINAGARAM-1"&&networkName=="SURYANARAYANA-CABLE-NETWORK"){num="919494911172"}
+else if(City=="GANDHINAGARAM-2"&&networkName=="RAVI-CABLE-NETWORK"){num="919912999082"}
+else if(City=="GANGALAKURRU"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919347876746"}
+else if(City=="GANGAVARAM"&&networkName=="MAHALAKSHMI-CABLE-NETWORK"){num="919989854003"}
+else if(City=="GANGOLU"&&networkName=="KRISHNA-TEJA-CABLE-NETWORK"){num="919949127245"}
+else if(City=="GARAGAPARRU"&&networkName=="GAYATHRI-CABLE-NETWORK"){num="919550578920"}
+else if(City=="GARAGAPARRU"&&networkName=="SIVANI-CABLE-NETWORK"){num="919133342221"}
+else if(City=="GARAVALLADIBBA"&&networkName=="SRI-SURYA-CABLE-NETWORK"){num="918184926667"}
+else if(City=="GAVARAPALEM"&&networkName=="GOWRI-CABLE-NETWORK"){num="918106076659"}
+else if(City=="GAVARAVARAM"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919676669691"}
+else if(City=="GAVARAVARAM"&&networkName=="VIGNESWARA-CABLE-NETWORK"){num="919490970126"}
+else if(City=="GAVARAVARAM"&&networkName=="CHANDANA-CABLE-NETWORK"){num="919441057938"}
+else if(City=="GAVARLAPALEM"&&networkName=="SRI-VARA-LAKSHMI-CABLE-NETWORK"){num="919290717125"}
+else if(City=="GEDELLANKA"&&networkName=="K.P.R-CABLE-NETWORK"){num="919441379442"}
+else if(City=="GODUGUPETA"&&networkName=="SRI-SAI-DURGA-CABLE-NETWORK"){num="919440362439"}
+else if(City=="GOGANNAMATAM"&&networkName=="DHARMA-CABLE-NETWORK"){num="919949323837"}
+else if(City=="GOGANNAMATAM"&&networkName=="VENKANNA-BABU-CABLE-NETWORK"){num="918096100829"}
+else if(City=="GOLLAGARUVU"&&networkName=="DHANA-SRI-CABLE-NETWORK"){num="918106616169"}
+else if(City=="GOLLAGUDEM"&&networkName=="SRI-SATYA-SAI-CABLE-NETWORK"){num="918074367266"}
+else if(City=="GOLLAGUDEM(D)"&&networkName=="SRI-VIJAYA-LAKSMHI-CABLE-NETWORK"){num="919014582999"}
+else if(City=="GOLLAGUDEM(T)"&&networkName=="STAR-CABLE-NETWORK"){num="918374700373"}
+else if(City=="GOLLAVANITIPPA"&&networkName=="DIVYA-CABLE-NETWORK"){num="919440182221"}
+else if(City=="GONDHI"&&networkName=="SRIMANIKANTA-CABLE-NETWORK"){num="919346523387"}
+else if(City=="GOPALAPURAM"&&networkName=="JNANASRI-CABLE-NETWORK"){num="919908685627"}
+else if(City=="GOPALAPURAM(I)"&&networkName=="SRI-SATYA-CABLE-NETWORK"){num="919885604998"}
+else if(City=="GOPALAPURAM(R)"&&networkName=="VIJAYA-LAKSHMI-CABLE-NETWORK"){num="917993585524"}
+else if(City=="GOPALAPURAM(R)"&&networkName=="MEENAKSHI-CABLE-NETWORK"){num="919866046102"}
+else if(City=="GOPALAPURAM(R)"&&networkName=="KUMARI-CABLE-NETWORK"){num="919866046102"}
+else if(City=="GOPAVARAM"&&networkName=="SRI-SAI-MANI-DURGA-CABLE-NETWORK"){num="919347626863"}
+else if(City=="GOPAVARAM(G)"&&networkName=="JEEVAN-CABLE-COMMUNICATION"){num="919441893758"}
+else if(City=="GOPINADHAPATNAM"&&networkName=="SRI-SAI-DURGA-CABLE-NETWORK"){num="919849623587"}
+else if(City=="GOPINADHAPATNAM-COLONY"&&networkName=="VINAY-BABU-CABLE-NETWORK"){num="919848386404"}
+else if(City=="GOTERU"&&networkName=="SRI-SAIRAM-CABLE-NETWORK"){num="919490293891"}
+else if(City=="GOTHIPPA"&&networkName=="LALITHA-CABLE-NETWORK"){num="917893213496"}
+else if(City=="GUBBALAPALEM"&&networkName=="SRI-NAVODAYA-STAR-TV-NETWORK"){num="919949291018"}
+else if(City=="GUBBALAVARIPALEM"&&networkName=="MANIKANTA-CABLE-NETWORK"){num="919948293141"}
+else if(City=="GUDDIGUDEM-1"&&networkName=="BHAVYA-SRI-CABLE-NETWORK"){num="919000045633"}
+else if(City=="GUDDIGUDEM-2"&&networkName=="LAKSHMI-SRINIVASA-CABLE-NETWORK"){num="919494701401"}
+else if(City=="GUDIMELLANKA"&&networkName=="GOVINDH-CABLE-NETWORK"){num="919515925992"}
+else if(City=="GUDIMELLANKA"&&networkName=="SRI-LAKSHMI-DURGA-CABLE-NETWORK"){num="919490348287"}
+else if(City=="GUDIMELLANKA"&&networkName=="SRI-LALITHA-CABLE-NETWORK"){num="919951438059"}
+else if(City=="GUDIMULA"&&networkName=="KRISHNA-CABLE-NETWORK"){num="917981112849"}
+else if(City=="GULLAPADU"&&networkName=="JOSEPH-CABLE-NETWORK"){num="919989677986"}
+else if(City=="GULLAPADU(U)"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919989677986"}
+else if(City=="GUMMAMPADU"&&networkName=="SRI-VENKATA-SAI-CABLE-TV-NETWORK"){num="919912128857"}
+else if(City=="GUMMILERU"&&networkName=="SRI-SAINADH-CABLE-NETWORK"){num="918985241119"}
+else if(City=="GUNDEPALLI"&&networkName=="NAGAMMA-CABLE-NETWORK"){num="919000931737"}
+else if(City=="GUNDUGOLANUGUNTA"&&networkName=="NAVEEN-CABLE-NETWORK"){num="919441392224"}
+else if(City=="GUNJAVARAM"&&networkName=="SRI-SAINADH-CABLE-NETWORK"){num="919347633789"}
+else if(City=="GUNNAMPALLI"&&networkName=="HANUMAN-CABLE-NETWORK"){num="918985808486"}
+else if(City=="GUNNEPALLI-AGRAHARAM"&&networkName=="SRI-GANESH-MANIKANTA-CABLE-NETWORK"){num="919866422993"}
+else if(City=="GUTHULAVARIPALEM"&&networkName=="SRI-RAMA-CABLE-NETWORK"){num="919866486687"}
+else if(City=="GUTLAPADU"&&networkName=="SRI-BHAVANI-CABLE-NETWORK"){num="919491371387"}
+else if(City=="HUKUMPETA"&&networkName=="CHAKRI-CABLE-NETWORK"){num="918096633099"}
+else if(City=="I-S-RAGHAVAPURAM"&&networkName=="SRI-LAKSHMI-NARASIMHA-MADURI-CABLE-NETWORK"){num="919666684306"}
+else if(City=="ILLAVARIPALEM"&&networkName=="CHANTI-CABLE-NETWORK"){num="918688933777"}
+else if(City=="INAPARRU"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919849316002"}
+else if(City=="INAPURAM"&&networkName=="SOWMYA-STAR-VISION-CABLE-NETWORK"){num="919912427828"}
+else if(City=="INAPURAM"&&networkName=="SRI-SAI-HARSHA-SITI-CABLE"){num="918106664703"}
+else if(City=="IRAGAVARAM"&&networkName=="SOWJANYA-CABLE-NETWORK"){num="919848011921"}
+else if(City=="ISAKAPUDI"&&networkName=="HEMAKUMAR-CABLE-NETWORK"){num="919849532139"}
+else if(City=="ISAKAPUDI-DAM"&&networkName=="BOBY-CABLE-NETWORK"){num="919849532139"}
+else if(City=="ISUKULANKA"&&networkName=="SRI-DURGA-PARLAMMA-CABLE-NETWORK"){num="919441234489"}
+else if(City=="ITUKULAGUNTA"&&networkName=="VIJAYA-DURGA-CABLE-NETWORK"){num="919948750975"}
+else if(City=="JAGANNADHAPURAM"&&networkName=="DHANA-LAKSHMI-CABLE-NETWORK"){num="919640044792"}
+else if(City=="JAGANNADHAPURAM"&&networkName=="VEERABRAHMENDRA-CABLE-NETWORK"){num="919441554967"}
+else if(City=="JAGANNADHAPURAM"&&networkName=="SATYA-SIVA-GANESH-CABLE-NETWORK"){num="919247574080"}
+else if(City=="JAGANNADHAPURAM(G)"&&networkName=="STAR-CABLE-NETWORK"){num="919848739390"}
+else if(City=="JAGGANNAPET"&&networkName=="SIDDI-VINAYAKA-CABLE-NETWORK"){num="919000164585"}
+else if(City=="JAGGANNAPETA"&&networkName=="SRI-SRINIVASA-CABLE-NETWORK"){num="918500702930"}
+else if(City=="JAJULAKUNTA"&&networkName=="SRI-VENKATA-SATYA-SAIRAM-CABLE-NETWORK"){num="919030138187"}
+else if(City=="JALLIKAKINADA"&&networkName=="SRI-VENKATA-DURGA-CABLE-NETWORK"){num="919492917987"}
+else if(City=="JEEDIGUNTA"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919440336354"}
+else if(City=="JONNADA"&&networkName=="TARAK-PRABHU-CABLE-NETWORK"){num="919247109222"}
+else if(City=="JONNADA-2"&&networkName=="SRI-SHIRIDI-SAI-CABLE-NETWORK"){num="918121426657"}
+else if(City=="JONNALAPALEM"&&networkName=="TEJASWI-CABLE-NETWORK"){num="919652617437"}
+else if(City=="JUTTIGA"&&networkName=="HIMAKARA-CABLE-NETWORK"){num="919966885929"}
+else if(City=="JUTTIGA"&&networkName=="BHASKARA-CABLE-NETWORK"){num="919885862247"}
+else if(City=="K-ILLINDALAPARRU"&&networkName=="SIVA-GANESH-CABLE-NETWORK"){num="919951693906"}
+else if(City=="K-ILLINDALAPARRU"&&networkName=="SAI-SIVA-GANESH-CABLE-NETWORK"){num="919087701471"}
+else if(City=="K-PEDAPUDI"&&networkName=="SRI-SIDDI-VINAYAKA-CABLE-NETWORK"){num="919392329589"}
+else if(City=="K-SAMUDRAPU-GATTU"&&networkName=="SRI-SAI-CABLE-TV-NETWORK"){num="919441447397"}
+else if(City=="K-SAMUDRAPU-GATTU"&&networkName=="UDAY-KRISHNA-CABLE-NETWORK"){num="919491381961"}
+else if(City=="K-YENUGUPALLI"&&networkName=="SRI-SIRI-CABLE-NETWORK"){num="919912443333"}
+else if(City=="K.JAGANNADHAPURAM"&&networkName=="VIJAYA-DURGA-SAI-CABLE-NETWORK"){num="919951056278"}
+else if(City=="KADALI"&&networkName=="KADALI-COMMUNICATION"){num="919849037249"}
+else if(City=="KADIAYADDA"&&networkName=="STAR-CABLE-NETWORK"){num="919440712246"}
+else if(City=="KAKARAPARRU"&&networkName=="LAKSHMI-CABLE-NETWORK"){num="919989351811"}
+else if(City=="KAKARAPARRU"&&networkName=="SRINIVASA-DIGITAL-CABLE-NETWORK"){num="918019187424"}
+else if(City=="KALAVACHERLA"&&networkName=="SUDHA-CABLE-TV-NETWORK"){num="919885980442"}
+else if(City=="KALAVAPUDI"&&networkName=="GANESH-CABLE-NETWORK"){num="919491278044"}
+else if(City=="KALDARI"&&networkName=="JYOTHI-CABLE-NETWORK"){num="919908091916"}
+else if(City=="KAMASALAPALEM"&&networkName=="S.G.S.CABLE-NETWORK"){num="919494760385"}
+else if(City=="KAMAYYAKUNTA"&&networkName=="LAKSHMI-SRINIVASA-CABLE-NETWORK"){num="919490145239"}
+else if(City=="KAMSALIBETAPUDI"&&networkName=="SRI-SAI-SURYA-CABLE-NETWORK"){num="919494467620"}
+else if(City=="KAMSALIGUNTA"&&networkName=="DWARAKA-SRINIVASA-CABLE-NETWORK"){num="919908454974"}
+else if(City=="KANAKADRIPURAM(ARIPATIDIBBALU)"&&networkName=="LAKSHMI-PRASANNA-CABLE-NETWORK"){num="919666133166"}
+else if(City=="KANAKAYALANKA"&&networkName=="GOWTHAMI-CABLE-NETWORK"){num="919866566561"}
+else if(City=="KANCHUMARRU"&&networkName=="SRI-DURGA-BHAVANI-CABLE-TV-NETWORK"){num="919392241381"}
+else if(City=="KANDIKUPPA"&&networkName=="RAJ-CABLE-NETWORK"){num="919908185788"}
+else if(City=="KANDRIKAGUDEM"&&networkName=="MEHAR-BABU-CABLE-NETWORK"){num="918978058205"}
+else if(City=="KANNAIGUDEM"&&networkName=="ANNAPURNA-CABLE-NETWORK"){num="919848299748"}
+else if(City=="KANNAPURAM"&&networkName=="BHAVANI-CABLE-NETWORK"){num="919493303217"}
+else if(City=="KANNAPURAM"&&networkName=="KANNAPURAM-CABLE-NETWORK"){num="919493303217"}
+else if(City=="KANTHERU"&&networkName=="SRI-SAINADH-CABLE-NETWORK"){num="919849316002"}
+else if(City=="KANURU"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919849422448"}
+else if(City=="KANURU"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919394347788"}
+else if(City=="KANURU-AGRAHARAM"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="917569922448"}
+else if(City=="KANURU-AGRAHARAM-2"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919959363132"}
+else if(City=="KAPAVARAM"&&networkName=="INDU-PRIYANKA-CABLE-NETWORK"){num="919912305926"}
+else if(City=="KAPPALAKUNTA"&&networkName=="PAVAN-KUMAR-CABLE-NETWORK"){num="919490347747"}
+else if(City=="KARICHARLAGUDEM"&&networkName=="SURYA-CABLE-NETWORK"){num="919398561313"}
+else if(City=="KARRAVANIREVU"&&networkName=="JYOTHI-SRI-CABLE-NETWORK"){num="919963515411"}
+else if(City=="KARRAVARI-SAVARAM"&&networkName=="LALITHA-CABLENETWORK"){num="919849324325"}
+else if(City=="KARUKUVADA-BETHAPUDI"&&networkName=="MAHI-CABLE-NETWORK"){num="919490920991"}
+else if(City=="KASIPADU"&&networkName=="K.R.CABLE-NETWORK"){num="919441448663"}
+else if(City=="KATAKOTESWARAM"&&networkName=="BALU-CABLE-NETWORK"){num="919912373400"}
+else if(City=="KATAKOTESWARAM"&&networkName=="KVR-CABLE-NETWORK"){num="919966751414"}
+else if(City=="KATARULANKA"&&networkName=="SRI-SAI-RAMA-CABLE-NETWORK"){num="919949751928"}
+else if(City=="KATHAVAPADU"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="918500471217"}
+else if(City=="KATRENIKONA"&&networkName=="OM-SAI-SITI-CABLE-NETWORK"){num="919491685414"}
+else if(City=="KATRENIKONA"&&networkName=="SRINIVASA-SITI-CABLE"){num="919491685414"}
+else if(City=="KATTIMANDA"&&networkName=="BHASKARA-CABLE-NETWORK"){num="919866271421"}
+else if(City=="KAVULURU"&&networkName=="SRI-SAI-SRINIVASA-CABLE-NETWORK"){num="919989036113"}
+else if(City=="KESAVADASUPALEM"&&networkName=="SRI-CABLE-NETWORK"){num="919676490466"}
+else if(City=="KESAVADASUPALEM"&&networkName=="VANI-CABLE-NETWORK"){num="919849699722"}
+else if(City=="KESAVADASUPALEM"&&networkName=="SIVA-CABLE-NETWORK"){num="919550836935"}
+else if(City=="KESAVADASUPALEM"&&networkName=="OM-CABLE-NETWORK"){num="918309392899"}
+else if(City=="KESAVARAM"&&networkName=="RAJU-CABLE-TV-NETWORK"){num="919989676912"}
+else if(City=="KETHARAJUPALLI"&&networkName=="ARUN-KUMAR-CABLE-NETWORK"){num="919849779555"}
+else if(City=="KETHAVARAM"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919948392335"}
+else if(City=="KODAMANCHILI"&&networkName=="SATYAM-CABLE-NETWORK"){num="919704305242"}
+else if(City=="KODAMANCHILI"&&networkName=="KODAMANCHILI-COMMUNICATION-NETWORK"){num="919441447396"}
+else if(City=="KODAMANCHILI"&&networkName=="VENKATESWARA-CABLE-NETWORK"){num="917702035373"}
+else if(City=="KODERU"&&networkName=="SATYA-CABLE-NETWORK"){num="919440467881"}
+else if(City=="KODIGUDEM"&&networkName=="SRI-BALAJI-CABLE-NETWORK"){num="919502066761"}
+else if(City=="KOMARADA"&&networkName=="SRINIVASA-CABLE-NETWORK"){num="919951753165"}
+else if(City=="KOMARADA(B)"&&networkName=="VINAYAKA-CABLE-NETWORK"){num="919603313412"}
+else if(City=="KOMARAVARAM"&&networkName=="SRI-KRISHNA-VENI-CABLE-NETWORK"){num="919399993362"}
+else if(City=="KOMARAVARAM"&&networkName=="JAI-KRISHNAVENI-CABLE-NETWORK"){num="917036182982"}
+else if(City=="KOMARRU"&&networkName=="SRI-VENKATESWARA-CABLE-TV-NETWORK"){num="919396212452"}
+else if(City=="KOMMARA"&&networkName=="CHINNA-CABLE-NETWORK"){num="919948877879"}
+else if(City=="KOMMARA(A)"&&networkName=="SRI-DURGA-CABLE-NETWORK"){num="919959852757"}
+else if(City=="KOMMARAJULANKA"&&networkName=="MYTRI-CABLE-NETWORK"){num="919949173999"}
+else if(City=="KOMMUGUDEM"&&networkName=="SHIRDI-SAI-Y.G.R-CABLE-NETWORK"){num="919948743379"}
+else if(City=="KOMMUGUDEM-(D)"&&networkName=="SRI-VIJAYA-LAKSHMI-CABLE-NETWORK"){num="919014582999"}
+else if(City=="KONABOTHUGUNTA"&&networkName=="SAI-CABLE-NETWORK"){num="919951667698"}
+else if(City=="KONALA"&&networkName=="DEVI-CABLE-NETWORK"){num="919705661466"}
+else if(City=="KONDAIAHGUNTA"&&networkName=="ANAND-CABLE-NETWORK"){num="918008699096"}
+else if(City=="KONDAIAHPALEM"&&networkName=="BHAGYALAKSHMI-CABLE-NETWORK"){num="918790642517"}
+else if(City=="KONDALAMMA-CHINTA"&&networkName=="V-CABLE-NETWORK"){num="919177938888"}
+else if(City=="KONDEPUDI"&&networkName=="SRI-PUJITHA-CABLE-NETWORK"){num="919908685102"}
+else if(City=="KONDRUPROLU"&&networkName=="RAMYA-COMMUNICATION-NETWORK"){num="919290799575"}
+else if(City=="KONDUKUDURU"&&networkName=="SAINADH-CABLE-NETWORK"){num="919963791819"}
+else if(City=="KONITHIWADA"&&networkName=="SAI-TEJA-CABLE-NETWORK"){num="919949134173"}
+else if(City=="KOPPARRU"&&networkName=="BHARGAVI-CABLE-NETWORK"){num="919491018817"}
+else if(City=="KOPPARRU-1"&&networkName=="SIRI-CABLE-NETWORK"){num="919848767642"}
+else if(City=="KORUKOLLU"&&networkName=="HANUMAN-CABLE-NETWORK"){num="919441554229"}
+else if(City=="KORUKOLLU"&&networkName=="SRI-CABLE-NETWORK"){num="919949164647"}
+else if(City=="KORUMAMIDI"&&networkName=="SRI-SAI-MANI-DEEP-CABLE-NETWORK"){num="919346824596"}
+else if(City=="KORUMAMIDI"&&networkName=="SRI-KAVYA-CABLE-NETWORK"){num="919603080196"}
+else if(City=="KORUMILLI"&&networkName=="LAKSHMI-CABLE-NETWORK"){num="919440893358"}
+else if(City=="KORUPALLI"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919908605666"}
+else if(City=="KOTA-RAMACHANDRAPURAM"&&networkName=="TWINS-CABLE-NETWORK"){num="919676212221"}
+else if(City=="KOTHA-PUSALAMARRU"&&networkName=="VANI-CABLE-NETWORK"){num="919866469381"}
+else if(City=="KOTHAGUDEM"&&networkName=="SRI-SATYA-SAI-CABLE-NETWORK"){num="918074367266"}
+else if(City=="KOTHAGUDEM(D)"&&networkName=="JAI-SOMALAMMA-TALLI-CABLE-NETWORK"){num="919553428163"}
+else if(City=="KOTHAGUDEM(N)"&&networkName=="SAI-CABLE-NETWORK"){num="919949887129"}
+else if(City=="KOTHALANKA"&&networkName=="SRI-MOUNIKA-CABLE-NETWORK"){num="919849010897"}
+else if(City=="KOTHAPADU"&&networkName=="SRI-SAINADH-CABLE-NETWORK"){num="919849316002"}
+else if(City=="KOTHAPALEM-(LIGHT-HOUSE)"&&networkName=="SRI-MANI-CABLE-NETWORK"){num="919866365638"}
+else if(City=="KOTHAPALLI"&&networkName=="SRI-SAI-RAM-CABLE-NETWORK"){num="919490917709"}
+else if(City=="KOTIVARI-AGRAHARAM"&&networkName=="EDUKONDALU-CABLE-NETWORK"){num="919440110136"}
+else if(City=="KOTIVARI-AGRAHARAM"&&networkName=="KAMAL-CABLE-NETWORK"){num="919885407145"}
+else if(City=="KOTIVARI-AGRAHARAM"&&networkName=="VASU-CABLE-NETWORK"){num="919440110496"}
+else if(City=="KOTTURU"&&networkName=="SRI-BHAVANI-CABLE-NETWORK"){num="919989672533"}
+else if(City=="KOVVURPADU"&&networkName=="AMEN-CABLE-NETWORK"){num="919441687262"}
+else if(City=="KOYARAJAHMUNDRY"&&networkName=="SRI-VIGENESWARA-CABLE-NETWORK"){num="918008100509"}
+else if(City=="KOYYALAGUDEM"&&networkName=="GOLDSTAR-CABLE-NETWORK"){num="917675919190"}
+else if(City=="KOYYALAGUDEM"&&networkName=="SRI-CHANDRIKA-CABLE-NETWORK"){num="919999999999"}
+else if(City=="KOYYALAGUDEM"&&networkName=="SRI-SAI-BABA-CABLE-NETWORK"){num="919999999999"}
+else if(City=="KRAPA"&&networkName=="SRI-LAKSHMI-GANAPATHI-CABLE-NETWORK"){num="919652853911"}
+else if(City=="KRAPACHINTALAPUDI"&&networkName=="SRI-SATYADEVA-CABLE-NETWORK"){num="919849450504"}
+else if(City=="KRISHNAMMAGUDEM"&&networkName=="KUMARI-CABLE-NETWORK"){num="919949636115"}
+else if(City=="KRISHNAPURAM"&&networkName=="MANIKANTA-CABLE-NETWORK"){num="919705607879"}
+else if(City=="KRISHNAYAGUDEM"&&networkName=="SRI-PRABHU-CABLE-NEWORK"){num="919010264291"}
+else if(City=="KRISHNAYAPALEM"&&networkName=="ANANTHA-LAKSHMI-CABLE-NETWORK"){num="919848033087"}
+else if(City=="KUNALANKA"&&networkName=="KANYAKA-PARAMESWARI-CABLE-NETWORK"){num="919542782548"}
+else if(City=="KUNDALESWARAM"&&networkName=="MANIKANTA-CABLE-NETWORK"){num="919849259862"}
+else if(City=="KUNDALESWARAM"&&networkName=="KUNDALESWARAM-CABLE-NETWORK"){num="919000177899"}
+else if(City=="KUNTALAGUDEM"&&networkName=="GANESH-CABLE-NETWORK"){num="919347969493"}
+else if(City=="L-AGRAHARAM"&&networkName=="GANESH-CABLE-NETWORK"){num="919247257098"}
+else if(City=="L-AGRAHARAM"&&networkName=="VIJAYA-DURGA-CABLE-NETWORK"){num="919247257098"}
+else if(City=="L-GANNAVARAM"&&networkName=="SRI-RAMA-CABLE-NETWORK"){num="919959646555"}
+else if(City=="L-N-D-PETA"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919550328655"}
+else if(City=="L-V-N-PURAM"&&networkName=="PAVAN-CABLE-NETWORK"){num="919866606196"}
+else if(City=="LAKKAVARAM"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919849603335"}
+else if(City=="LAKKAVARAM"&&networkName=="SRI-SURYA-CABLE-NETWORK"){num="919849603337"}
+else if(City=="LAKSHMI-POLAVARAM"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919395344701"}
+else if(City=="LAKSHMIDEVILANKA"&&networkName=="SRI-SAI-DHARSINI-CABLE-NETWORK"){num="919666437758"}
+else if(City=="LAKSHMINARASIMHAPURAM"&&networkName=="SNEHA-CABLE-NETWORD"){num="919030883688"}
+else if(City=="LAKSHMINARAYANAPURAM"&&networkName=="LAKSHMI-DURGA-CABLE-NETWORK"){num="919999999999"}
+else if(City=="LAKSHMIPURAM"&&networkName=="SAIBABA-CABLE-NETWORK"){num="919849169396"}
+else if(City=="LIKITHAPUDI"&&networkName=="SRI-VEERANJANEYA-CABLE-NETWORK"){num="919949549909"}
+else if(City=="LINGAREDDYGUDEM"&&networkName=="VENKATESWARA-CABLE-NETWORK"){num="919440856355"}
+else if(City=="LINGAREDDYGUDEM"&&networkName=="VIJAYA-DURGA-CABLE-NEWORK"){num="919948750975"}
+else if(City=="LOLLA"&&networkName=="ESWARA-CABLE-NETWORK"){num="919490876427"}
+else if(City=="LUTUKURRU"&&networkName=="MOKSHITHA-HARSHI-CABLE-NETWORK"){num="919059814444"}
+else if(City=="LUTUKURRU"&&networkName=="SRI-DHANAMMA-THALLI-CABLE-NETWORK"){num="919550270287"}
+else if(City=="M-G-PALEM"&&networkName=="SAI-DURGA-CABLE-NETWORK"){num="919989499797"}
+else if(City=="MACHAVARAM"&&networkName=="KAMAL-CABLE-NET-WORK"){num="919885407145"}
+else if(City=="MACHAVARAM"&&networkName=="SRI-LAKSHMI-SAI-CABLE-NET-WORK"){num="919866999848"}
+else if(City=="MACHAVARAM"&&networkName=="SRI-VENKATA-DURGA-CABLE"){num="919948802567"}
+else if(City=="MADDULAGUDEM"&&networkName=="N.K.B.V.R.R.CABLE-NETWORK"){num="918897177374"}
+else if(City=="MADHAVARAM"&&networkName=="ANNAVARAM-CABLE-NETWORK"){num="919392219144"}
+else if(City=="MADHAVARAM"&&networkName=="STAR-CABLE-NETWORK"){num="917660927181"}
+else if(City=="MADIPALLI"&&networkName=="HYMA-CABLE-NETWORK"){num="919100112127"}
+else if(City=="MADUGU-POLAVARAM"&&networkName=="SAI-CHAITANYA-CABLE-NETWORK"){num="919849086793"}
+else if(City=="MAGAM"&&networkName=="RADHASWAMY-CABLE-NETWORK"){num="919392216173"}
+else if(City=="MAGATAPALLI"&&networkName=="THE-MAGATAPALLI-CABLE-NETWORK"){num="919849932786"}
+else if(City=="MAHADEVAPURAM"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919441447373"}
+else if(City=="MAHALAKSHMI-CHERUVU"&&networkName=="SRIDEVI-CABLE-NETWORK"){num="919849122673"}
+else if(City=="MAHIPALA-CHERUVU"&&networkName=="MANIKANTA-CABLE-NETWORK"){num="919989484145"}
+else if(City=="MAKANAPALEM"&&networkName=="SRI-DEVI-CABLE-NETWORK"){num="919490060203"}
+else if(City=="MALAVANITHIPPA"&&networkName=="SATISH-CABLE-NETWORK"){num="919440613456"}
+else if(City=="MALIKIPURAM"&&networkName=="ARTHI-CABLE-NETWORK"){num="919949132880"}
+else if(City=="MALIKIPURAM"&&networkName=="DEVI-CABLE-NETWORK"){num="919701285878"}
+else if(City=="MALIKIPURAM"&&networkName=="MALIKIPURAM-COMMUNICATION"){num="917658903234"}
+else if(City=="MALIKIPURAM"&&networkName=="SAI-RAM-CABLE-NETWORK"){num="919849533555"}
+else if(City=="MALIKIPURAM"&&networkName=="MALIKIPURAM-COMMUNICATION"){num="917675919158"}
+else if(City=="MALLAIDODDI"&&networkName=="ARUNA-CABLE-NETWORK"){num="919949864496"}
+else if(City=="MALLAPARAJUPETA"&&networkName=="VARMA-CABLE-NETWORK"){num="919989676912"}
+else if(City=="MALLIPUDI"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919581378312"}
+else if(City=="MAMIDIKUDURU"&&networkName=="MAHA-LAKSHMI-CABLE-NETWORK"){num="919493541424"}
+else if(City=="MAMIDIKUDURU"&&networkName=="SATYASRI-CABLE-NETWORK"){num="919951957327"}
+else if(City=="MAMIDIPUDI"&&networkName=="YACOB-CABLE-NETWORK"){num="919618668517"}
+else if(City=="MAMUDURU"&&networkName=="SRI-SAI-MARUTHI-CABLE-NETWORK"){num="919948840628"}
+else if(City=="MANCHILI"&&networkName=="SRI-LEKHA-CABLE-NETWORK"){num="919866673406"}
+else if(City=="MANDAPAKA"&&networkName=="GANESH-CABLE-NETWORK"){num="919908137884"}
+else if(City=="MANDAPAKA"&&networkName=="S.R.K.S-CABLE-NETWORK"){num="919441907855"}
+else if(City=="MANDAPAKA"&&networkName=="SIVA-SRI-CABLE-NETWORK"){num="918019570994"}
+else if(City=="MANEPALLI"&&networkName=="BHAVANI-CABLE-NETWORK"){num="919951292105"}
+else if(City=="MANEPALLI"&&networkName=="SRI-SAI-DURGA-CABLE-NETWORK"){num="919014087789"}
+else if(City=="MANEVARIPALEM"&&networkName=="LAKSHMI-SAI-CABLE-NET-WORK"){num="919866239575"}
+else if(City=="MANGAPATIDEVIPETA"&&networkName=="BHARATH-CABLE-NETWORK"){num="919441447656"}
+else if(City=="MARAMPALLI"&&networkName=="SRI-VENKATA-SATYA-SAIRAM-CABLE-NETWORK"){num="918374555666"}
+else if(City=="MARAMPALLI(T)"&&networkName=="BALA-SHESHU-CABLE-NETWORK"){num="919494907769"}
+else if(City=="MARELLAMUDI"&&networkName=="LALITHA-CABLE-NETWORK"){num="919441554592"}
+else if(City=="MATLAM"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919989833665"}
+else if(City=="MATSYAPURI"&&networkName=="MURALI-KRISHNA-CABLE-NETWORK"){num="919701881399"}
+else if(City=="MATTAGUNTA"&&networkName=="LAKSHMI-CABLE-NETWORK"){num="919849306332"}
+else if(City=="MATTAPARRU"&&networkName=="KRISHNA-CABLE-NETWORK"){num="919441813619"}
+else if(City=="MEDICHARLAPALEM"&&networkName=="VIJAYA-DURGA-CABLE-NETWORK"){num="919866381235"}
+else if(City=="MEENAVALLURU"&&networkName=="SRI-BALADITYA-CABLE-NETWORK"){num="919866162067"}
+else if(City=="MENTEPUDI"&&networkName=="SRI-SATYA-CABLE-NETWORK"){num="919949626007"}
+else if(City=="MERAPALEM"&&networkName=="M.VENKATESWARA-RAO-CABLE-NETWORK"){num="919247741699"}
+else if(City=="MERLAPALEM"&&networkName=="SATYA-CABLE-NETWORK"){num="919393845555"}
+else if(City=="METTAUPPARAGUDEM"&&networkName=="SURYA-SAI-CABLE-NETWORK"){num="917981477677"}
+else if(City=="MODI"&&networkName=="SAI-DURGA-PARVATHI-CABLE-NETWORK"){num="919849596673"}
+else if(City=="MODUKURU"&&networkName=="SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"){num="918897732155"}
+else if(City=="MOGALLU"&&networkName=="SRI-SRINU-CABLE-NETWORK"){num="919866940744"}
+else if(City=="MOGALLU"&&networkName=="SRI-CABLE-NETWORK"){num="919949164647"}
+else if(City=="MOGGALLA"&&networkName=="SRI-PANKAJANABHA-CABLE-NETWORK"){num="919866598227"}
+else if(City=="MOKKALATIPPA"&&networkName=="SRI-GANESH-CABLE-NETWORK"){num="919948150963"}
+else if(City=="MONDEPULANKA"&&networkName=="MAXIMA-CABLE-NETWORK"){num="919963286733"}
+else if(City=="MORI"&&networkName=="SRI-VINAYAKA-CABLE-NETWORK"){num="919502534666"}
+else if(City=="MORI-PADAMATIPALEM"&&networkName=="SRI-MAHA-LAKSHMI-CABLE-NETWORK"){num="919908912256"}
+else if(City=="MORIPODU"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919618602309"}
+else if(City=="MORIPODU"&&networkName=="SRI-MAHALAKSHMI-THALLI-CABLE-NETWORK"){num="919949049124"}
+else if(City=="MORIPOLAM"&&networkName=="SUDHA-CABLE-NETWORK"){num="919949637512"}
+else if(City=="MORTHA"&&networkName=="LAKSHMI-PRASAD-CABLE-NETWORK"){num="919440866999"}
+else if(City=="MORTHA"&&networkName=="VARA-PRASAD-CABLE-NETWORK"){num="918897640633"}
+else if(City=="MOYYERU"&&networkName=="SUDEESHNA-CABLE-NETWORK"){num="919440218394"}
+else if(City=="MUDDAPURAM"&&networkName=="DEVI-CABLE-NETWORK"){num="919441448512"}
+else if(City=="MUDDAPURAM"&&networkName=="SATYA-KRISHNA-CABLE-NETWORK"){num="919948567990"}
+else if(City=="MUKKAMALA"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="917702834801"}
+else if(City=="MUKKAMALA"&&networkName=="SAI-CABLE-NETWORK"){num="917660816118"}
+else if(City=="MUKKAMALA/NEDUNURU"&&networkName=="HANUMAN-CABLE-VISION"){num="919396527999"}
+else if(City=="MUKTESWARAM"&&networkName=="NAVYA-SRI-CABLE-NETWORK"){num="918332804424"}
+else if(City=="MULA-GONDHI"&&networkName=="LAKSHMI-CABLE-NETWORK"){num="919849444887"}
+else if(City=="MULLAIPALEM"&&networkName=="SRI-SIVA-DURGA-CABLE-NETWORK"){num="919666900159"}
+else if(City=="MUMMIDIVARAM"&&networkName=="MANASA-SITI-CABLE-NETWORK"){num="919492733123"}
+else if(City=="MUMMIDIVARAM"&&networkName=="V-COMMUNICATIONS"){num="919440575123"}
+else if(City=="MUNGANDA(M)"&&networkName=="VENU-CABLE-NETWORK"){num="919866440423"}
+else if(City=="MUNGANDA(S)"&&networkName=="SMYLEY-CABLE-NETWORK"){num="919010058482"}
+else if(City=="MUNGANDAPALEM"&&networkName=="SREERAM-CABLE-NETWORK"){num="919949961234"}
+else if(City=="MUNIPALLI"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919849422448"}
+else if(City=="MUNJAVARAM"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919494143777"}
+else if(City=="MUPPARTHIPADU"&&networkName=="RAJU-DIGITAL-NETWORK"){num="919948922585"}
+else if(City=="MUSALLAGUNTA"&&networkName=="SRAVANI-CABLE-NETWORK"){num="919618277166"}
+else if(City=="NABIPETA"&&networkName=="SRI-SAI-SRINIVASA-CABLE-NETWORK"){num="919989036113"}
+else if(City=="NADAPANIVARIPALEM"&&networkName=="PAVAN-CABLE-NETWORK"){num="919493714684"}
+else if(City=="NADAVAPALLI-(PALLIPALEM)"&&networkName=="ADITYA-CABLE-NETWORK"){num="918790508287"}
+else if(City=="NADIGADI/VEMANAVARIPALEM"&&networkName=="SRI-SAI-PRIYA-CABLE-NETWORK"){num="919948595900"}
+else if(City=="NADIMI-LANKA"&&networkName=="MANI-KANTA-CABLE-NETWORK"){num="919959826939"}
+else if(City=="NADUPALLI"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="918297722448"}
+else if(City=="NADUPALLI-KOTA"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="918297000444"}
+else if(City=="NAGARAM"&&networkName=="GEETASAI-CABLE-NETWORK"){num="917702072674"}
+else if(City=="NAGARAM"&&networkName=="SRI-VINAYAKA-VIJAYA-DURGA-CABLE-NETWORK"){num="919490186431"}
+else if(City=="NAGARAM"&&networkName=="SAI-SURYA-CABLE-NETWORK"){num="917569665444"}
+else if(City=="NAGIDIPALEM"&&networkName=="SRI-VENAKTESWARA-CABLE-NETWORK"){num="919676225775"}
+else if(City=="NAGULLANKA"&&networkName=="SAI-DURGA-CABLE-NETWORK"){num="919573572789"}
+else if(City=="NALLAJERLA"&&networkName=="NALLAJERLA-CABLE-COMMUNICATION"){num="919618277166"}
+else if(City=="NANDAMPUDI"&&networkName=="VINOD-CABLE-NETWORK"){num="919393052562"}
+else if(City=="NANDAMURU"&&networkName=="SAI-TEJA-CABLE-NETWORK"){num="919492453658"}
+else if(City=="NANDIGUDEM"&&networkName=="SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"){num="919494701401"}
+else if(City=="NANDURI-NAGAR"&&networkName=="SRI-SIDHI-VINAYAKA-CABLE-NETWORK"){num="919346332240"}
+else if(City=="NARASANNAPALEM"&&networkName=="SRI-SAI-VARA-LAKSHMI-CABLE-NETWORK"){num="919347006628"}
+else if(City=="NARENDRAPURAM"&&networkName=="SAI-CABLE-NETWORK"){num="918688822777"}
+else if(City=="NARKEDIMILLI"&&networkName=="SRI-RAM-CABLE-NETWORK"){num="919440337728"}
+else if(City=="NATTARAMESWARAM"&&networkName=="SHIVA-SHAKTHI-CABLE-NETWORK"){num="919493987587"}
+else if(City=="NAVABPALEM"&&networkName=="SAI-TEJA-CABLE-NETWORK"){num="919492453658"}
+else if(City=="NAVUDURU"&&networkName=="GOLD-STAR-CABLE-NETWORK"){num="919491971249"}
+else if(City=="NAVUDURU-JUNCTION"&&networkName=="SAI-CABLE-NETWORK"){num="919493985332"}
+else if(City=="NEELADRIPURAM"&&networkName=="SAI-SRINIVASA-CABLE-NETWORK"){num="919912695885"}
+else if(City=="NEELADRIPURAM(T)"&&networkName=="SRI-VENKATA-SATYA-CABLE-SERVICE"){num="919676014278"}
+else if(City=="NELAMURU"&&networkName=="SRI-CHAITANYA-KRISHNA-CABLE-NETWORK"){num="919866717611"}
+else if(City=="NELAPOGULU"&&networkName=="MANIKANTA-CABLE-NETWORK"){num="919949312313"}
+else if(City=="NEMMALAGUDEM"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="918985992005"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-SAI-BABA-CABLE-NETWORK"){num="919393665599"}
+else if(City=="NIDADAVOLU"&&networkName=="GANGA-RAJU-CABLE-NETWORK"){num="917396266361"}
+else if(City=="NIDADAVOLU"&&networkName=="KATTA-MURALI-KRISHNA-CABLE-NETWORK"){num="919347627529"}
+else if(City=="NIDADAVOLU"&&networkName=="LIMBRA-CABLE-NETWORK"){num="919908893188"}
+else if(City=="NIDADAVOLU"&&networkName=="NAGELLA-BALAJI-CABLE-NETWORK"){num="919392301616"}
+else if(City=="NIDADAVOLU"&&networkName=="SAI-BABA-CABLE-NETWORK"){num="919393886962"}
+else if(City=="NIDADAVOLU"&&networkName=="SAI-BALAJI-CABLE-NETWORK"){num="919392301616"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-SIVA-SAI-CABLE-NETWORK"){num="919032906449"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-SUBBARAJUPETA-CABLE-NETWORK"){num="919393895755"}
+else if(City=="NIDADAVOLU"&&networkName=="SUDRASHAN-CABLE-NETWORK"){num="919441911148"}
+else if(City=="NIDADAVOLU"&&networkName=="JESUS-CABLE-NETWORK"){num="919640068040"}
+else if(City=="NIDADAVOLU"&&networkName=="MAHA-LAKSHMI-CABLE-NETWORK"){num="917997822255"}
+else if(City=="NIDADAVOLU"&&networkName=="SARITHA-CABLE-NETWORK"){num="917997822255"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-SAIRAM-STAR-TV-CABLE-NETWORK"){num="917997822255"}
+else if(City=="NIDADAVOLU"&&networkName=="VENKATESWARA-CABLE-NETWORK"){num="917997822255"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-SAIRAM-STAR-TV-CABLE-NETWORK"){num="917997822255"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-SOWJANYA-CABLE-NETWORK"){num="919989189666"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-RAMU-CABLE-NETWORK"){num="917013616939"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-LAKSHMI-CABLE-NETWORK"){num="919440604758"}
+else if(City=="NIDADAVOLU"&&networkName=="SOWJANYA-CABLE-NETWORK"){num="919891896666"}
+else if(City=="NIDADAVOLU"&&networkName=="STAR-&-STAR-CABLE-NETWORK"){num="919347622777"}
+else if(City=="NIDADAVOLU"&&networkName=="NAAZ-CABLE-NETWORK"){num="919014555576"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-VEERANJANEYA-CABLE-NETWORK"){num="919848859139"}
+else if(City=="NIDADAVOLU"&&networkName=="SRI-BHAKTHANJANEYA-CABLE-NETWORK"){num="919553620689"}
+else if(City=="NIMMALAGUDEM"&&networkName=="SRI-SAI-DURGA-CABLE-NETWORK"){num="919440362439"}
+else if(City=="NUTHIRAMANNAPALEM"&&networkName=="TWINS-CABLE-NETWORK"){num="919491711437"}
+else if(City=="P-GANNAVARAM"&&networkName=="V.S.COMMUNICATION"){num="917675919160"}
+else if(City=="P-KANNAPURAM"&&networkName=="SRI-SUBRAHMANYAM-CABLE-NETWORK"){num="919491372807"}
+else if(City=="PADAMATIPALEM"&&networkName=="DURGA-SAINDH-CABLE-NETWORK"){num="919866802959"}
+else if(City=="PALAGUMMI"&&networkName=="SRI-LAKSHMI-GANAPATHI-CABLE-NETWORK"){num="919963740674"}
+else if(City=="PALANGI"&&networkName=="SAIBABA-CABLE-NETWORK"){num="919866225448"}
+else if(City=="PALANGI"&&networkName=="SRI-SAINADH-STAR-&-CABLE-NETWORK"){num="919346721353"}
+else if(City=="PALANGI"&&networkName=="MANASA-CABLE-NETWORK"){num="919346721353"}
+else if(City=="PALI"&&networkName=="SRI-SRINIVASA-CABLE-TV-NETWORK"){num="919441907359"}
+else if(City=="PALLAM"&&networkName=="SATYA-DURGA-CABLE-NETWORK"){num="919849686983"}
+else if(City=="PALLAMKURRU"&&networkName=="SRI-SAI-DURGA-CABLE-NETWORK"){num="919989844520"}
+else if(City=="PALLEPALEM"&&networkName=="GANESH-CABLE-NETWORK"){num="919959825439"}
+else if(City=="PALLIPALEM"&&networkName=="SUSHMA-CABLE-NETWORK"){num="919963614127"}
+else if(City=="PALURU"&&networkName=="SRI-VENKATA-VIJAYA-DURGA-CABLE-NETWORK"){num="919949248244"}
+else if(City=="PAMPANAVARIPALEM"&&networkName=="VINAYAKA-DURGA-SAI-CABLE-NETWORK"){num="919959377620"}
+else if(City=="PANDALAPARRU"&&networkName=="SRI-AYYAPPA-CABLE-NETWORK"){num="919347626865"}
+else if(City=="PANDALAPARRU"&&networkName=="SRI-LAKSHMI-NARASIMHA-CABLE-NETWORK"){num="918886446889"}
+else if(City=="PANDIREDDYGUDEM"&&networkName=="SRI-LALITHA-CABLE-NETWORK"){num="919441554592"}
+else if(City=="PANDUGUDEM"&&networkName=="LAKSHMI-SRINIVAS-CABLE-NETWORK"){num="919912455246"}
+else if(City=="PANGIDIGUDEM"&&networkName=="SRI-HANUMAN-CABLE-NETWORK"){num="919247170707"}
+else if(City=="PANJA-VEMAVARAM"&&networkName=="PAVAN-SAI-CABLE-NETWORK"){num="919849086793"}
+else if(City=="PARIMPUDI"&&networkName=="ANANTHA-SAI-CABLE-NETWORK"){num="919848784726"}
+else if(City=="PASALAPUDI"&&networkName=="VENKATA-SAI-CABLE-NETWORK"){num="919949968885"}
+else if(City=="PASARALAPUDI-BADAVA"&&networkName=="SRI-VENKATA-DURGA-CABLE-NETWORK"){num="919948832109"}
+else if(City=="PASARALAPUDI-BADAVA"&&networkName=="SRI-LAAKSHMI-CABLE-NETWORK"){num="919912181418"}
+else if(City=="PASARALAPUDI-BADAVA"&&networkName=="SRI-RAMA-CABLE-NETWORK"){num="919705758803"}
+else if(City=="PASARLAPUDI"&&networkName=="SURYA-CHANDRA-CABLE-NETWORK"){num="919963412741"}
+else if(City=="PASARLAPUDI-LANKA"&&networkName=="SRI-SAI-KIRAN-CABLE-NETWORK"){num="919949188753"}
+else if(City=="PASARLAPUDI-LANKA"&&networkName=="MANI-KUMARI-CABLE-NETWORK"){num="919912239936"}
+else if(City=="PATTEMPALEM"&&networkName=="SRI-CHAITANYA-CABLE-NETWORK"){num="919492616813"}
+else if(City=="PAVULURIVARIGUDEM"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919440013903"}
+else if(City=="PEDA-TATAPUDI"&&networkName=="SRI-SATYA-CABLE-NETWORK"){num="918019146649"}
+else if(City=="PEDAKANDALAPALEM"&&networkName=="SURYA-CABLE-NETWORK"){num="919553332232"}
+else if(City=="PEDALANKA"&&networkName=="SIVA-GAYATHRI-CABLE-NETWORK"){num="919705076932"}
+else if(City=="PEDAMALLAM"&&networkName=="VENKATA-COMMUNICATION"){num="919392561954"}
+else if(City=="PEDAMETLANKA"&&networkName=="MOHAN-MANI-SRI-CABLE-NETWORK"){num="918008497888"}
+else if(City=="PEDAPADU"&&networkName=="MARUTHI-CABLE-NETWORK"){num="919441687467"}
+else if(City=="PEDAPALLA"&&networkName=="GANESH-CABLE-NETWORK"){num="919490935444"}
+else if(City=="PEDAPATNAM"&&networkName=="VEERABHADRA-CABLE-NETWORK"){num="919440892093"}
+else if(City=="PEDAPATNAM-AGRAHARAM"&&networkName=="SURYA-CABLE-NETWORK"){num="919441094236"}
+else if(City=="PEDAPATNAMLANKA"&&networkName=="P.NAIDU-CABLE-NETWORK"){num="919849888403"}
+else if(City=="PEDAPATNAMLANKA"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919493276889"}
+else if(City=="PEDAPETA"&&networkName=="YAMAHA-CABLE-NETWORK"){num="919963738369"}
+else if(City=="PEDATADEPALLI"&&networkName=="SRI-SURYA-CABLE-NETWORK"){num="919346641929"}
+else if(City=="PEDATHIPPA"&&networkName=="VANI-CABLE-NETWORK"){num="919573604387"}
+else if(City=="PEDAVELAMILLI"&&networkName=="N.V.R-CABLE-NETWORK"){num="919912462445"}
+else if(City=="PEDDA-GARUVU"&&networkName=="SHIVA-CABLE-NETWORK"){num="919494336426"}
+else if(City=="PENDYALA-1"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919392023334"}
+else if(City=="PENDYALA-2"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919533536772"}
+else if(City=="PENIKURU"&&networkName=="SURESH-CABLE-NETWORK"){num="919849222233"}
+else if(City=="PENKULAPATIGARUVU"&&networkName=="SRI-SAI-GANESH-CABLE-TV-NETWORK"){num="919550221502"}
+else if(City=="PENUMANTRA"&&networkName=="SRI-RAVINDRA-CABLE-NETWORK"){num="919441832347"}
+else if(City=="PENUMANTRA"&&networkName=="SRI-SRINIVASA-CABLE-TV-NETWORK"){num="919440476762"}
+else if(City=="PERAVALI"&&networkName=="SAI-SAILAJA-CABLE-NETWORK"){num="919652229495"}
+else if(City=="PERAVALI"&&networkName=="DINESH-COMMUNICATIONS"){num="919866282478"}
+else if(City=="PERAVALI"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="917730094377"}
+else if(City=="PERIKIPALEM"&&networkName=="SRI-LAKSHMI-SAI-CABLE-NETWORK"){num="919908665966"}
+else if(City=="PERUGUDEM"&&networkName=="VIJAYA-LAKSHMI-CABLE-NETWORK"){num="919502976555"}
+else if(City=="PINAPALLA"&&networkName=="GANESH-CABLE-NETWORK"){num="919490935444"}
+else if(City=="PITTLA-VEMAVARAM"&&networkName=="SATYA-SRI-CABLE-NETWORK"){num="919866848603"}
+else if(City=="PODAGATLAPALLI"&&networkName=="SRI-RAMA-CABLE-TV-NETWORK"){num="919948063045"}
+else if(City=="PODAGATLAPALLI"&&networkName=="SRI-TEJA-CABLE-NETWORK"){num="919491254610"}
+else if(City=="PODALADA"&&networkName=="LAKSHMI-NARASIMHA-CABLE-NETWORK"){num="919849144026"}
+else if(City=="PODALADA"&&networkName=="SAI-KRISHNA-CABLE-NETWORK"){num="919440962051"}
+else if(City=="PODALADA"&&networkName=="SYAM-&-SARATH-CABLE-NETWORK"){num="918985944110"}
+else if(City=="POLAMURU"&&networkName=="BHANU-CABLE-NETWORK"){num="919949134419"}
+else if(City=="POLAMURU"&&networkName=="SAI-DURGA-CBALE-NETWORK"){num="919492290299"}
+else if(City=="PONGUTURU"&&networkName=="FRIENDS-CABLE-NETWORK"){num="919848299748"}
+else if(City=="PONNAMANDA"&&networkName=="SRINU-CABLE-NETWORK"){num="919866257783"}
+else if(City=="PONNAMANDA"&&networkName=="ARUNA-CABLE-NETWORK"){num="916281844386"}
+else if(City=="PORA"&&networkName=="SRI-VENKATA-NARAYANA-CABLE-NETWORK"){num="919848348255"}
+else if(City=="POTHARLANKA"&&networkName=="BHAGYA-RAJU-CABLE-NETWORK"){num="919849986892"}
+else if(City=="POTHAVARAM"&&networkName=="POTHAVARAM-COMMUNICATION-NETWORK"){num="919959625667"}
+else if(City=="POTHAVARAM"&&networkName=="J.D-CABLE-NETWORK"){num="919848443952"}
+else if(City=="POTHAVARAM"&&networkName=="SRI-VIJAYA-LAKSHMI-CABLE-NETWORK"){num="919440331246"}
+else if(City=="POTHAVARAM(P)"&&networkName=="GANESH-CABLE-NETWORK"){num="919849446469"}
+else if(City=="PRAGADAPALLI"&&networkName=="VASUDHA-CABLE-NETWORK"){num="919441684609"}
+else if(City=="PRAKASARAOPALEM"&&networkName=="VIJAYA-LAKSHMI-CABLE-NETWORK"){num="919494704341"}
+else if(City=="PRATHALLAMERAKA"&&networkName=="SRI-BHAVANI-CABLE-NETWORK"){num="919491371387"}
+else if(City=="PUCHALANKA(NADIGADI)"&&networkName=="SRI-CABLE-NETWORK"){num="918184942229"}
+else if(City=="PULIRAMANNAGUDEM"&&networkName=="ROWAN-CALISTA-CABLE-NETWORK"){num="917893072194"}
+else if(City=="PULLAIGUDEM"&&networkName=="GANESH-CABLE-NETWORK"){num="919949588492"}
+else if(City=="PULLALAPADU"&&networkName=="SRAVANI-CABLE-NETWORK"){num="919618277166"}
+else if(City=="PULLETIKURRU"&&networkName=="SRI-RAJA-RAJESWARI-CABLE-NETWORK"){num="919393335303"}
+else if(City=="PULLETIKURRU"&&networkName=="YODE-CABLE-NETWORK"){num="918985676212"}
+else if(City=="PULLETIKURRU"&&networkName=="SRI-HARINI-CABLE-NETWORK"){num="919676263789"}
+else if(City=="PULLETIKURRU/K.PEDAPUDI"&&networkName=="SRI-USHODAYA-COMMUNICATION-CABLE-NETWORK"){num="919866398255"}
+else if(City=="PURUSHOTAPALLI"&&networkName=="S.V.L.S.S.CABLE-NETWORK"){num="919393222884"}
+else if(City=="PURUSHOTAPALLI"&&networkName=="SRI-VENKATESWARA-SIVA-SAI-CABLE-NETWORK"){num="919160440884"}
+else if(City=="PUTTALAPUDI"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919989833665"}
+else if(City=="PYDIPARRU"&&networkName=="SIVANI-CABLE-NETWORK"){num="919949533445"}
+else if(City=="PYDIPARRU"&&networkName=="B-R-CABLE-NETWORK"){num="919912690155"}
+else if(City=="RAJAMPALEM"&&networkName=="SRI-VIGNESWARA-DURGA-CABLE-NETWORK"){num="919391455755"}
+else if(City=="RAJANAGARAM"&&networkName=="SHANMUKA-SAI-CABLE-NETWORK"){num="919493773192"}
+else if(City=="RAJAVARAM"&&networkName=="KRISHNA-TEJA-CABLE-NETWORK"){num="919949513644"}
+else if(City=="RAJAVARAM"&&networkName=="SRI-KRISHNA-TEJA-CABLE-NETWORK"){num="919849870860"}
+else if(City=="RAJUPALEM"&&networkName=="JAI-SANTOSHIMATHA-CABLE-NETWORK"){num="919440352723"}
+else if(City=="RALLAGANDI"&&networkName=="CHINNI-KRISHNA-CABLE-NETWORK"){num="919494956867"}
+else if(City=="RALLAKUNTA"&&networkName=="SRI-SRINIVASA-CABLE-NETWORK"){num="919989036113"}
+else if(City=="RAMA-SINGAVARAM"&&networkName=="PARAMESWARI-CABLE-NETWORK"){num="919848274699"}
+else if(City=="RAMACHANDRAPURAM"&&networkName=="SAI-DURGA-CABLE-NETWORK"){num="919885971293"}
+else if(City=="RAMAKRISHNAPURAM"&&networkName=="SRI-LAKSHMI-SAIRAM-CABLE-NETWORK"){num="919948241631"}
+else if(City=="RAMANNAGUDEM"&&networkName=="STAR-CABLE-NETWORK"){num="919440712246"}
+else if(City=="RAMANNAGUDEM(B)"&&networkName=="VARALAKSFHMI-CABLE-NETWORK"){num="919493090667"}
+else if(City=="RAMANUJAPURAM"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919542675977"}
+else if(City=="RAMARAJULANKA"&&networkName=="SRI-SAI-DURGA-CABLE-NETWORK"){num="919985945345"}
+else if(City=="RAMARAJULANKA"&&networkName=="SRI-SAI-TEJA-CABLE-NETWORK"){num="918499895232"}
+else if(City=="RAMARAJULANKA-CHURCHPETA"&&networkName=="SIVALEELA-CABLE-NETWORK"){num="919640945318"}
+else if(City=="RAMAYANAPURAM"&&networkName=="DURGA-CABLE-NETWORK"){num="919347207636"}
+else if(City=="RAMESWARAM"&&networkName=="AKIL-CABLE-NETWORK"){num="919849194444"}
+else if(City=="RAMESWARAM"&&networkName=="SAI-CABLE-NETWORK"){num="919666519407"}
+else if(City=="RAMPALEM"&&networkName=="KRISHNA-TEJA-CABLE-NETWORK"){num="919949127245"}
+else if(City=="RAVIGUNTA"&&networkName=="SURYA-CABLE-NETWORK"){num="919848674975"}
+else if(City=="RAVIMETLA"&&networkName=="SRI-DANALAKSHMI-CABLE-NETWORK"){num="919603412439"}
+else if(City=="RAVIPADU"&&networkName=="SRI-VIJAYA-DURGA-CABLE-NETWORK"){num="919000159156"}
+else if(City=="RAVIPADU"&&networkName=="LALITHA-CABLE-NETWORK"){num="919000159156"}
+else if(City=="RAVIVARIPALEM"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919849733641"}
+else if(City=="RAVULAPADU"&&networkName=="JAI-PRAKASH-CABLE-NETWORK"){num="919440176530"}
+else if(City=="RAVULAPALEM"&&networkName=="SRI-MAHALAKSHMI-CABLE-NETWORK"){num="917331172088"}
+else if(City=="RAVULAPALEM"&&networkName=="SRI-KRISHNA-COMMUNICATION-NETWORK"){num="919866341531"}
+else if(City=="RAVULAPALEM"&&networkName=="GAYATHRI-CABLE-NETWORK"){num="919100787956"}
+else if(City=="RAVULAPALEM"&&networkName=="ANKALAMMA-CABLE-NETWORK"){num="919100787964"}
+else if(City=="RAVULAPALEM"&&networkName=="VAKULAMMA-CABLE-NETWORK"){num="919100787964"}
+else if(City=="RAVULAPALEM"&&networkName=="AYYAPPA-CABLE-NETWORK"){num="919866341531"}
+else if(City=="RAVULAPALEM"&&networkName=="SRINIVASA-CABLE-NETWORK"){num="919100787964"}
+else if(City=="RAVULAPALEM"&&networkName=="GANESH-CABLE-NETWORK"){num="919100787964"}
+else if(City=="RAVULAPALEM"&&networkName=="VINAYAKA-CABLE-NETWORK"){num="919100787964"}
+else if(City=="RAVULAPALEM"&&networkName=="ADILAKSHMI-CABLE-NETWORK"){num="919100787964"}
+else if(City=="RAVULAPALEM"&&networkName=="SRI-K.V.REDDY-CABLE-NETWORK"){num="919000033667"}
+else if(City=="RAVULAPALEM"&&networkName=="K.V.REDDY-CABLE-NETWORK-"){num="919000033667"}
+else if(City=="RAZOLE"&&networkName=="PADMAJA-CABLE-NETWORK"){num="919949859404"}
+else if(City=="RAZOLE"&&networkName=="R-K-DISH-CABLE-NETWORK"){num="919849348302"}
+else if(City=="RAZOLE"&&networkName=="KRISHNA-CABLE-NETWORK"){num="919441813619"}
+else if(City=="RAZOLE"&&networkName=="MAHALAKSHMI-DISH-CABLE-NETWORK"){num="917799772013"}
+else if(City=="RAZOLE"&&networkName=="SRI-MAHA-VIJAYA-KANAKA-DURGA-CABLE-NETWORK"){num="919177759442"}
+else if(City=="RAZOLE"&&networkName=="THIRUMALA-CABLE-NETWORK"){num="917675919157"}
+else if(City=="REGULAGUNTA"&&networkName=="SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"){num="919494701401"}
+else if(City=="RELANGI"&&networkName=="DIRISALA-COMMUNICATIONS"){num="919441447281"}
+else if(City=="RELANGI"&&networkName=="DIRISALA-COMMUNICATIONS"){num="919494997669"}
+else if(City=="RELANGI"&&networkName=="SAI-SUBRAHMANYESWARA-CABLE-NETWORK"){num="919849498667"}
+else if(City=="RELANGI"&&networkName=="SRI-DURGA-CABLE-NETWORK"){num="919963738641"}
+else if(City=="RELANGI"&&networkName=="SRI-VIJAYA-DURGA-CABLE-NETWORK"){num="919866455858"}
+else if(City=="RELANGI"&&networkName=="DIRISALA-CABLE-NERWORK"){num="919440374428"}
+else if(City=="RELANGI"&&networkName=="LUCKY-COMMUNICATION-NETWORK"){num="919441447281"}
+else if(City=="REPALLIWADA"&&networkName=="SATYASAI-BHAVATHI-CABLE-NETWORK"){num="919490105905"}
+else if(City=="RYALI"&&networkName=="THE-RYALI-CABLE-COMMUNICATION-NETWORK"){num="919440575239"}
+else if(City=="S-ILLINDALAPARRU"&&networkName=="SRI-SHIRDI-SAI-CABLE-NETWORK"){num="919133598599"}
+else if(City=="S-MUPPAVARAM"&&networkName=="MADHU-CABLE-NETWORK"){num="919866140876"}
+else if(City=="S.KONDEPADU"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919866328047"}
+else if(City=="S.MULAPALEM/KONDUKUDURU/POTTILANKA"&&networkName=="MURALI-KRISHNA-CABLE-NETWORK"){num="919948114599"}
+else if(City=="SAJJAPURAM"&&networkName=="SRI-SAIRAM-CABLE-NETWORK"){num="919949307088"}
+else if(City=="SAJJAPURAM"&&networkName=="SRI-SANTHI-COMMUNICATIONS"){num="919963888889"}
+else if(City=="SAJJAPURAM"&&networkName=="GAJANANA-CABLE-NETWORK"){num="919494444965"}
+else if(City=="SAKINETIPALLI"&&networkName=="SRI-LASKHMI-BHIMESWARA-CABLE-NETWORK"){num="919533906668"}
+else if(City=="SAKINETIPALLI"&&networkName=="PAVANI-CABLE-NETWORK"){num="919490348771"}
+else if(City=="SAKINETIPALLI-LANKA"&&networkName=="SURYA-CABLE-NETWORK"){num="919866596058"}
+else if(City=="SAKINETIPALLI-LANKA"&&networkName=="LAKSHMI-DURGA-CABLE-NETWORK"){num="919989153804"}
+else if(City=="SAKURRU"&&networkName=="PAVAN-CABLE-NETWORK"){num="917842501781"}
+else if(City=="SAMISRAGUDEM"&&networkName=="BHAGYA-LAKSHMI-CABLE-NETWORK"){num="919347626866"}
+else if(City=="SAMISRAGUDEM"&&networkName=="SRI-AYYAPPA-CABLE-&-SAT-LINKS-NETWORK"){num="919347626866"}
+else if(City=="SANDHIPUDI"&&networkName=="SAI-SRIDATTA-CABLE-NETWORK"){num="919059418555"}
+else if(City=="SANDRAGUNTA"&&networkName=="KUMARI-CABLE-NETWORK"){num="919908717452"}
+else if(City=="SANKARAGUPTHAM"&&networkName=="SARADHI-CABLE-NETWORK"){num="919493533111"}
+else if(City=="SANKARAPURAM"&&networkName=="SRI-NAMGALYA-DEVI-CABLE-NETWORK"){num="919347311547"}
+else if(City=="SARIPALLI"&&networkName=="SIRISHA-CABLE-NETWORK"){num="919948807954"}
+else if(City=="SARVAPURAM"&&networkName=="SAI-PRIYA-CABLE-NETWORK"){num="919908685537"}
+else if(City=="SATTEMMACHETTU"&&networkName=="SATYA-SAI-DURGA-CABLE-NETWORK"){num="919494549010"}
+else if(City=="SATTENNAGUDEM"&&networkName=="ASHOK-CABLE-NETWORK"){num="919493696128"}
+else if(City=="SATYAWADA"&&networkName=="SRI-VENKATA-SAI-CABLE-NETWORK"){num="919949968885"}
+else if(City=="SAVARAM"&&networkName=="SHAHEE-SITI-CABLE-NETWORK"){num="919849545073"}
+else if(City=="SEETHAMPETA"&&networkName=="SRI-VENKATESWARA-CABLE-NETWORK"){num="919701212578"}
+else if(City=="SETTIPET"&&networkName=="SURYA-CABLE-NETWORK"){num="919347627544"}
+else if(City=="SETTIPET"&&networkName=="VIGNESWARA-CABLE-NETWORK"){num="919666585296"}
+else if(City=="SHANKARAYAGUDEM"&&networkName=="NAVAYUGA-CABLE-NETWORK"){num="919704635636"}
+else if(City=="SINGARJUPALEM"&&networkName=="LAKSHMI-CABLE-NETWORK"){num="919949924569"}
+else if(City=="SINGAVARAM"&&networkName=="SRI-SAI-RAM-CABLE-NETWORK"){num="919347622777"}
+else if(City=="SIVAKODU"&&networkName=="BALU-CABLE-NETWORK"){num="919866566137"}
+else if(City=="SIVAKODU"&&networkName=="MAHA-LAKSHMI-CABLE-NETWORK"){num="919000811678"}
+else if(City=="SIVAKODU"&&networkName=="GANESH-CABLE-NETWORK"){num="918463961704"}
+else if(City=="SIVAKODU-PALEM"&&networkName=="PREETHI-CABLE-NETWORK"){num="918500111597"}
+else if(City=="SIVAPURAM"&&networkName=="SRI-VENKATESWARA-CABLE-TV-NETWORK"){num="919676046440"}
+else if(City=="SKINNERAPURAM"&&networkName=="SRI-KRISHNA-MADHAV-CABLE-NETWORK"){num="919441751373"}
+else if(City=="SOMIDEVARAPALEM"&&networkName=="SURYA-CABLE-NETWORK"){num="919866868355"}
+else if(City=="SOMPALLI"&&networkName=="SARATH-CABLE-NETWORK"){num="919491690140"}
+else if(City=="SRIRANGAPATNAM"&&networkName=="NAGA-GOWRI-CABLE-NETWORK"){num="918096508387"}
+else if(City=="SRUNGAVARAPUPADU"&&networkName=="SRI-VENKATA-SAI-CABLE-NETWORK"){num="919908960171"}
+else if(City=="SRUNGAVARAPUPADU"&&networkName=="SURYA-CABLE-NETWORK"){num="919989075572"}
+else if(City=="SUBHADRAPALEM"&&networkName=="PARAMESWARI-CABLE-NETWORK"){num="919848274699"}
+else if(City=="SURAIAHPETA"&&networkName=="SRI-LAKSHMI-SRINIVASA-CABLE-NETWORK"){num="919494701401"}
+else if(City=="SURAICHERUVU"&&networkName=="MADHU-CABLE-NETWORK"){num="919494156914"}
+else if(City=="SURAMPUDI"&&networkName=="SURAMPUDI-CABLE-NETWORK"){num="919491081560"}
+else if(City=="SURYACHANDRARAOPETA"&&networkName=="SRI-VENKATA-SAI-SOWMYA-CABLE-NETWORK"){num="919441446871"}
+else if(City=="SURYARAOPALEM"&&networkName=="SURYA-CABLE-NETWORK"){num="919849169396"}
+else if(City=="TADIMALLA"&&networkName=="VENKATESWARA-CABLE-NETWORK"){num="916309615582"}
+else if(City=="TADIMALLA"&&networkName=="VENKATESWARA-CABLE-NETWORK"){num="917997822255"}
+else if(City=="TADIMALLA-COLONY"&&networkName=="HEMA-CABLE-NETWORK"){num="919346208086"}
+else if(City=="TADIPARRU"&&networkName=="SRI-SRINIVASA-CABLE-NETWORK"){num="919491555799"}
+else if(City=="TADIPARRU"&&networkName=="SRI-DURGA-CABLE-NETWORK"){num="919949476992"}
+else if(City=="TAKKELLAPADU"&&networkName=="SRI-VIJAYA-KRISHNACABLE-NETWORK"){num="919908362188"}
+else if(City=="TALATADITHIPPA"&&networkName=="ABHAYANJANEYA-CABLE-NETWORK"){num="919701288008"}
+else if(City=="TALLAPALEM"&&networkName=="MOHAN-CABLE-NETWORK"){num="919396212452"}
+else if(City=="TALLAPALEM(N)"&&networkName=="DEEPIKA-CABLE-NETWORK"){num="917569527955"}
+else if(City=="TANELANKA"&&networkName=="SRI-SAI-KRISHNA-CABLE-NETWORK"){num="919912549780"}
+else if(City=="TANUKU"&&networkName=="ANJALI-STAR-NETWORK"){num="919848487182"}
+else if(City=="TANUKU"&&networkName=="DARSHAN-STAR-NETWORK"){num="919440891218"}
+else if(City=="TANUKU"&&networkName=="GOLDSTAR-CABLE-NETWORK"){num="919866341531"}
+else if(City=="TANUKU"&&networkName=="SRI-KRISHNA-CABLE-NETWORK"){num="919866341531"}
+else if(City=="TANUKU"&&networkName=="SIVA-CABLE-NETWORK"){num="919866341531"}
+else if(City=="TANUKU"&&networkName=="HANUMAN-CABLE-NETWORK"){num="919866341531"}
+else if(City=="TANUKU"&&networkName==""){num="919866341531"}
+else if(City=="TANUKU"&&networkName=="CHAKRAVARTHI-CABLE-NETWORK"){num="919701576744"}
+else if(City=="TANUKU"&&networkName=="PRASANTH-CABLE-NETWORK"){num="919440402208"}
+else if(City=="TANUKU"&&networkName=="PUJITHA-CABLE-NETWORK"){num="919490050288"}
+else if(City=="TANUKU"&&networkName=="SRI-HARI-PRIYA-CABLE-NETWORK"){num="919440695263"}
+else if(City=="TANUKU"&&networkName=="AVANTHI-CABLE-NET-WORK"){num="919848021242"}
+else if(City=="TANUKU"&&networkName=="TCN-OFFICE"){num="919849994640"}
+else if(City=="TANUKU"&&networkName=="NAGA-YASHWANTH-CABLE-NETWORK"){num="918885552020"}
+else if(City=="TANUKU"&&networkName=="SRI-CABLE-NETWORK"){num="919494444965"}
+else if(City=="TANUKU"&&networkName=="STAR-NETWORK"){num="919494444965"}
+else if(City=="TANUKU"&&networkName=="S.R.K.S.CABLE-NETWORK"){num="919849639369"}
+else if(City=="TANUKU"&&networkName=="DURGA-DEVI-CABLE-NETWORK"){num="919848116677"}
+else if(City=="TANUKU"&&networkName=="LAKSHMI-TULASI-CABLE-NETWORK"){num="919949533445"}
+else if(City=="TANUKU"&&networkName=="VENKATA-RATHNA-CABLE-NETWORK"){num="919949256677"}
+else if(City=="TANUKU"&&networkName=="SRI-SAINADH-CABLE-NETWORK"){num="919885674756"}
+else if(City=="TANUKU"&&networkName=="SRI-PAVANA-CABLE-NETWORK"){num="919885674756"}
+else if(City=="TANUKU"&&networkName=="SRI-HARIKA-CABLE-NETWORK"){num="919885674756"}
+else if(City=="TANUKU"&&networkName=="MANIKANTA-CABLE-NETWORK"){num="919346266547"}
+else if(City=="TANUKU"&&networkName=="DHANA-LAKSHMI-STAR-CABLE-NETWORK"){num="917702871799"}
+else if(City=="TANUKU"&&networkName=="SRI-RAM-CABLE-NETWORK"){num="919346266547"}
+else if(City=="TANUKU"&&networkName=="TCN-EMPLOYEES"){num="919848048171"}
+else if(City=="TANUKU"&&networkName=="COASTAL-BROADBAND-NETWORK"){num="919963546464"}
+else if(City=="TATIPAKA"&&networkName=="GAYATHRI-COMMUNICATION"){num="919247887364"}
+else if(City=="TATIPAKA"&&networkName=="SYAMALA-COMMUNICATIONS"){num="919542294242"}
+else if(City=="TEEPARRU"&&networkName=="VENKATA-KRISHNA-CABLE-NETWORK"){num="919494744136"}
+else if(City=="TEKISETTIPALEM"&&networkName=="FRIENDS-CABLE-NETWORK"){num="919603337778"}
+else if(City=="TEKISETTIPALEM-VANTHENA"&&networkName=="SRI-SATYA-CABLE-NETWORK"){num="919866353211"}
+else if(City=="TEKKINAVARIGUDEM"&&networkName=="SRI-SAI-DURGA-CABLE-NETWORK"){num="919440362439"}
+else if(City=="TELIKICHERLA"&&networkName=="KANAKADURGA-CABLE-NETWORK"){num="919440614738"}
+else if(City=="TELIKICHERLA"&&networkName=="DHANA-LAKSHMI-CABLE-NETWORK"){num="919618277166"}
+else if(City=="TELIKICHERLA"&&networkName=="DHANA-LAKSHMI-CABLE-NETWORK"){num="919618277166"}
+else if(City=="TETALI"&&networkName=="SATYA-SURYA-CABLE-NETWORK"){num="919949424999"}
+else if(City=="TETALI"&&networkName=="LALITHA-CABLE-NETWORK"){num="919849324325"}
+else if(City=="THATIPAKA-MATAM"&&networkName=="PAVAN-CABLE-NWTWORK"){num="919440204504"}
+else if(City=="THILLAPUDIPALEM"&&networkName=="SRI-SAIDURGA-CABLE-NET-WORK"){num="919908688513"}
+else if(City=="THIMMAIAHPALEM"&&networkName=="SAIDURGA-CABLE-NETWORK"){num="919491978219"}
+else if(City=="THOTLAPALEM"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919542271593"}
+else if(City=="THOTLAPALEM"&&networkName=="SRI-SAI-GAYATHRI-CABLE-NETWORK"){num="919550278569"}
+else if(City=="THRINADHAPURAM"&&networkName=="SRI-CABLE-NETWORK"){num="919951689445"}
+else if(City=="THUNDURRU"&&networkName=="MANI-CABLE-NETWORK"){num="919849932035"}
+else if(City=="TIMMAPURAM"&&networkName=="MESSAYYA-CABLE-NETWORK"){num="919949329118"}
+else if(City=="TIMMARAJUPALEM"&&networkName=="SRI-SAI-ROHINI-CABLE-NETWORK"){num="919396275043"}
+else if(City=="TIRUMALAMPALEM"&&networkName=="GANESH-CABLE-NETWORK"){num="919441042324"}
+else if(City=="TIRUMALAPURAM"&&networkName=="TULASI-NAIDU-CABLE-NETWORK"){num="919989972126"}
+else if(City=="TIRUPATHIPURAM"&&networkName=="TEJA-CABLE-NETWORK"){num="919440866126"}
+else if(City=="TOKALANKA"&&networkName=="SRI-SAI-CABLE-VISION"){num="919493275445"}
+else if(City=="TOKALAPUDI"&&networkName=="DURGA-CABLE-NETWORK"){num="919642776261"}
+else if(City=="TOKALAPUDI-PALEM"&&networkName=="KRISHNA-KUMARI-CABLE-NETWORK"){num="919949118580"}
+else if(City=="TOKKIREDDYGUDEM"&&networkName=="SRI-VIGNESWARA-CABLE-NETWORK"){num="919492415509"}
+else if(City=="TOLERU"&&networkName=="SRI-DURGA-CABLE-NETWORK"){num="919866928861"}
+else if(City=="TOLERU-UTTARAPALEM"&&networkName=="DURGA-SAI-NADH-CABLE-NET-WORK"){num="919866802959"}
+else if(City=="TONDAVARAM"&&networkName=="SRI-RAJYALAKSHMI-CABLE-NETWORK"){num="918500506317"}
+else if(City=="TOTTARAMUDI"&&networkName=="SRI-SAI-DURGA-CABLE-NETWORK"){num="919100112125"}
+else if(City=="TUMMAGUPPAM"&&networkName=="DIVYA-CABLE-NETWORK"){num="919701461645"}
+else if(City=="TURPUPALEM"&&networkName=="VINAYA-SRI-CABLE-NETWORK"){num="918897371888"}
+else if(City=="TYAJAMPUDI"&&networkName=="DIVYA-CABLE-NETWORK"){num="919949543504"}
+else if(City=="TYAJAMPUDI"&&networkName=="KVR-CABLE-NETWORK"){num="919398824721"}
+else if(City=="UBALANKA"&&networkName=="SRI-SRINIVASA-CABLE-NETWORK"){num="919100787956"}
+else if(City=="UNDRAJAVARAM"&&networkName=="A-CABLE-NETWORK"){num="919966642444"}
+else if(City=="UNDRAJAVARAM"&&networkName=="GANDHI-CABLE-NETWORK"){num="919966642444"}
+else if(City=="UNDRAJAVARAM"&&networkName=="SANGAMITRA-CABLE-NETWORK"){num="919966642444"}
+else if(City=="UNDRAJAVARAM"&&networkName=="SURYA-CABLE-NETWORK"){num="919966642444"}
+else if(City=="UNDRAJAVARAM"&&networkName=="MUTYALAMMA-CABLE-NETWORK"){num="919999999999"}
+else if(City=="UNIKILI"&&networkName=="VIJAYA-LAKSHMI-CABLE-NETWORK"){num="919441687518"}
+else if(City=="UNKARAMILLI"&&networkName=="SURYA-CABLE-NETWORK"){num="919441687243"}
+else if(City=="UPPARAGUDEM"&&networkName=="YESU-RAJU-CABLE-NETWORK"){num="917893629475"}
+else if(City=="UPPARAGUDEM(T)"&&networkName=="MALATHI-CABLE-NETWORK"){num="918985228417"}
+else if(City=="UPPIDI"&&networkName=="SRI-SAI-NAVEEN-CABLE-NETWORK"){num="919963160079"}
+else if(City=="URADALLAPALEM"&&networkName=="SRI-SHIRIDI-SAI-CABLE-TV-NETWORK"){num="919848258088"}
+else if(City=="USULUMARRU"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="918297722448"}
+else if(City=="USULUMARRU-PADU"&&networkName=="WHY-NOT-CABLE-NETWORK"){num="919494913096"}
+else if(City=="UTCHILI"&&networkName=="LAKSHMI-CABLE-NETWORK"){num="919948586800"}
+else if(City=="UTTARAPALEM"&&networkName=="SRI-PAVAN-PUTHRA-CABLE-NETWORK"){num="918331977599"}
+else if(City=="VADDIGUDEM"&&networkName=="SAINADH-CABLE-NETWORK"){num="919963584417"}
+else if(City=="VADLURU"&&networkName=="VENUS-COMMUNICATION"){num="919394650555"}
+else if(City=="VADREVUPALLI"&&networkName=="SRI-LAKSHMI-CABLE-NETWORK"){num="919490710946"}
+else if(City=="VAKAPALLI"&&networkName=="SRI-PANKAJANABHA-CABLE-NETWORK"){num="919866598227"}
+else if(City=="VANGATALACHERUVU"&&networkName=="SRINIVAS-CABLE-NETWORK"){num="919618188420"}
+else if(City=="VANUM-VARI-PALEM"&&networkName=="SRI-LAKSHMI-CABLE-NETWORK"){num="919603811755"}
+else if(City=="VARAGALANKA"&&networkName=="SRI-DEVI-HARSHITHA-CABLE-NETWORK"){num="919052788744"}
+else if(City=="VARIGHEDU"&&networkName=="SRI-DANESWARI-CABLE-NETWORK"){num="919948275893"}
+else if(City=="VASAMSETTIVARIPALEM"&&networkName=="KAVYA-CABLE-NETWORK"){num="919490560999"}
+else if(City=="VEDANTHAPURAM"&&networkName=="SRI-DURGA-CABLE-NETWORK"){num="919392827226"}
+else if(City=="VEDIRESWARAM"&&networkName=="VARMA-CABLE-NETWORK"){num="918143773568"}
+else if(City=="VEERABADRAPURAM"&&networkName=="SRI-SAI-SATTELLITE-VISION"){num="919247196899"}
+else if(City=="VEERAMPALEM"&&networkName=="KARUNA-CABLE-NETWORK"){num="918500448034"}
+else if(City=="VEERAVALLIPALEM"&&networkName=="OM-SAI-CABLE-NETWORK"){num="919948181998"}
+else if(City=="VEERAVALLIPALEM(V)"&&networkName=="LAKSHMI-PRASANNA-CABLE-NETWORK"){num="919000392696"}
+else if(City=="VEGIVARIPALEM"&&networkName=="KEERTHI-CABLE-NETWORK"){num="919491690140"}
+else if(City=="VELAGADURRU"&&networkName=="SRI-SAIKRISHNA-CABLE-NETWORK"){num="918008597991"}
+else if(City=="VELAGALAVARIPALEM"&&networkName=="SRI-VIGNESWARA-CABLE-NETWORK"){num="919441655482"}
+else if(City=="VELAVALIPALLI"&&networkName=="SAI-BALAJI-CABLE-NETWORK"){num="919493654102"}
+else if(City=="VELICHERU"&&networkName=="SRI-VIJAYA-DURGA-CABLE-NETWORK"){num="919502417020"}
+else if(City=="VELIVENNU"&&networkName=="SRI-LAKSHMI-GANAPATHI-CABLE-NETWORK"){num="919966885326"}
+else if(City=="VELIVENNU"&&networkName=="VIGNESWARA-CABLE-NETWORK"){num="919000420243"}
+else if(City=="VELIVENNU"&&networkName=="VARASIDDI-VINAYAKA-CABLE-NETWORK"){num="919966885326"}
+else if(City=="VELPUR"&&networkName=="MOHAN-COMMUNICATOIN-CABLE-NETWORK"){num="919010834777"}
+else if(City=="VELPUR"&&networkName=="V.S.C.DIGITAL-NETWORK"){num="919949922577"}
+else if(City=="VELPUR"&&networkName=="AKILA-CABLE-NETWORK"){num="919292552552"}
+else if(City=="VELPUR"&&networkName=="SHIVA-CABLE-NETWORK"){num="919966660606"}
+else if(City=="VELPUR"&&networkName=="KARTHIKEYA-CABLE-NETWORK"){num="919966660606"}
+else if(City=="VELPUR"&&networkName=="TEJA-CABLE-CABLE-NETWORK"){num="919966660606"}
+else if(City=="VELPUR"&&networkName=="NEELAKANTA-CABLE-NETWORK"){num="919966660606"}
+else if(City=="VELPUR"&&networkName=="SURYA-CHANDRA-CABLE-NETWORK"){num="919885198899"}
+else if(City=="VELPUR"&&networkName=="PAVAN-CHANDRA-CABLE-NETWORK"){num="919985828068"}
+else if(City=="VENDRA"&&networkName=="SRI-VIJAYA-LAKSHMI-CABLE-NETWORK"){num="919949164647"}
+else if(City=="VENKATARAMANNAGUDEM"&&networkName=="YSR-HORTICULTURAL-UNIVERSITY"){num="919985845981"}
+else if(City=="VENKATARAMANNAGUDEM"&&networkName=="STAR-CABLE-NETWORK"){num="919490922142"}
+else if(City=="VENKATARAOPALEM"&&networkName=="SRI-KANAKADURGA-CABLE-NETWORK"){num="919676742338"}
+else if(City=="VENKATARAYAPURAM"&&networkName=="THE-ANDHRA-SUGARS-L.T.D"){num="919866341531"}
+else if(City=="VENKATARAYAPURAM"&&networkName=="SREE-RANGARAO-MEMORIAL-CLUB"){num="919866341531"}
+else if(City=="VENKATARAYAPURAM(PERAVALI)"&&networkName=="LAKSHMI-SURYA-CABLE-NETWORK"){num="919949975335"}
+else if(City=="VETLAPALEM"&&networkName=="SATYA-CABLE-NETWORK"){num="919553754071"}
+else if(City=="VINAYAKA-PURAM"&&networkName=="VINAYAKAPURAM-CABLE-NETWORK"){num="919959253088"}
+else if(City=="VISWESWARAYAPURAM"&&networkName=="SRI-DEVI-CABLE-NETWORK"){num="919492948339"}
+else if(City=="VUYYURI-VARI-MERAKA"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919030905680"}
+else if(City=="VUYYURI-VARI-MERAKA"&&networkName=="CHINNA-CABLE-NETWORK"){num="919550219990"}
+else if(City=="Y-BRIDZE"&&networkName=="SRI-SAI-CABLE-NETWORK"){num="919542255666"}
+else if(City=="YALAKALLANKA"&&networkName=="SRINIVASA-CABLE-NETWORK"){num="918985487316"}
+else if(City=="YANAMADURRU"&&networkName=="NAVEEN-CABLE-NETWORK"){num="919866523555"}
+else if(City=="YARRAMALLA"&&networkName=="PAVAN-CABLE-NETWORK"){num="919014366439"}
+else if(City=="YARRAMILLIPADU"&&networkName=="SRI-LALITHA-CABLE-NETWORK"){num="919441554592"}
+else if(City=="YELLAMILLI-STAGE"&&networkName=="LAKSMI-DURGA-CABLE-NETWORK"){num="919949924569"}
+else if(City=="YENUGULAMAHAL"&&networkName=="BABA-CABLE-NETWORK"){num="919949130597"}
+else if(City=="YENUGULAMAHAL"&&networkName=="BABA-CABLE-NETWORK"){num="917893230798"}
+else if(City=="YERRAICHERUVU"&&networkName=="SRI-RAMA-CABLE-NETWORK"){num="919492839781"}
+else if(City=="YERRAMSETTIVARIPAELM"&&networkName=="SRI-SAI-SATYA-SIVARAM-CABLE-NETWORK"){num="919441953767"}
+else if(City=="YERRANELUGUNTA"&&networkName=="SWATHI-CABLE-NETWORK"){num="919652584100"}
+
+      
+          var url = "https://wa.me/+"+num+"?text="
+          + "My Name: "+ complaintName + "%0a"
+          + "Complaint: "+ email + "%0a"
+          + "My Address: "+ complaintAddress;
+      
+          window.open(url, '_blank').focus();
+    
+      firebase.database().ref('Complaints/' + newPostKey).set({
+        City: City,
+        NetworkName: networkName,
+        Email: email,
+        CustomerName: complaintName,
+        CustomerPhNumber: complaintPhNumber,
+        CustomerAddress: complaintAddress
+      });
+
+
+    
+      }
+    }
+  </script>
+    
+        <script src="app.js"></script>
+    
+      </body>
+    </html>
+    
